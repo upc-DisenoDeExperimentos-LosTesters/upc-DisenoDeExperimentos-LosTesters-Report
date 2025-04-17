@@ -1,5 +1,12 @@
-![Logo Upc](https://www.upc.edu.pe/static/img/logo_upc_red.png "Logo upc")
-Universidad Peruana de Ciencias Aplicadas
+<center>  
+<img src="./assets/UPC_logo_transparente.png" alt="Logo Upc">  
+</center>
+
+<center>
+
+# Universidad Peruana de Ciencias Aplicadas
+
+</center>
 
 <center>
 
