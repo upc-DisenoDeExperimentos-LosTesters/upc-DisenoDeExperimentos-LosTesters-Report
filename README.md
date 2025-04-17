@@ -219,7 +219,6 @@ del ABET – EAC - Student Outcome 5
     <tr>
         <td>Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software</td>
         <td>
-        <td>
         </td>
         <td>
         </td>
