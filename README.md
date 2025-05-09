@@ -16,10 +16,10 @@
 
 ### <center>Diseño De Experimentos</center>
 
-<center>Ciclo: 2025-01</center>
-<center>Carrera: Ingenieria de Software</center>  
-<center>Seccion: 4441</center> 
-<center>Profesor: Julio Manuel Noriega Melendez</center>
+<center>Ciclo: 2025-01</center> <br> 
+<center>Carrera: Ingenieria de Software</center> <br>   
+<center>Seccion: 4441</center> <br> 
+<center>Profesor: Julio Manuel Noriega Melendez</center><br>
 
 ### <center>Startup: Los Testers</center>
 
