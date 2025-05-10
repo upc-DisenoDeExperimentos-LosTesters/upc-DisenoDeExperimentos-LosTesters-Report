@@ -67,8 +67,8 @@ Con MoviGestión, los usuarios pueden visualizar el estado de cada vehículo, el
       </td>
       <td>
       <img
-          src="/assets/img/capitulo-1/profiles/ruben-mallma-profile.png"
-          alt="Ruben Mallma profile picture"
+          src="/assets/chapter01/juan-cueto.png"
+          alt="Juan Cueto profile picture"
           width="350"
           height="125"
         />
@@ -81,8 +81,8 @@ Con MoviGestión, los usuarios pueden visualizar el estado de cada vehículo, el
       </td>
       <td>
         <img
-          src="/assets/img/capitulo-1/profiles/ruben-mallma-profile.png"
-          alt="Ruben Mallma profile picture"
+          src="/assets/chapter01/fabrizio-sanchez.png"
+          alt="Fabrizio Sanchez profile picture"
           width="350"
           height="125"
         />
@@ -95,8 +95,8 @@ Con MoviGestión, los usuarios pueden visualizar el estado de cada vehículo, el
       </td>
       <td>
         <img
-          src="/assets/img/capitulo-1/profiles/luiggi-paredes-profile.png"
-          alt="Luiggi Paredes profile picture"
+          src="/assets/chapter01/piero-tarazona.png"
+          alt="Piero Tarazona profile picture"
           width="350"
           height="100"
         />
@@ -110,8 +110,8 @@ Con MoviGestión, los usuarios pueden visualizar el estado de cada vehículo, el
       </td>
       <td>
         <img
-          src="/assets/img/capitulo-1/profiles/juan-pescoran-profile.png"
-          alt="Juan Pescoran profile picture"
+          src="/assets/chapter01/flavio-trigueros.png"
+          alt="Flavio Trigueros profile picture"
         />
       </td>
     </tr>
@@ -122,8 +122,8 @@ Con MoviGestión, los usuarios pueden visualizar el estado de cada vehículo, el
       </td>
       <td>
         <img
-          src="/assets/img/capitulo-1/profiles/flavio-trigueros-chumacero-profile.png"
-          alt="Flavio Trigueros profile picture"
+          src="/assets/chapter01/aldair-valenzuela.png"
+          alt="Aldair Valenzuela profile picture"
           width="300"
           height="110"
         />
@@ -205,7 +205,57 @@ El Lean UX Canvas, según Gothelf y Seiden (2021), es una herramienta visual de 
 
 _Lean UX Canvas del proyecto MoviGestion_
 
-<img src="/assets/img/capitulo-1/lean-ux/lean-ux-canvas.png" >
+<table>
+<tr>
+<td>Business Problem<br><br>En el sector del transporte empresarial, la gestión eficiente de las flotas es un desafío constante. Los empresarios y transportistas a menudo utilizan múltiples herramientas y procesos manuales para gestionar sus flotas debido a la falta de soluciones integradas. Esta gestión descentralizada de flotas puede llevar a ineficiencias operativas, aumento de costos y reducción de la satisfacción del cliente.
+Además, los cambios en el mercado y el comportamiento del cliente están aumentando la demanda de soluciones de gestión de flotas más eficientes y fáciles de usar. Los empresarios y transportistas necesitan una solución que les permita tener una visibilidad completa de sus flotas, controlar los costos operativos, identificar áreas de mejora y adaptarse rápidamente a los cambios.
+Sin embargo, muchas de las soluciones de software existentes para la gestión de flotas no satisfacen todas estas necesidades. Pueden ser difíciles de usar, no ofrecer todas las funciones necesarias o no ser lo suficientemente flexibles para adaptarse a las necesidades específicas de cada empresa.
+Por lo tanto, el problema empresarial que MoviGestion está tratando de resolver es la falta de una solución de gestión de flotas integral, flexible y fácil de usar que pueda satisfacer todas las necesidades de los empresarios y transportistas en el sector del transporte empresarial. MoviGestion aspira a llenar esta brecha en el mercado proporcionando una solución tecnológica que simplifique y optimice la gestión de flotas de transporte.</td>
+<td rowspan="2">Solutions<br><br>Algunas soluciones que podrían resolver el problema comercial y satisfacer las necesidades de los clientes al mismo tiempo: <br>
+1. Interfaz de Usuario Intuitiva: Desarrollar una interfaz de usuario que sea fácil de navegar y usar. Esto puede incluir tutoriales interactivos, asistencia en la aplicación y una interfaz de usuario limpia y minimalista.<br>
+2. Funcionalidades Avanzadas de Gestión de Flotas: Implementar una variedad de características para la gestión de flotas, como estadísticas de rendimiento, reporte de infracciones, registro de incidencias, seguimiento de envíos exitosos y control de sitios enviados. Estas características deben ser personalizables para adaptarse a las necesidades específicas de cada empresa.<br>
+3. Informes Personalizables: Proporcionar informes detallados y personalizables que ayuden a los empresarios a tomar decisiones informadas. Esto puede incluir análisis de costos, informes de rendimiento y análisis de tendencias.<br>
+4. Seguridad de Datos: Garantizar la seguridad y privacidad de los datos de los usuarios. Esto puede incluir el uso de encriptación de datos, autenticación de dos factores y políticas de privacidad claras.<br>
+5. Soporte al Cliente: Ofrecer soporte al cliente de alta calidad para ayudar a los usuarios a resolver problemas y responder a preguntas. Esto puede incluir chat en vivo, soporte por correo electrónico y una base de conocimientos en línea.<br></td>
+<td>Business Outcomes<br>Para MoviGestion, los resultados comerciales pueden ser medidos a través de varias métricas clave que indican el éxito del cliente y la resolución del problema comercial.
+1. Eficiencia Operativa: Medir la mejora en la eficiencia operativa de las flotas de transporte de los usuarios. Esto podría ser a través de la reducción en el tiempo de inactividad de los vehículos, el aumento en el número de envíos exitosos, o la disminución en el tiempo necesario para planificar y programar los viajes.<br>
+2. Reducción de Costos: Medir la reducción en los costos operativos de los usuarios. Esto podría ser a través de la disminución en los costos de combustible, mantenimiento, o infracciones.<br>
+3. Satisfacción del Cliente: Medir la satisfacción del cliente a través de encuestas y comentarios. Esto podría incluir la facilidad de uso de la plataforma, la utilidad de las características ofrecidas, y la calidad del soporte al cliente.<br>
+4. Retención de Usuarios: Medir la tasa de retención de usuarios. Un aumento en la retención de usuarios indica que los usuarios encuentran valor en la plataforma y continúan utilizándola a largo plazo.<br>
+5. Crecimiento de Usuarios: Medir el crecimiento en el número de usuarios o empresas que utilizan la plataforma. Esto indica que la plataforma está ganando tracción en el mercado.<br>
+6. Uso de la Plataforma: Medir el uso de las diferentes características de la plataforma. Esto puede ayudar a identificar qué características son más valiosas para los usuarios y dónde se pueden hacer mejoras.</td>
+</tr>
+<tr>
+<td>Users<br><br>Para MoviGestion, los usuarios y clientes pueden ser categorizados de la siguiente manera:<br>
+1. Empresarios: Son los que probablemente comprarán el servicio. Son los propietarios de empresas que necesitan administrar sistemas de transporte. Estos usuarios estarán interesados en las capacidades de gestión de flotas de la plataforma, así como en las estadísticas de rendimiento y los informes detallados que pueden ayudarles a tomar decisiones informadas.<br>
+2. Transportistas: Son los usuarios finales que utilizarán la plataforma a diario. Estos usuarios buscan eficiencia y organización en sus operaciones de transporte. Necesitarán funciones como el registro de incidencias, el seguimiento de envíos exitosos y el control de sitios enviados.<br>
+3. Administradores de sistemas: Son los que configuran y mantienen la plataforma. Estos usuarios necesitarán acceso a funciones de administración y configuración para asegurarse de que la plataforma se adapta a las necesidades específicas de su empresa.<br>
+4. Analistas de datos: Estos usuarios podrían estar interesados en los datos recopilados por la plataforma para realizar análisis y generar informes que ayuden a la empresa a tomar decisiones estratégicas.</td>
+<td>User Outcomes & Benefits<br><br>1.Eficiencia Operativa Mejorada: Al utilizar MoviGestion, los usuarios pueden mejorar la eficiencia de sus operaciones de transporte. Esto se traduce en un mejor uso de los recursos, menos tiempo perdido en tareas administrativas y más tiempo para centrarse en el crecimiento del negocio.<br>
+2. Reducción de Costos: MoviGestion puede ayudar a los usuarios a reducir costos al proporcionar herramientas para optimizar el uso de la flota, reducir el tiempo de inactividad y minimizar las infracciones.<br>
+3. Toma de Decisiones Informada: Con los informes detallados y las estadísticas de rendimiento que ofrece MoviGestion, los usuarios pueden tomar decisiones más informadas sobre la gestión de su flota.<br>
+4. Satisfacción del Cliente Mejorada: Al mejorar la eficiencia y la fiabilidad de las operaciones de transporte, los usuarios pueden mejorar la satisfacción de sus propios clientes.</td>
+</tr>
+<tr>
+<td>Hypotheses<br><br>1. Creemos que la eficiencia operativa se logrará si los empresarios obtienen una mejor visibilidad y control de sus flotas con la funcionalidad avanzada de gestión de flotas.<br>
+2. Creemos que la reducción de costos se logrará si los transportistas obtienen una mayor eficiencia en sus operaciones de transporte con el registro de incidencias y el seguimiento de envíos exitosos.<br>
+3. Creemos que la satisfacción del cliente se logrará si los desarrolladores obtienen una plataforma adaptable a las necesidades específicas de su empresa con las funciones de administración y configuración.<br>
+4. Creemos que la retención de usuarios se logrará si los desarolladores, analistas de datos obtienen informes detallados y personalizables con la función de informes personalizables.<br>
+5. Creemos que el crecimiento de usuarios se logrará si los empresarios obtienen una plataforma fácil de adoptar y que mejora la eficiencia operativa con la integración con otras plataformas.<br></td>
+<td>What’s the most important thing we need to learn first?<br><br>En las etapas iniciales de nuestro proyecto, es crucial identificar los supuestos más riesgosos en nuestras hipótesis. Esto nos permite enfocarnos en mitigar esos riesgos y validar nuestras ideas de manera efectiva.<br>1.El supuesto más riesgoso asociado con la Hipótesis 1 es que los empresarios realmente necesiten y valoren una funcionalidad avanzada de gestión de flotas.<br>
+2. El supuesto más riesgoso asociado con la Hipótesis 2 es que los transportistas encuentren útil y mejoren su eficiencia con el registro de incidencias y el seguimiento de envíos exitosos.<br>
+3. El supuesto más riesgoso asociado con la Hipótesis 3 es que los administradores de sistemas necesiten y utilicen funciones de administración y configuración.<br>
+4. El supuesto más riesgoso asociado con la Hipótesis 4 es que los analistas de datos necesiten y utilicen informes detallados y personalizables.<br>
+5. El supuesto más riesgoso asociado con la Hipótesis 5 es que los empresarios estén dispuestos a adoptar una nueva plataforma y que esta mejore su eficiencia operativa.<br>
+6. El supuesto más riesgoso asociado con la Hipótesis 6 es que los usuarios valoren y utilicen el soporte al cliente ofrecido.<br>En esta etapa inicial del proyecto, nuestro enfoque se centra en identificar y mitigar los riesgos para valorar en lugar de en la viabilidad absoluta de cada hipótesis. Esto nos permite abordar los desafíos más críticos y validar nuestras ideas de manera efectiva.El supuesto más riesgoso en este momento se relaciona con la Hipótesis 1, donde la necesidad y valoración real de una funcionalidad avanzada de gestión de flotas por parte de los empresarios podrían determinar el éxito o el fracaso de nuestra solución. Si este supuesto resulta ser incorrecto, nuestra idea principal de proporcionar una solución de gestión de flotas integral, flexible y fácil de usar podría fracasar.</td>
+<td>What’s the least amount of work we need to do to learn the next most important thing?<br><br>Para validar nuestra suposición más arriesgada, que los empresarios realmente necesitan y valoran una funcionalidad avanzada de gestión de flotas, proponemos los siguientes experimentos con la menor cantidad de trabajo posible:<br>
+1. Entrevistas con Empresarios: Realizaremos entrevistas con un pequeño grupo de empresarios en el sector del transporte. Durante estas entrevistas, preguntaremos sobre sus necesidades actuales, los desafíos que enfrentan con las soluciones existentes y qué características valorarían en una nueva solución. Esto nos permitirá validar si realmente necesitan y valorarían una funcionalidad avanzada de gestión de flotas.<br>
+2. Encuestas: Diseñaremos una encuesta corta y la enviaremos a un grupo más amplio de empresarios. La encuesta incluirá preguntas sobre sus necesidades actuales, los desafíos que enfrentan y qué características les gustaría ver en una nueva solución de gestión de flotas.<br>
+3. Producto Mínimo Viable (MVP): Desarrollaremos un MVP que incluya la funcionalidad avanzada de gestión de flotas y lo proporcionaremos a un pequeño grupo de empresarios para que lo prueben. Recogeremos sus comentarios y observaremos cómo utilizan el MVP para validar nuestra suposición.<br>
+El objetivo de estos experimentos es aprender lo más rápido posible con la menor cantidad de trabajo. Por lo tanto, hemos diseñado nuestros experimentos de manera que podamos obtener resultados rápidamente y hacer ajustes según sea necesario."</td>
+</tr>
+
+</table>
 
 ## 1.3. Segmentos objetivo
 

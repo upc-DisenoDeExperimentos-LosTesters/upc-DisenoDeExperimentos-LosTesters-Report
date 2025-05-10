@@ -3,9 +3,9 @@
 ## 3.1. To-Be Scenario Mapping.
 
 _Modelo de To-Be Scenario Mapping del primer User Persona._
-<img src="/assets/capitulo-3/to-be scenario-1.jpg">
+<img src="/assets/chapter03/to-be-1.png">
 _Modelo de To-Be Scenario Mapping del segundo User Persona._
-<img src="/assets/capitulo-3/to-be-scenario-2.jpg">
+<img src="/assets/chapter03/to-be-2.png">
 
 ## 3.2. User Stories.
 
@@ -390,14 +390,14 @@ _Impact Mapping de los dos user persona del proyecto._
 ---
 
 - **Modelo de Impact Mapping del primer User Persona**
-  ![ImpactMapping_1](/assets/img/capitulo-3/ImpactMapping1.png) <br><br>
-  ![ImpactMapping_1](/assets/img/capitulo-3/ImpactMapping1.png) <br><br>
-  ![ImpactMapping_1](/assets/img/capitulo-3/ImpactMapping1.png) <br><br>
+  ![ImpactMapping_1](/assets/chapter03/impact-map-1.jpeg) <br><br>
+  ![ImpactMapping_2](/assets/chapter03/impact-map-2.jpeg) <br><br>
+  ![ImpactMapping_3](/assets/chapter03/impact-map-3.jpeg) <br><br>
 
 - **Modelo de Impact Mapping del segundo User Persona**
-  ![ImpactMapping_1](/assets/img/capitulo-3/ImpactMapping2.png) <br><br>
-  ![ImpactMapping_1](/assets/img/capitulo-3/ImpactMapping2.png) <br><br>
-  ![ImpactMapping_1](/assets/img/capitulo-3/ImpactMapping2.png) <br><br>
+  ![ImpactMapping_4](/assets/chapter03/impact-map-4.jpeg) <br><br>
+  ![ImpactMapping_5](/assets/chapter03/impact-map-5.jpeg) <br><br>
+  ![ImpactMapping_6](/assets/chapter03/impact-map-6.jpeg) <br><br>
 
 ## 3.4. Product Backlog.
 

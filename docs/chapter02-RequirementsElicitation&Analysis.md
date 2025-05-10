@@ -269,7 +269,7 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 - **Entrevista N°1:**
   Figura 2
   Presentación de la primera entrevista realizada para el primer segmento objetivo
-
+  ![Entrevista_1](/assets/chapter02/interview-1.png) <br><br>
   **Nota** La persona que se encuentra a la derecha es el entrevistador, integrante delgrupo, mientras que la persona a la izquierda es el entrevistado.
   Datos principales:
   Nombre completo del entrevistado: Marco Tarazona
@@ -284,7 +284,7 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 - **Entrevista N°2:**
   Figura 3
   Presentación de la segunda entrevista realizada para el primer segmento objetivo
-
+  ![Entrevista_2](/assets/chapter02/interview-2.png) <br><br>
   **Nota.** La persona que se muestra en la grabación es el entrevistado.
   Datos principales:
   Nombre completo del entrevistado: Gilver Flores
@@ -299,7 +299,7 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 - **Entrevista N°3:**
   Figura 4
   Presentación de la tercera entrevista realizada para el primer segmento objetivo
-
+  ![Entrevista_3](/assets/chapter02/interview-3.png) <br><br>
   **Nota.** La persona que se muestra en la imagen es el entrevistado.
   Datos principales:
   Nombre completo del entrevistado: Abraham Quenta
@@ -316,6 +316,7 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 - **Entrevista N°1:**
   Figura 5
   Presentación de la primera entrevista realizada para el segundo segmento objetivo
+  ![Entrevista_4](/assets/chapter02/interview-4.png) <br><br>
   Datos principales:
   Nombre completo del entrevistado: Ricardo Chate Flores
   Edad: 45 años
@@ -325,10 +326,11 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
   Duración: 26:26 min
   **RESUMEN:**
   Ricardo es un experimentado conductor de autobuses, con más de 25 años de experiencia en el transporte personal y turismo. Trabaja para la empresa Arellano, que presta servicios a empresas como Gloria, Textil Creditex y Faber-Castell. Además de su función como conductor, Gilbert también desempeña el rol de supervisor de la flota de buses. En cuanto a la comunicación, utiliza celulares con WhatsApp para coordinar con los conductores y la empresa. La gestión de viajes y rutas se realiza a través de una secretaria que asigna las rutas a cada conductor. En cuanto a tecnología, utiliza una aplicación web para conocer la ruta asignada. Gilbert está dispuesto a adoptar nuevas tecnologías para mejorar la eficiencia en su trabajo, destacando la importancia de mejorar la comunicación en la empresa y la implementación de tecnología para agilizar procesos
+
 - **Entrevista N°2:**
   Figura 6
   Presentación de la segunda entrevista realizada para el segundo segmento objetivo
-
+  ![Entrevista_5](/assets/chapter02/interview-5.png) <br><br>
   Datos principales:
   Nombre completo del entrevistado: Víctor Cuba Bautista
   Edad: 42 años
@@ -342,7 +344,7 @@ En esta sección se presenta el diseño de las entrevistas, estructurado en tres
 - **Entrevista N°3:**
   Figura 7
   Presentación de la tercera entrevista realizada para el segundo segmento objetivo
-
+  ![Entrevista_6](/assets/chapter02/interview-6.png) <br><br>
   Datos principales:
   Nombre completo del entrevistado: Martín Merino Ávila
   Edad: 50 años
@@ -402,10 +404,10 @@ Las fichas de User Persona son herramientas fundamentales para comprender las ne
 <br><br>
 
 - **Segmento 1: Personas Apasionadas por las plantas**
-  ![UserPerson_1](/assets/img/capitulo-2/needfinding/user-persona/UserPerson1.png) <br><br>
+  ![UserPerson_1](/assets/chapter02/user-person-1.png) <br><br>
 
 - **Segmento 2: Personas dedicadas a la jardineria**
-  ![UserPerson_2](/assets/img/capitulo-2/needfinding/user-persona/UserPerson2.png) <br><br>
+  ![UserPerson_2](/assets/chapter02/user-person-2.jpeg) <br><br>
 
 - ### 2.5.2. User Task Matrix
 
@@ -513,19 +515,19 @@ Una Matriz de Tareas de Usuario es una herramienta utilizada en el diseño de ex
   Figura 10
 
   - **Modelo de User Empathy Mapping del primer User Persona**
-    ![EmpathyMap_1](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap1.png) <br><br>
+    ![EmpathyMap_1](/assets/chapter02/empathy-map-1.jpeg) <br><br>
 
   Figura 11
 
   - **Modelo de User Empathy Mapping del segundo User Persona.**
-    ![EmpathyMap_2](/assets/img/capitulo-2/needfinding/empathy-mapping/EmpathyMap2.png)
+    ![EmpathyMap_2](/assets/chapter02/empathy-map-2.jpeg) <br><br>
 
 - ### 2.5.4. As-is Scenario Mapping
 
   El "As-is Scenario Mapping" será una parte fundamental de nuestro enfoque de trabajo, ya que nos permitirá comprender el estado actual de nuestros procesos, identificar áreas de mejora y visualizar los pasos necesarios para alcanzar nuestros objetivos.<br><br>
 
   - **Modelo de As-is Scenario Mapping del primer User Persona**
-    ![As_Is-1](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento1.png) <br><br>
+    ![As_Is-1](/assets/chapter02/as-is-1.png) <br><br>
 
   - **Modelo de As-is Scenario Mapping del segundo User Persona**
-    ![As_Is-2](/assets/img/capitulo-2/needfinding/as-is-mapping/As_Is-Segmento2.png)
+    ![As_Is-2](/assets/chapter02/as-is-2.png) <br><br>
