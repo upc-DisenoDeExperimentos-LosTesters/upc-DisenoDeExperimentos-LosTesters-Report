@@ -389,12 +389,12 @@ _Impact Mapping de los dos user persona del proyecto._
 
 ---
 
-- **Modelo de Impact Mapping del primer User Persona**
+- **Modelo de Impact Mapping del primer User Persona** <br><br>
   ![ImpactMapping_1](/assets/chapter03/impact-map-1.jpeg) <br><br>
   ![ImpactMapping_2](/assets/chapter03/impact-map-2.jpeg) <br><br>
   ![ImpactMapping_3](/assets/chapter03/impact-map-3.jpeg) <br><br>
 
-- **Modelo de Impact Mapping del segundo User Persona**
+- **Modelo de Impact Mapping del segundo User Persona** <br><br>
   ![ImpactMapping_4](/assets/chapter03/impact-map-4.jpeg) <br><br>
   ![ImpactMapping_5](/assets/chapter03/impact-map-5.jpeg) <br><br>
   ![ImpactMapping_6](/assets/chapter03/impact-map-6.jpeg) <br><br>
