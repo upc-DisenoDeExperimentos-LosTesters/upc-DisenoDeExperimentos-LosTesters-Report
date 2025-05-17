@@ -292,42 +292,42 @@ _Impact Mapping de los dos user persona del proyecto._
       <td>US07</td>
       <td>Asignación de envío</td>
       <td>Como gerente, quiero poder asignar envíos a mis transportistas seleccionando de una lista de envíos pendientes y transportistas disponibles, considerando la capacidad del vehículo y la ubicación, para distribuir eficientemente los envíos y optimizar los tiempos de entrega.</td>
-      <td>8</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>2</td>
       <td>US09</td>
       <td>Asignación de flota</td>
       <td>Como gerente, quiero asignar flotas (especificando un vehículo o un grupo de vehículos) a mis transportistas para un período determinado o para una ruta específica, considerando la capacidad y el tipo de carga, para que puedan realizar los encargos con el vehículo adecuado.</td>
-      <td>8</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>3</td>
       <td>US10</td>
       <td>Gestión de inventario de flotas</td>
       <td>Como gerente, quiero añadir nuevas flotas (registrando detalles como tipo, capacidad, placa, estado) a mi negocio para tener un control activo de mis flotas y asegurar la disponibilidad de vehículos para las operaciones.</td>
-      <td>8</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>4</td>
       <td>US08</td>
       <td>Visualización de historial de envíos</td>
       <td>Como gerente, quiero ver el historial de envíos realizados, incluyendo el estado final (exitoso, fallido, cancelado), fechas, transportistas asignados y motivos de fallo (si aplica) para saber cuántos de estos fueron exitosos y analizar las causas de los envíos no exitosos para mejorar la eficiencia futura.</td>
-      <td>8</td>
+      <td>5</td>
     </tr>
     <tr>
       <td>5</td>
       <td>US02</td>
       <td>Visualización de reportes de un transportista</td>
       <td>Como gerente, quiero ver los tipos y detalles de los reportes hechos por mis transportistas (ej. incidencias, problemas con paquetes) filtrados por período y transportista para tomar decisiones estratégicas en los próximos envíos basadas en problemas recurrentes o áreas de mejora.</td>
-      <td>5</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>6</td>
       <td>US03</td>
       <td>Visualización de envíos asignados a un transportista</td>
       <td>Como gerente, quiero ver el listado de envíos asignados a un transportista, incluyendo fechas de entrega, estado actual y detalles del envío, para poder medir el rendimiento de mis empleados en relación con la carga de trabajo y el cumplimiento de plazos.</td>
-      <td>5</td>
+      <td>3</td>
     </tr>
     <tr>
       <td>7</td>
@@ -338,66 +338,17 @@ _Impact Mapping de los dos user persona del proyecto._
     </tr>
     <tr>
       <td>8</td>
-      <td>US04</td>
-      <td>Visualización de envíos asignados</td>
-      <td>Como transportista, quiero poder ver los envíos que me han sido asignados, incluyendo direcciones de recogida y entrega, horarios estimados, contenido e instrucciones especiales, para poder organizar mejor el orden de mis tareas y optimizar mi ruta.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>US13</td>
-      <td>Reporte de problemas con el paquete</td>
-      <td>Como transportista, quiero poder reportar problemas con los paquetes que transporto durante mis viajes, describiendo el problema (daño, faltante, etc.) y el número de paquete, para que el gerente pueda reportarlo al cliente y tomar las medidas correctivas.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>US11</td>
-      <td>Reporte de infracciones vehiculares</td>
-      <td>Como transportista, quiero poder reportar infracciones vehiculares que ocurran durante mis viajes, detallando la ubicación, tipo de infracción y si es posible, adjuntar evidencia, para que el gerente pueda tomar las medidas del caso y garantizar la seguridad y el cumplimiento normativo.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>US12</td>
-      <td>Reporte de accidentes en la carretera</td>
-      <td>Como transportista, quiero poder reportar accidentes en la carretera que ocurran durante mis viajes, detallando la ubicación, gravedad, si hay heridos y cualquier otra información relevante, para que el gerente pueda organizar las futuras rutas evitando zonas peligrosas o tomar las acciones necesarias de soporte.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>US14</td>
-      <td>Reporte de problemas técnicos</td>
-      <td>Como transportista, quiero poder reportar problemas técnicos que surjan durante mis viajes con el vehículo o la aplicación (ej. fallo del motor, error de navegación), detallando el problema, para que el gerente pueda resolverlo lo antes posible y minimizar el impacto en las entregas</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>US05</td>
-      <td>Visualización de paquetes entregados</td>
-      <td>Como transportista, quiero visualizar la lista de paquetes que he marcado como entregados, incluyendo la hora y la confirmación de entrega (si aplica) para tener un comprobante de trabajo realizado y poder resolver cualquier duda o reclamación.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>US06</td>
-      <td>Visualización de reportes realizados</td>
-      <td>Como transportista, quiero visualizar los reportes que hice en mi labor, incluyendo la fecha, hora, tipo de reporte y descripción del problema, para tener un historial de incidencias en mi trabajo y poder referirme a ellos si es necesario.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>15</td>
       <td>US15</td>
       <td>Gestión de Perfil de Gerente</td>
       <td>Como gerente, quiero visualizar y editar mi información personal (como nombre, correo electrónico, número de teléfono) para asegurarme de que mis datos estén correctos y actualizados en el sistema.</td>
-      <td>1</td>
+      <td>2</td>
     </tr>
     <tr>
-      <td>16</td>
+      <td>9</td>
       <td>US16</td>
       <td>Gestión de Perfil de Transportista</td>
       <td>Como transportista, quiero visualizar y editar mi información personal (como nombre, correo electrónico, número de teléfono, información de contacto de emergencia) para asegurarme de que mis datos estén correctos y actualizados en el sistema.</td>
-      <td>1</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
