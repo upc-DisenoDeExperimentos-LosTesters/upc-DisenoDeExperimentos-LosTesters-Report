@@ -372,3 +372,4 @@ Para este punto llevamos a cabo el despliegue de nuestro Backend. A continuació
 El equipo ha logrado despegar el web service de MoviGestion. Todas las historias de usuario asignadas para este sprint fueron completadas exitosamente. En primer lugar, nos enfocamos en el desarrollo y la implementación del web service que es fundamental para la aplicación MoviGestion. Este esfuerzo incluyó la creación de APIs RESTful, la integración segura y eficiente con la base de datos, y la implementación de pruebas exhaustivas para asegurar la fiabilidad y el rendimiento del servicio.
 Capturas de pantalla:
 
+![BicasTeam API](./assets/chapter05/movigestionapi.jpg)
