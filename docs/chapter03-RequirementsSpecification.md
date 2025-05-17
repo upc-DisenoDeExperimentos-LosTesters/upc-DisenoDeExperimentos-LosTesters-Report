@@ -90,11 +90,11 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
         <ul> 
           <li> 
           <b>Criterio 1: Filtrado y Listado de Entregas</b> 
-          Dado que el gerente ha iniciado sesión en el sistema, cuando selecciona un  transportista        específico y un rango de fechas en la sección de    visualización de entregas, entonces el     sistema muestra una lista de todos los  paquetes entregados por ese transportista durante     el período seleccionado,   incluyendo el ID del paquete y la fecha/hora de entrega.
+          Dado que el gerente ha iniciado sesión en el sistema, cuando selecciona un  transportista específico y un rango de fechas en la sección de visualización de entregas, entonces el sistema muestra una lista de todos los  paquetes entregados por ese transportista durante el período seleccionado, incluyendo el ID del paquete y la fecha/hora de entrega.
           </li>
           <li> 
           <b>Criterio 2: Conteo Total de Entregas</b> 
-          Dado que el gerente ha aplicado un filtro de transportista y rango de fechas en la  sección de visualización de entregas, entonces el sistema muestra el número total    de paquetes entregados por el transportista seleccionado en el período     especificado en un lugar visible de la interfaz
+          Dado que el gerente ha accedido a la sección de visualización de entregas, y ha aplicado un filtro por transportista y un rango de fechas, cuando se actualiza la vista con los resultados filtrados, entonces el sistema muestra el número total de paquetes entregados por el transportista seleccionado durante el período especificado, en un lugar visible de la interfaz.
           </li>
         </u>
       </td>
@@ -114,7 +114,7 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
           </li>
           <li> 
           <b>Criterio 2: Detalles del Reporte en Listado</b> 
-          Dado que se muestra una lista de reportes, entonces para cada reporte en la lista, el sistema muestra la fecha y hora del reporte, el tipo, una breve descripción y el nombre del transportista que lo generó.
+          Dado que se ha accedido a la sección donde se muestra una lista de reportes, cuando el sistema carga los reportes disponibles, entonces para cada reporte en la lista, el sistema muestra la fecha y hora del reporte, el tipo de reporte, una breve descripción y el nombre del transportista que lo generó.
           </li>
         </u>
       </td>
@@ -168,7 +168,7 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
           </li>
           <li> 
           <b>Criterio 2: Ver Confirmación de Entrega </b> 
-          Dado que se requiere confirmación de entrega para un paquete, entonces esta información (ej. firma o fotografía) es visible para el transportista junto con el registro de entrega
+          Dado que el transportista ha iniciado sesión en la aplicación, y el paquete requiere confirmación de entrega, entonces esta información, que son la firma o fotografía, es visible para el transportista junto con el registro de entrega
           </li>
         </u>
       </td>
@@ -186,7 +186,7 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
           </li>
           <li> 
           <b>Criterio 2: Ver Instrucciones Especiales  </b> 
-          Dado que el transportista selecciona un reporte de la lista, entonces el sistema muestra la descripción completa del problema que reportó
+          Dado que el transportista visualiza la lista de reportes realizados, cuando el transportista selecciona un reporte de la lista, entonces el sistema muestra la descripción completa del problema que reportó
           </li>
         </u>
       </td>
@@ -222,7 +222,7 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
           </li>
           <li> 
           <b>Criterio 2: Detalles del Envío en el Historial </b> 
-          Dado que se muestra un envío en el historial, entonces el sistema muestra el estado final, el transportista asignado y el motivo del fallo si el envío no fue exitoso.
+          Dado que la sección de historial de envíos está visible, cuando el sistema carga los detalles del envío, entonces el sistema muestra el estado final, el transportista asignado y el motivo del fallo si el envío no fue exitoso.
           </li>
         </u>
       </td>
