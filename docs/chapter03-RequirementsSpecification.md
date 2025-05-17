@@ -140,60 +140,6 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
     </tr>
     <tr>
       <td >US04</td>
-      <td >Visualización de envíos asignados</td>
-      <td >Como transportista, quiero poder ver los envíos que me han sido asignados, incluyendo direcciones de recogida y entrega, horarios estimados, contenido e instrucciones especiales, para poder organizar mejor el orden de mis tareas y optimizar mi ruta.</td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: Listado de Envíos para Transportista</b> 
-          Dado que el transportista ha iniciado sesión en la aplicación, cuando accede a la sección de envíos asignados, entonces el sistema muestra una lista de todos los envíos que le han sido asignados. Cada entrada muestra las direcciones de recogida y entrega, la hora estimada de entrega y una breve descripción del contenido.
-          </li>
-          <li> 
-          <b>Criterio 2: Ver Instrucciones Especiales </b> 
-          Dado que el transportista selecciona un envío de la lista, entonces el sistema muestra instrucciones especiales detalladas (si las hay) para ese envío.
-          </li>
-        </u>
-      </td>
-      <td >EP02</td>
-    </tr>
-    <tr>
-      <td >US05</td>
-      <td >Visualización de paquetes entregados</td>
-      <td >Como transportista, quiero visualizar la lista de paquetes que he marcado como entregados, incluyendo la hora y la confirmación de entrega (si aplica) para tener un comprobante de trabajo realizado y poder resolver cualquier duda o reclamación.</td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: Listado de Paquetes Entregados por Transportista</b> 
-          Dado que el transportista ha iniciado sesión en la aplicación, cuando accede a la sección de paquetes entregados, entonces el sistema muestra una lista de los paquetes que ha marcado como entregados. Cada entrada muestra el ID del paquete y la hora en que se marcó como entregado.
-          </li>
-          <li> 
-          <b>Criterio 2: Ver Confirmación de Entrega </b> 
-          Dado que el transportista ha iniciado sesión en la aplicación, y el paquete requiere confirmación de entrega, entonces esta información, que son la firma o fotografía, es visible para el transportista junto con el registro de entrega
-          </li>
-        </u>
-      </td>
-      <td >EP02</td>
-    </tr>
-    <tr>
-      <td >US06</td>
-      <td >Visualización de reportes realizados</td>
-      <td >Como transportista, quiero visualizar los reportes que hice en mi labor, incluyendo la fecha, hora, tipo de reporte y descripción del problema, para tener un historial de incidencias en mi trabajo y poder referirme a ellos si es necesario.</td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: Historial de Reportes del Transportista</b> 
-          Dado que el transportista ha iniciado sesión en la aplicación, cuando accede a la sección de reportes realizados, entonces el sistema muestra un historial de todos los reportes que ha generado. Cada entrada muestra la fecha y hora del reporte, el tipo de reporte y una breve descripción del problema.
-          </li>
-          <li> 
-          <b>Criterio 2: Ver Instrucciones Especiales  </b> 
-          Dado que el transportista visualiza la lista de reportes realizados, cuando el transportista selecciona un reporte de la lista, entonces el sistema muestra la descripción completa del problema que reportó
-          </li>
-        </u>
-      </td>
-      <td >EP02</td>
-    </tr>
-    <tr>
-      <td >US07</td>
       <td >Asignación de envíos</td>
       <td >Como gerente, quiero poder asignar envíos a mis transportistas seleccionando de una lista de envíos pendientes y transportistas disponibles, considerando la capacidad del vehículo y la ubicación, para distribuir eficientemente los envíos y optimizar los tiempos de entrega.</td>
       <td>
@@ -211,7 +157,7 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
       <td >EP03</td>
     </tr>
     <tr>
-      <td >US08</td>
+      <td >US05</td>
       <td >Visualización de historial de envíos</td>
       <td >Como gerente, quiero ver el historial de envíos realizados, incluyendo el estado final (exitoso, fallido, cancelado), fechas, transportistas asignados y motivos de fallo (si aplica) para saber cuántos de estos fueron exitosos y analizar las causas de los envíos no exitosos para mejorar la eficiencia futura.</td>
       <td>
@@ -229,7 +175,7 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
       <td >EP03</td>
     </tr>
     <tr>
-      <td >US09</td>
+      <td >US06</td>
       <td >Asignación de flotas</td>
       <td >Como gerente, quiero asignar flotas (especificando un vehículo o un grupo de vehículos) a mis transportistas para un período determinado o para una ruta específica, considerando la capacidad y el tipo de carga, para que puedan realizar los encargos con el vehículo adecuado.</td>
       <td>
@@ -247,7 +193,7 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
       <td >EP04</td>
     </tr>
     <tr>
-      <td >US10</td>
+      <td >US07</td>
       <td >Gestión de inventario de flotas</td>
       <td >Como gerente, quiero añadir nuevas flotas (registrando detalles como tipo, capacidad, placa, estado) a mi negocio para tener un control activo de mis flotas y asegurar la disponibilidad de vehículos para las operaciones.</td>
       <td>
@@ -265,83 +211,7 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
       <td >EP04</td>
     </tr>
      <tr>
-      <td >US11</td>
-      <td >Reporte de infracciones vehiculares</td>
-      <td >Como transportista, quiero poder reportar infracciones vehiculares que ocurran durante mis viajes, detallando la ubicación, tipo de infracción y si es posible, adjuntar evidencia, para que el gerente pueda tomar las medidas del caso y garantizar la seguridad y el cumplimiento normativo.</td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: </b> 
-          Dado que el transportista está en la sección de reporte de infracciones, cuando completa el formulario con la ubicación, tipo de infracción y adjunta evidencia (opcional), entonces al enviar el reporte, el sistema guarda la información
-          </li>
-          <li> 
-          <b>Criterio 2: Confirmación de Reporte de Infracción </b> 
-          Dado que el reporte se ha enviado exitosamente, entonces el sistema muestra un mensaje de confirmación al transportista.
-          </li>
-        </u>
-      </td>
-      <td >EP05</td>
-    </tr>
-    </tr>
-     <tr>
-      <td >US12</td>
-      <td >Reporte de accidentes en la carretera</td>
-      <td >Como transportista, quiero poder reportar accidentes en la carretera que ocurran durante mis viajes, detallando la ubicación, gravedad, si hay heridos y cualquier otra información relevante, para que el gerente pueda organizar las futuras rutas evitando zonas peligrosas o tomar las acciones necesarias de soporte.</td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: Envío de Reporte de Accidente </b> 
-          Dado que el transportista está en la sección de reporte de accidentes, cuando completa el formulario con la ubicación, gravedad, información sobre heridos y otros detalles relevantes, entonces al enviar el reporte, el sistema guarda la información.
-          </li>
-          <li> 
-          <b>Criterio 2: Confirmación de Reporte de Accidente </b> 
-          Dado que el reporte se ha enviado exitosamente, entonces el sistema muestra un mensaje de confirmación al transportista.
-          </li>
-        </u>
-      </td>
-      <td >EP05</td>
-    </tr>
-    </tr>
-     <tr>
-      <td >US13</td>
-      <td >Reporte de problemas con el paquete</td>
-      <td >Como transportista, quiero poder reportar problemas con los paquetes que transporto durante mis viajes, describiendo el problema (daño, faltante, etc.) y el número de paquete, para que el gerente pueda reportarlo al cliente y tomar las medidas correctivas.</td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: Envío de Reporte de Problema de Paquete </b> 
-          Dado que el transportista está en la sección de reporte de problemas con paquetes, cuando completa el formulario con la descripción del problema y el número de paquete, entonces al enviar el reporte, el sistema guarda la información.
-          </li>
-          <li> 
-          <b>Criterio 2: Confirmación de Reporte de Problema de Paquete  </b> 
-          Dado que el reporte se ha enviado exitosamente, entonces el sistema muestra un mensaje de confirmación al transportista.
-          </li>
-        </u>
-      </td>
-      <td >EP05</td>
-    </tr>
-    </tr>
-     <tr>
-      <td >US14</td>
-      <td >Reporte de problemas técnicos</td>
-      <td >Como transportista, quiero poder reportar problemas técnicos que surjan durante mis viajes con el vehículo o la aplicación (ej. fallo del motor, error de navegación), detallando el problema, para que el gerente pueda resolverlo lo antes posible y minimizar el impacto en las entregas.</td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: Envío de Reporte de Problema Técnico </b> 
-          Dado que el transportista está en la sección de reporte de problemas técnicos, cuando completa el formulario con la descripción del problema con el vehículo o la aplicación, entonces al enviar el reporte, el sistema guarda la información.
-          </li>
-          <li> 
-          <b>Criterio 2: Confirmación de Reporte de Problema Técnico  </b> 
-          Dado que el reporte se ha enviado exitosamente, entonces el sistema muestra un mensaje de confirmación al transportista.
-          </li>
-        </u>
-      </td>
-      <td >EP05</td>
-    </tr>
-    </tr>
-     <tr>
-      <td >US15</td>
+      <td >US08</td>
       <td >Gestión de Perfil de Gerente</td>
       <td >Como gerente, quiero visualizar y editar mi información personal (como nombre, correo electrónico, número de teléfono) para </td>
       <td>
@@ -360,7 +230,7 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
     </tr>
     </tr>
      <tr>
-      <td >US16</td>
+      <td >US09</td>
       <td >Gestión de Perfil de Transportista</td>
       <td >Como transportista, quiero visualizar y editar mi información personal (como nombre, correo electrónico, número de teléfono, información de contacto de emergencia) para asegurarme de que mis datos estén correctos y actualizados en el sistema. </td>
       <td>
@@ -377,7 +247,6 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
       </td>
       <td >EP06</td>
     </tr>
-
   </tbody>
 </table>
 
