@@ -55,3 +55,19 @@ Las pruebas de integración central son esenciales para verificar que los contro
 ### 6.1.3. Core Behavior-Driven Development
 
 ### 6.1.4. Core System Tests.
+
+En este proyecto se utilizó Selenium para llevar a cabo las pruebas de Core System Tests. Esta herramienta permite automatizar interacciones con la aplicación a través de su interfaz, lo que facilita la validación del comportamiento de los controladores en conjunto con otros componentes clave del sistema, como los servicios y las bases de datos. Las pruebas realizadas aseguran que ante distintos escenarios incluidos aquellos con errores el sistema responda correctamente, mejorando así la experiencia del usuario, facilitando la depuración y contribuyendo al desarrollo de un software confiable y de alta calidad.
+
+**Mobile**
+![Mobile](../assets/chapter06/LightHouse_1.png)
+![Mobile](../assets/chapter06/LightHouse_2.png)
+![Mobile](../assets/chapter06/LightHouse_3.png)
+![Mobile](../assets/chapter06/LightHouse_4.png)
+![Mobile](../assets/chapter06/LightHouse_5.png)
+
+**Desktop**
+
+![Mobile](../assets/chapter06/LightHouse_Desktop_1.png)
+![Mobile](../assets/chapter06/LightHouse_Desktop_2.png)
+![Mobile](../assets/chapter06/LightHouse_Desktop_3.png)
+![Mobile](../assets/chapter06/LightHouse_Desktop_4.png)
