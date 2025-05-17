@@ -328,9 +328,42 @@ Si las modificaciones son sustanciales, se notificará previamente.
 | **Sprint 1 Velocity**                 | Acordamos aceptar 4 Story Points como nuestra capacidad de entrega para este sprint.          |
 | **Sum of Story Points**                 | La suma de los Story Points para los User Stories que se están incluyendo en este Sprint 1 es 6     |
 
-ssssssssssssssssssssprint 2
-sssssssssssssssssssssprint 3
-ssssssssssssssssssssprint 4
+ddddddddddddddddddddddddddddddddddddddddd
+
+## 5.2.1. Sprints Backlogs
+
+| **Sprint #**                    | Sprint 2                                                                 |
+|---------------------------------|-------------------------------------------------------------------------|
+| **Sprint Planning Background**  |                                                                         |
+| **Date**                        | 2025-04-09                                                              |
+| **Time**                        | 05:20 PM                                                                |
+| **Location**                    | Google Meet                                                       |
+| **Prepared By**                 | Fabrizio Sanchez                                                        |
+| **Attendees (to planning meeting)** | Fabrizio Sanchez, Piero Tarazona, Flavio Trigueros, Aldhair Valenzuela, Juan Diego Cueto |
+| **Sprint 2 - 1 Review Summary**     | Sprint 2 fue un éxito en términos de avance del frontend de la aplicación web y colaboración efectiva del equipo. Los logros alcanzados y la retroalimentación recopilada durante esta revisión proporcionan una base sólida para el siguiente sprint y refuerzan el compromiso del equipo con la calidad y la entrega oportuna del producto.    |
+| **Sprint 2 - 1 Retrospective Summary**     | Para la retrospectiva del Sprint 2 nos sirvió para reflexionar sobre el desempeño del equipo e identificar áreas de mejora. Esto nos servirá como base para impulsar la mejora continua y optimizar el trabajo del equipo en los próximos sprints.          |
+| **Sprint Goal & User Stories**            |                                                         |
+| **Sprint 2 Goal**                 | Alcanzar una métrica de cumplimiento del 100%, lo que indicará que se ha logrado los objetivos del sprint 2     |
+| **Sprint 2 Velocity**                 | Con el equipo para este sprint 2 decidimos aceptar 7 Story Points     |
+| **Sum of Story Points**                 | La suma de los Story Points para los User Stories que se están incluyendo en este Sprint 2 es 21  |
+
+dddddddddddddddddddddddddddddddddddddddddddd
+
+| **Sprint #**                    | Sprint 3                                                                 |
+|---------------------------------|-------------------------------------------------------------------------|
+| **Sprint Planning Background**  |                                                                         |
+| **Date**                        | 2025-04-13                                                              |
+| **Time**                        | 06:50 PM                                                                |
+| **Location**                    | Google Meet                                                       |
+| **Prepared By**                 | Fabrizio Sanchez                                                        |
+| **Attendees (to planning meeting)** | Fabrizio Sanchez, Piero Tarazona, Flavio Trigueros, Aldhair Valenzuela, Juan Diego Cueto |
+| **Sprint 3 - 1 Review Summary**     | Después de realizar todos los procedimientos establecidos para la identificación de objetivos y áreas de retroalimentación, hemos podido concluir la reunión del sprint 3 con éxito en términos de avance en los productos de software y en la colaboración general del equipo. El proceso de mejora con la retroalimentación y la programación de varias secciones nuevas en el servicio web significó un gran proceso de mejora para la construcción y realización del sprint, además de reforzar el compromiso de nuestro equipo y la mejora exponencial de las actividades indicadas.   |
+| **Sprint 3 - 1 Retrospective Summary**     | Para el proceso de la retrospectiva del Sprint 3, fue necesario que nuestro equipo revisará a detalle toda la retroalimentación recibida ante el primer sprint realizado, para luego generar un análisis a profundidad del desempeño general e individual de todos los miembros del equipo de trabajo. Después de ese proceso, pudimos identificar varias áreas de mejora en las cuales centrarnos para así poder garantizar la entrega de un mejor trabajo y un buen producto para todos nuestros clientes, promoviendo la mejora continua y optimizando los métodos de trabajo en los próximos sprints durante el ciclo de vida del proyecto.       |
+| **Sprint Goal & User Stories**            |                                                         |
+| **Sprint 3 Goal**                 | Alcanzar una métrica de cumplimiento del 100%, lo que indicará que se ha logrado los objetivos del sprint 2     |
+| **Sprint 3 Velocity**                 | Con el equipo para este sprint 2 decidimos aceptar 7 Story Points     |
+| **Sum of Story Points**                 | La suma de los Story Points para los User Stories que se están incluyendo en este Sprint 2 es 21  |
+
 
 ## 5.2.2. Implemented Landing Page Evidence
 
@@ -372,4 +405,4 @@ Para este punto llevamos a cabo el despliegue de nuestro Backend. A continuació
 El equipo ha logrado despegar el web service de MoviGestion. Todas las historias de usuario asignadas para este sprint fueron completadas exitosamente. En primer lugar, nos enfocamos en el desarrollo y la implementación del web service que es fundamental para la aplicación MoviGestion. Este esfuerzo incluyó la creación de APIs RESTful, la integración segura y eficiente con la base de datos, y la implementación de pruebas exhaustivas para asegurar la fiabilidad y el rendimiento del servicio.
 Capturas de pantalla:
 
-![BicasTeam API](./assets/chapter05/movigestionapi.jpg)
+![BicasTeam API](../assets/chapter05/movigestionapi.jpg)
