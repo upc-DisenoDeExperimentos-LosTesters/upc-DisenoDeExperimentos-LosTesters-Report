@@ -308,3 +308,67 @@ WeHaveAnIdea puede modificar los Términos en cualquier momento.
 El uso continuo después de modificaciones implica aceptación automática.
 
 Si las modificaciones son sustanciales, se notificará previamente.
+
+## 5.2. Product Implementation & Deployment 
+
+## 5.2.1. Sprints Backlogs
+
+| **Sprint #**                    | Sprint 1                                                                 |
+|---------------------------------|-------------------------------------------------------------------------|
+| **Sprint Planning Background**  |                                                                         |
+| **Date**                        | 2025-04-07                                                              |
+| **Time**                        | 01:30 PM                                                                |
+| **Location**                    | Virtual (Discord)                                                       |
+| **Prepared By**                 | Fabrizio Sanchez                                                        |
+| **Attendees (to planning meeting)** | Fabrizio Sanchez, Piero Tarazona, Flavio Trigueros, Aldhair Valenzuela, Juan Diego Cueto |
+| **Sprint 1 - 1 Review Summary**     | Durante el primer sprint, avanzamos significativamente en el desarrollo del producto y logramos una colaboración eficiente dentro del equipo. Alcanzamos hitos importantes y recopilamos retroalimentación valiosa que nos servirá como base para el próximo sprint.    |
+| **Sprint 1 - 1 Retrospective Summary**                    | En la retrospectiva del primer sprint identificamos áreas para mejorar, como la comunicación y la estimación de tareas. Estamos comprometidos a implementar acciones correctivas y mejorar continuamente nuestro proceso de trabajo.          |
+| **Sprint Goal & User Stories**            |                                                         |
+| **Sprint 1 Goal**                 | Alcanzar una métrica de cumplimiento del 100%, lo que indicará que se ha logrado los objetivos del sprint 1     |
+| **Sprint 1 Velocity**                 | Acordamos aceptar 4 Story Points como nuestra capacidad de entrega para este sprint.          |
+| **Sum of Story Points**                 | La suma de los Story Points para los User Stories que se están incluyendo en este Sprint 1 es 6     |
+
+ssssssssssssssssssssprint 2
+sssssssssssssssssssssprint 3
+ssssssssssssssssssssprint 4
+
+## 5.2.2. Implemented Landing Page Evidence
+
+Para este punto llevamos a cabo el despliegue de nuestra landing page en GitHub Pages. A continuación, detallamos los pasos realizados:
+1. Creación del Repositorio en GitHub: Iniciamos creando un repositorio dedicado en GitHub para nuestro proyecto de landing page.
+2. Configuración de la Rama main: Aseguramos que la rama principal del repositorio se llamará main, ya que GitHub Pages toma esta rama como base para el despliegue automático.
+3. Preparación del Contenido: Desarrollamos y diseñamos nuestra landing page, asegurándonos de que todos los archivos y recursos necesarios estuvieran presentes en el repositorio.
+4. Generación del enlace de GitHub Pages: Navegamos a la sección "Pages" en la configuración del repositorio en GitHub. Configuramos la fuente del GitHub Pages para que tomara el contenido de la rama main.
+5. Despliegue Automático: GitHub Pages automáticamente detectó los cambios en la rama main y desplegó la landing page en la URL proporcionada por GitHub Pages.
+
+## 5.2.3. Implemented Frontend-Web Application Evidence
+
+Para este punto, llevamos a cabo el despliegue de nuestro Frontend-Web Application en FireBase. A continuación, detallamos los pasos realizados:
+- Creación del Repositorio en GitHub: Iniciamos creando un repositorio dedicado en GitHub para nuestro proyecto de web service.
+- Configuración de la Rama main: Aseguramos que la rama principal del repositorio se llamará main, ya que esta rama sirve como base para el despliegue automático.
+- Preparación del Contenido: Desarrollamos y diseñamos nuestra web service, asegurándonos de que todos los archivos y recursos necesarios estuvieran presentes en el repositorio.
+- Generación del enlace del hosting: Creamos nuestra cuenta en el hosting, le asignamos un nombre y desplegamos el web service en la URL proporcionada por el hosting.
+
+## 5.2.4. Implemented Native-Mobile Application Evidence
+
+Para este punto, llevamos a cabo el despliegue de nuestra Native-Mobile Application en FireBase. A continuación, detallamos los pasos realizados:
+- Creación del Repositorio en GitHub: Iniciamos creando un repositorio dedicado en GitHub para nuestro proyecto de web service.
+- Configuración de la Rama main: Aseguramos que la rama principal del repositorio se llamará main, ya que esta rama sirve como base para el despliegue automático.
+- Preparación del Contenido: Desarrollamos y diseñamos nuestra web service, asegurándonos de que todos los archivos y recursos necesarios estuvieran presentes en el repositorio.
+- Generación del enlace del hosting: Creamos nuestra cuenta en el hosting, le asignamos un nombre y desplegamos el web service en la URL proporcionada por el hosting.
+
+## 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+
+Para este punto llevamos a cabo el despliegue de nuestro Backend. A continuación, detallamos los pasos realizados:
+
+* Ingresar a Visual Studio
+* Descargar el Plugin Azure DevOps en nuestro proyecto
+* Ingresamos nuestra cuenta de azure
+* Configurar el despliegue de nuestro proyecto
+* API desplegado
+
+## 5.2.6. RESTful API documentation
+
+El equipo ha logrado despegar el web service de MoviGestion. Todas las historias de usuario asignadas para este sprint fueron completadas exitosamente. En primer lugar, nos enfocamos en el desarrollo y la implementación del web service que es fundamental para la aplicación MoviGestion. Este esfuerzo incluyó la creación de APIs RESTful, la integración segura y eficiente con la base de datos, y la implementación de pruebas exhaustivas para asegurar la fiabilidad y el rendimiento del servicio.
+Capturas de pantalla:
+
