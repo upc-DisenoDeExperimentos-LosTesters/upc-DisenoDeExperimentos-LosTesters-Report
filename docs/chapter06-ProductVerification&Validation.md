@@ -54,6 +54,24 @@ Las pruebas de integración central son esenciales para verificar que los contro
 
 ### 6.1.3. Core Behavior-Driven Development
 
+Modelo de todas las pruebas Behaviour-Driven Development realizadas en Cucumber
+
+![All Gherkin Tests made with Cucumber](../assets/chapter06/gherkin-test-all.png)
+
+Gherkin tests for individual User Stories. Puedes usar este link para revisar todas las pruebas Gherkin: https://github.com/upc-DisenoDeExperimentos-LosTesters/upc-DisenoDeExperimentos-LosTesters-Gherkin/blob/main/us-04-visualizacion-de-envios-asignados.feature
+
+![Gherkin Test for US-1](../assets/chapter06/gherkin-test-us-1.png)
+
+![Gherkin Test for US-3](../assets/chapter06/gherkin-test-us-3.png)
+
+![Gherkin Test for US-5](../assets/chapter06/gherkin-test-us-5.png)
+
+![Gherkin Test for US-7](../assets/chapter06/gherkin-test-us-7.png)
+
+![Gherkin Test for US-9](../assets/chapter06/gherkin-test-us-9.png)
+
+![Gherkin Test for US-11](../assets/chapter06/gherkin-test-us-11.png)
+
 ### 6.1.4. Core System Tests.
 
 En este proyecto se utilizó Selenium para llevar a cabo las pruebas de Core System Tests. Esta herramienta permite automatizar interacciones con la aplicación a través de su interfaz, lo que facilita la validación del comportamiento de los controladores en conjunto con otros componentes clave del sistema, como los servicios y las bases de datos. Las pruebas realizadas aseguran que ante distintos escenarios incluidos aquellos con errores el sistema responda correctamente, mejorando así la experiencia del usuario, facilitando la depuración y contribuyendo al desarrollo de un software confiable y de alta calidad.
