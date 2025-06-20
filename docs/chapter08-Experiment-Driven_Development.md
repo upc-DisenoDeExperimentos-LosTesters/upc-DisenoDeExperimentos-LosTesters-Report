@@ -197,8 +197,46 @@ En esta sección presentamos las Experiment‑Ready Questions, un conjunto de pr
 |¿Incrementará la base de usuarios activos la internacionalización al inglés?	|5 – Depende de la demanda real en mercados extranjeros.	|5 – Riesgo medio, implica proceso de traducción y adaptación cultural.|	8 – Puede abrir nuevas oportunidades de mercado y crecimiento de la audiencia.	|6 – Interés variable según perfil de usuario y región.	|24|
   
 ### 8.1.4. Question Backlog
+
+| Prioridad (1,2,3,5,8) | Pregunta |
+|-----------------------|----------|
+| 1 | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables? |
+| 2 | ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach‑marks? |
+| 3 | ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico? |
+| 3 | ¿Incrementará la base de usuarios activos la internacionalización al inglés? |
+| 5 | ¿Mejorará la experiencia añadiendo un modo oscuro a la aplicación web? |
   
 ### 8.1.5. Experiment Cards
+
+| Question | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables? |
+|----------|--|
+| Why | Actualmente no existe un sistema de notificaciones multicanal (push, email y SMS) que los usuarios puedan configurar. Se postula que las notificaciones multicanal configurables permitirán a gerentes y transportistas reaccionar un 30% más rápido ante reportes críticos, mejorando la coordinación operacional. |
+| What | Desplegar alertas push, email y SMS para incidencias, confirmaciones de entrega y cambios de asignación. Permitir a cada usuario definir el canal preferido y la frecuencia de recepción de avisos. |
+| Hypothesis | Se espera que, con la implementación de notificaciones multicanal configurables, el tiempo promedio de respuesta a incidencias críticas por parte de gerentes y transportistas se reduzca en un 30%. |
+
+| Question | ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach‑marks? |
+|----------|--|
+| Why | La ausencia de tutoriales interactivos y coach-marks impide que los nuevos usuarios se familiaricen rápidamente con la interfaz y perciban un progreso inmediato durante la carga de datos. Se tiene alta confianza en que estas técnicas de onboarding interactivo reducirán la tasa de abandono en cada paso del flujo de registro y configuración inicial. |
+| What | Desarrollar tutoriales interactivos y coach-marks que guíen al usuario en los flujos esenciales durante su primera sesión. |
+| Hypothesis | Se espera que la introducción de tutoriales interactivos y coach-marks reduzca la tasa de abandono de nuevos usuarios en al menos un 15% durante el proceso de onboarding inicial. |
+
+| Question | ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico? |
+|----------|--|
+| Why | El Largest Contentful Paint (LCP) promedia 5,0s y el First Contentful Paint (FCP) alcanza 2,5s en pantallas críticas, creando una percepción de lentitud. Se cree que reducir el LCP a < 2s y el FCP a < 1,5s no solo aliviará la percepción de lentitud, sino que también aumentará la adopción diaria y la retención de usuarios. |
+| What | Comparar dos versiones de las pantallas críticas de la aplicación (con skeleton screens vs. loader clásico) para medir cómo varía la satisfacción del usuario y el tiempo hasta la primera interacción perceptible. |
+| Hypothesis | Se espera que el uso de skeleton screens en pantallas críticas reduzca la percepción de lentitud, mejorando la satisfacción del usuario y potencialmente aumentando el engagement y reduciendo el abandono inicial. |
+
+| Question | ¿Incrementará la base de usuarios activos la internacionalización al inglés? |
+|----------|--|
+| Why | Toda la interfaz y los contenidos están únicamente en español, lo que limita la adopción por hablantes de otros idiomas y obstaculiza la expansión regional. Se asume que soportar formatos globales y traducir la interfaz al inglés permitirá captar nuevos mercados y ampliar la base de usuarios potenciales en un 20% o más. |
+| What | Añadir soporte para formatos internacionales (fechas, moneda, zonas horarias) y traducir toda la interfaz al inglés. |
+| Hypothesis | Se espera que la internacionalización de la interfaz al inglés incremente la base de usuarios activos en al menos un 20% al permitir la adopción en nuevos mercados. |
+
+| Question | ¿Mejorará la experiencia añadiendo un modo oscuro a la aplicación web? |
+|----------|--|
+| Why | Al agregar un modo oscuro, se mejora la usabilidad para los usuarios que prefieren una experiencia visual más cómoda, especialmente en ambientes con poca luz. Esto no solo reduce la fatiga visual, sino que también puede aumentar el tiempo que los usuarios pasan en la aplicación, resultando en un mayor compromiso y satisfacción general. |
+| What | Implementar un modo oscuro que los usuarios puedan seleccionar fácilmente en la configuración de la aplicación. Esto incluiría ajustar el esquema de colores de texto, fondo y elementos gráficos para facilitar una experiencia de navegación más cómoda. |
+| Hypothesis | Se espera que, al añadir el modo oscuro, el 60% de los usuarios informen una mejora en la usabilidad y que el tiempo promedio de uso de la aplicación se incremente en un 25%. |
   
 ## 8.2. Experiment Design
 
