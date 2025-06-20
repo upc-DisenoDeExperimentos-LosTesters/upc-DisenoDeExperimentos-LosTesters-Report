@@ -90,7 +90,6 @@ En este proyecto se utilizó Selenium para llevar a cabo las pruebas de Core Sys
 ![Mobile](../assets/chapter06/LightHouse_Desktop_3.png)
 ![Mobile](../assets/chapter06/LightHouse_Desktop_4.png)
 
-
 ## 6.2. Static testing & Verification
 
 ### 6.2.1. Static Code Analysis
@@ -101,10 +100,12 @@ En este proyecto se utilizó Selenium para llevar a cabo las pruebas de Core Sys
 
 ### 6.2.2. Reviews
 
-
 ## 6.3. Validations Interviews
+
 Con el fin de obtener y separar correctamente toda la información obtenida durante las entrevistas, se optó por definir un banco de preguntas según nuestro segmento de mercado identificado anteriormente. Este grupo de preguntas está especializado para la obtención de información específica según la persona entrevistada y según la problemática investigada para el proyecto y la posible solución en la forma de nuestro producto.
-### 6.3.1.  Diseño de Entrevistas
+
+### 6.3.1. Diseño de Entrevistas
+
 **Para los Empresarios:**
 
 - ¿Cuál es su opinión general sobre la plataforma MoviGestion tras la demostración?
@@ -136,12 +137,11 @@ Con el fin de obtener y separar correctamente toda la información obtenida dura
 - ¿Cree que MoviGestion le ayudaría a reducir el tiempo de inactividad y aumentar la productividad?
 - ¿Estaría dispuesto a recomendar MoviGestion a otros transportistas? ¿Por qué?
 
-### 6.3.2.  Registro de Entrevistas
+### 6.3.2. Registro de Entrevistas
 
-1. ### <a name="_heading=h.mqpm42spx03x"></a>***Segmento objetivo: Empresarios***
+1. ### <a name="_heading=h.mqpm42spx03x"></a>**_Segmento objetivo: Empresarios_**
    **Entrevista N°1:**
 
-   
 ![Entrevsita 1](/assets/chapter02/interview-3.png)
 
 - **Datos principales:**
@@ -166,7 +166,6 @@ Con el fin de obtener y separar correctamente toda la información obtenida dura
 - **Duración:** 6:40
 - **Resumen:** El empresario Gustavo Manrique expresó una opinión muy bien sobre MoviGestion, destacando la utilidad de las estadísticas de rendimiento y el seguimiento de envíos exitosos. Considera que la plataforma es fácil de usar y que su equipo podría adaptarse rápidamente. También, identificó como desafíos principales el seguimiento de envíos, gestión de incidencias y optimización de rutas, áreas donde cree que MoviGestion puede ayudar significativamente. Mencionó la necesidad de una herramienta para la optimización de rutas en tiempo real. Valora altamente la seguridad de la información y está dispuesto a recomendar la plataforma a otros empresarios del sector.
 
-
 **Entrevista N°3:**
 
 ![Entrevsita3](/assets/chapter02/interview-2.png)
@@ -179,8 +178,6 @@ Con el fin de obtener y separar correctamente toda la información obtenida dura
 - **Inicio de la entrevista:** 17:34
 - **Duración:** 2:17
 - **Resumen:** El empresario Marco Tarazona expresó una opinión positiva sobre MoviGestion, resaltando su utilidad para la gestión de flotas, especialmente en el seguimiento de envíos y la gestión de incidencias. Mencionó la facilidad de uso de la plataforma y consideró que su equipo podría adaptarse rápidamente. Identificó como posible desafio la optimización de rutas y la necesidad de integración con otros sistemas. Además, valora la seguridad de la información y está dispuesto a recomendar MoviGestion a otros empresarios del sector.
-
-
 
 **Segmento objetivo: Transportistas**
 
@@ -223,137 +220,258 @@ Con el fin de obtener y separar correctamente toda la información obtenida dura
 - **Duración:** 4:50
 - **Resumen:** El transportista Víctor Cuba Bautista tras probar la plataforma, reconoció que el uso de las funciones eran más sencillos de lo que esperaba. Encontró especialmente útil el registro de incidencias en tiempo real. Aunque le gustaría ver mejoras en algunas funcionalidades adicionales, valora la capacidad de monitorear los sitios de entrega y la seguridad de los datos proporcionada por la plataforma. Al final, Víctor concluyó que MoviGestion es una herramienta efectiva que puede mejorar su eficiencia y reducir el tiempo de inactividad, y estaría dispuesto a recomendarla a otros transportistas.
 
-
-### 6.3.3.  Evaluaciones según heurísticas
+### 6.3.3. Evaluaciones según heurísticas
 
 Esta sección contiene el proceso de evaluación de las sesiones de validación basado en heurísticas, considerando heurísticas de usabilidad, arquitectura de información e inclusive design de la experiencia propuesta. Para esto la sección usamos la estructura del formato para evaluaciones de heurísticas indicado.
-
 
 **UX Heuristics & Principles Evaluation**
 
 **Usability – Inclusive Design – Information Architecture**
-\***
+\*\*\*
 
+**CARRERA : Ingeniería de Software**
 
-**CARRERA                	: Ingeniería de Software**
+**CURSO : Aplicaciones Web**
 
-**CURSO                    	: Aplicaciones Web**
+**SECCIÓN : SV51**
 
-**SECCIÓN                   	: SV51**
+**PROFESORES : Angel Augusto Velasquez Nuñez**
 
-**PROFESORES         	: Angel Augusto Velasquez Nuñez**
+**AUDITOR : Bicas Team**
 
-**AUDITOR                 	: Bicas Team**
+**CLIENTE : MoviGestion**
 
-**CLIENTE                  	: MoviGestion**
-1. ## <a name="_heading=h.3ibjgvegxoc5"></a>** 
+1. ## <a name="_heading=h.3ibjgvegxoc5"></a>\*\*
+
    **SITE o APP A EVALUAR:**
 
    **MoviGestion**
 
    **TAREAS A EVALUAR:**
 
-   *El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:*
+   _El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:_
 
-*1.* 	*Gestión y edición de perfil de usuario.*
+_1._ _Gestión y edición de perfil de usuario._
 
-*2.     Visualización de asignación de envíos que pertenecen a cada transportista*
+_2. Visualización de asignación de envíos que pertenecen a cada transportista_
 
-*3. 	Agregar un nuevo vehículo a la flota de vehículos.*
+_3. Agregar un nuevo vehículo a la flota de vehículos._
 
-*4. 	Eliminar un vehículo de la flota de vehículos.*
+_4. Eliminar un vehículo de la flota de vehículos._
 
-*5. 	Visualización de alertas de cada transportista.*
+_5. Visualización de alertas de cada transportista._
 
 **ESCALA DE SEVERIDAD:**
 
-*Los errores serán puntuados tomando en cuenta la siguiente escala de severidad*
+_Los errores serán puntuados tomando en cuenta la siguiente escala de severidad_
 
-|***Nivel***|***Descripción***|
-| :- | :- |
-|*1*|*Problema superficial: puede ser fácilmente superado o hasta ignorado por el usuario ó ocurre con muy poca frecuencia. El error no necesita ser arreglado de forma inmediata en la mayoría de las casos, a no ser que exista disponibilidad de tiempo.*|
-|*2*|*Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara antes de la siguiente entrega o actualización.*|
-|*3*|*Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.*|
-|*4*|*Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.*|
-
+| **_Nivel_** | **_Descripción_**                                                                                                                                                                                                                                       |
+| :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| _1_         | _Problema superficial: puede ser fácilmente superado o hasta ignorado por el usuario ó ocurre con muy poca frecuencia. El error no necesita ser arreglado de forma inmediata en la mayoría de las casos, a no ser que exista disponibilidad de tiempo._ |
+| _2_         | _Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja para resolverlo de cara antes de la siguiente entrega o actualización._                         |
+| _3_         | _Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta._                                                                                       |
+| _4_         | _Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento._                                                                                     |
 
 **TABLA RESUMEN:**
 
-|*#*|*Problema*|*Escala de severidad*|*Heurística/Principio violada(o)*|
-| :-: | :-: | :-: | :-: |
-|*1*|*Incluye un botón “See More” pero no tiene funcionalidad*|*3*|*Information Architecture: Is it usable?*|
-|*2*|*No parece haber consistencia en la forma en que se presentan las opciones para actualizar la información*|*2*|*Usability: Consistencia y estándares*|
-|*3*|*Información de pagos no está claramente presentada*|*3*|*Usability: Visibilidad del estado del sistema*|
-|*4*|*No funciona cancelar el agregado de un vehículo.*|*2*|*Usability: Libertad y control del usuario*|
-
-
-
-
+| _#_ |                                                 _Problema_                                                 | _Escala de severidad_ |        _Heurística/Principio violada(o)_        |
+| :-: | :--------------------------------------------------------------------------------------------------------: | :-------------------: | :---------------------------------------------: |
+| _1_ |                         _Incluye un botón “See More” pero no tiene funcionalidad_                          |          _3_          |    _Information Architecture: Is it usable?_    |
+| _2_ | _No parece haber consistencia en la forma en que se presentan las opciones para actualizar la información_ |          _2_          |     _Usability: Consistencia y estándares_      |
+| _3_ |                            _Información de pagos no está claramente presentada_                            |          _3_          | _Usability: Visibilidad del estado del sistema_ |
+| _4_ |                             _No funciona cancelar el agregado de un vehículo._                             |          _2_          |   _Usability: Libertad y control del usuario_   |
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
-*PROBLEMA #1:* 
+_PROBLEMA #1:_
 
-*Severidad: 3*
+_Severidad: 3_
 
-*Heurística violada: Information Architecture: Is it usable?*
+_Heurística violada: Information Architecture: Is it usable?_
 
-*Problema:*
+_Problema:_
 
-*La aplicación incluye un botón “See More” pero no tiene funcionalidad, lo que confunde a los usuarios y les impide acceder a contenido adicional esperado.*
+_La aplicación incluye un botón “See More” pero no tiene funcionalidad, lo que confunde a los usuarios y les impide acceder a contenido adicional esperado._
 
 ![H1](/assets/chapter06/h1.png)
 
-*Recomendación:*
+_Recomendación:_
 
-*Eliminar el botón “See More” si no hay contenido adicional disponible, o implementar la funcionalidad esperada para que los usuarios puedan acceder a más información.*
+_Eliminar el botón “See More” si no hay contenido adicional disponible, o implementar la funcionalidad esperada para que los usuarios puedan acceder a más información._
 
-*PROBLEMA #2:* 
+_PROBLEMA #2:_
 
-*Severidad: 2*
+_Severidad: 2_
 
-*Heurística violada: Usability - Consistencia y estándares*
+_Heurística violada: Usability - Consistencia y estándares_
 
-*Problema:*
+_Problema:_
 
-*La interfaz de Settings incluye campos para Nickname, Bio, Email y Avatar, pero no parece haber consistencia en la forma en que se presentan las opciones para actualizar la información. Por ejemplo, el botón ‘Choose’ para actualizar el avatar está separado del campo ‘Avatar’, lo que podría confundir a los usuarios.*
+_La interfaz de Settings incluye campos para Nickname, Bio, Email y Avatar, pero no parece haber consistencia en la forma en que se presentan las opciones para actualizar la información. Por ejemplo, el botón ‘Choose’ para actualizar el avatar está separado del campo ‘Avatar’, lo que podría confundir a los usuarios._
 
 ![H2](/assets/chapter06/h2.png)
 
-*Recomendación:*
+_Recomendación:_
 
-*Asegurar que todos los campos de entrada y botones relacionados estén agrupados de manera coherente y clara para mejorar la comprensión y la facilidad de uso.*
+_Asegurar que todos los campos de entrada y botones relacionados estén agrupados de manera coherente y clara para mejorar la comprensión y la facilidad de uso._
 
-*PROBLEMA #3:* 
+_PROBLEMA #3:_
 
-*Severidad: 3*
+_Severidad: 3_
 
-*Heurística violada: Usability: Visibilidad del estado del sistema*
+_Heurística violada: Usability: Visibilidad del estado del sistema_
 
-*Problema:*
+_Problema:_
 
-*La información relacionada con Organization no está claramente presentada, lo que puede causar confusión a la hora de querer tener información y dificulta la asignación de envíos.*
+_La información relacionada con Organization no está claramente presentada, lo que puede causar confusión a la hora de querer tener información y dificulta la asignación de envíos._
 
 ![H3](/assets/chapter06/h3.png)
 
-*Recomendación:*
+_Recomendación:_
 
-*Mejorar la presentación y accesibilidad de la información relacionada con "Organization" puede mejorar significativamente la experiencia del usuario y facilitar la asignación de envíos en la aplicación.* 
+_Mejorar la presentación y accesibilidad de la información relacionada con "Organization" puede mejorar significativamente la experiencia del usuario y facilitar la asignación de envíos en la aplicación._
 
-*PROBLEMA #4:* 
+_PROBLEMA #4:_
 
-*Severidad: 2*
+_Severidad: 2_
 
-*Heurística violada: Usability: Libertad y control del usuario*
+_Heurística violada: Usability: Libertad y control del usuario_
 
-*Problema:*
+_Problema:_
 
-*Al momento de ingresar los datos del nuevo vehículo, no se puede cerrar hasta darle darle al botón “Close” y luego se tiene que eliminar en el botón “Delete Vehicle”, esto obliga a agregar nuevos carros no deseados, también incrementando así la cantidad de esfuerzo del usuario.*
+_Al momento de ingresar los datos del nuevo vehículo, no se puede cerrar hasta darle darle al botón “Close” y luego se tiene que eliminar en el botón “Delete Vehicle”, esto obliga a agregar nuevos carros no deseados, también incrementando así la cantidad de esfuerzo del usuario._
 
 ![H4](/assets/chapter06/h4.png)
 
-*Recomendación:*
+_Recomendación:_
 
-*Hacer que el botón "Close" tenga la funcionalidad para cerrar la ventana emergente sin guardar los datos del vehículo ingresados.*
+_Hacer que el botón "Close" tenga la funcionalidad para cerrar la ventana emergente sin guardar los datos del vehículo ingresados._
 
 ---
+
+## 6.4. Auditoría de Experiencias de Usuario.
+
+La auditoría de experiencias de usuario es un proceso clave para evaluar la efectividad, accesibilidad y satisfacción que ofrece una interfaz digital a sus usuarios. A través de un análisis detallado de cada punto de interacción, esta auditoría permite identificar fricciones, inconsistencias y oportunidades de mejora que impactan directamente en la usabilidad y la percepción del producto. Su objetivo es asegurar que la experiencia ofrecida sea intuitiva, eficiente y alineada con las necesidades y expectativas del público objetivo.
+
+### 6.4.1. Auditoría realizada.
+
+Se realizó una auditoría de experiencias de usuario para identificar problemas de usabilidad y mejorar la interacción con la interfaz, enfocándose en la eficiencia y satisfacción del usuario.
+
+#### 6.4.1.1. Información del grupo auditado.
+
+El grupo auditado estuvo compuesto por usuarios representativos del público objetivo, seleccionados según su perfil, nivel de experiencia y frecuencia de uso del sistema.
+
+- Nombre del responsable de auditoría: **LosTesters**
+- Especialización: Especialistas en diseño de interfaces (UI), accesibilidad web y
+  evaluación de experiencias inclusivas.
+- Fecha de auditoría: 14/06/2025 - 21/06/2025
+- Herramientas utilizadas:
+  - Selenium, para simular interacciones de usuario y detectar posibles problemas en los flujos de navegación.
+  - Lighthouse, para evaluar el rendimiento, la accesibilidad, las mejores prácticas y el SEO de la interfaz.
+  - WebPageTest, para medir tiempos de carga y rendimiento desde diferentes ubicaciones y dispositivos.
+  - RedLine13, utilizada para pruebas de carga y rendimiento en escenarios de alto tráfico.
+  - Otras herramientas complementarias conocidas fueron empleadas para obtener una visión integral del comportamiento y la experiencia del usuario.
+
+#### 6.4.1.2. Cronograma de auditoría realizada.
+
+El siguiente cronograma detalla las fases y fechas clave en las que se llevó a cabo la auditoría de experiencias de usuario. Cada etapa fue organizada de forma secuencial para asegurar una evaluación completa, desde la planificación inicial hasta la presentación de hallazgos y recomendaciones.
+
+| Fecha      | Actividad                                                                | Responsable        |
+| ---------- | ------------------------------------------------------------------------ | ------------------ |
+| 14/06/2025 | Análisis de resultados y redacción del informe preliminar                | Fabrizio Sanchez   |
+| 14/06/2025 | Revisión cruzada del informe y validación de hallazgos                   | Juan Cueto         |
+| 14/06/2025 | Presentación de resultados y recomendaciones de mejora al equipo cliente | Flavio Trigueros   |
+| 15/06/2025 | Revisión del diseño visual con base en los hallazgos                     | Aldhair Valenzuela |
+| 16/06/2025 | Implementación de ajustes de accesibilidad                               | Piero Tarazona     |
+| 17/06/2025 | Optimización del rendimiento basada en métricas de Lighthouse            | Juan Cueto         |
+| 18/06/2025 | Pruebas de regresión automatizadas con Selenium                          | Juan Cueto         |
+| 19/06/2025 | Validación final con usuarios                                            | Fabrizio Sanchez   |
+| 20/06/2025 | Recopilación de feedback posterior a ajustes                             | Flavio Trigueros   |
+| 21/06/2025 | Elaboración del informe final de auditoría                               | Aldhair Valenzuela |
+
+#### 6.4.1.3. Contenido de auditoría realizada.
+
+La auditoría abarcó una revisión integral de la experiencia de usuario, evaluando aspectos como la usabilidad, el rendimiento, la accesibilidad y la eficiencia del sistema. Se analizaron distintos flujos de navegación, tiempos de carga, consistencia visual e interacción del usuario mediante herramientas automatizadas y criterios estandarizados, con el fin de identificar áreas de mejora y asegurar una experiencia óptima.
+
+| #   | Problema                                                                                                                                              | Escala de severidad | Heurística/Principio violado(a)                                  |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ---------------------------------------------------------------- |
+| 1   | El contraste entre el texto rojo oscuro y el fondo negro en la pantalla principal dificulta la lectura, especialmente para usuarios con baja visión.  | 3                   | Accesibilidad; Estética y diseño minimalista                     |
+| 2   | El logo y los botones en el header se ven muy pequeños en resoluciones altas, lo que afecta su visibilidad y comprensión.                             | 2                   | Estética y diseño minimalista; Consistencia y estándares         |
+| 3   | Los botones de navegación como “Sign In” y “Home” no tienen etiquetas accesibles (`aria-label`), lo cual dificulta su uso con lectores de pantalla.   | 4                   | Accesibilidad; Ayuda y documentación                             |
+| 4   | La interfaz de los módulos (fermentación, clarificación, etc.) no mantiene una jerarquía visual clara entre las secciones, generando confusión.       | 2                   | Consistencia y estándares                                        |
+| 5   | No hay retroalimentación visual (loading, confirmación) al presionar botones como “Export” o “New”, lo que puede generar incertidumbre en el usuario. | 3                   | Visibilidad del estado del sistema; Prevención de errores        |
+| 6   | Las validaciones de los formularios no explican con claridad qué se requiere, solo indican que un campo es obligatorio sin mayor contexto.            | 2                   | Prevención de errores; Ayuda y documentación                     |
+| 7   | No se observa un modo claro para modificar o visualizar en detalle los registros ingresados, lo que limita la flexibilidad del sistema.               | 2                   | Flexibilidad y eficiencia de uso; Control y libertad del usuario |
+| 8   | El cambio de idioma (EN/ES) no aplica a todo el contenido de la página, afectando la coherencia para usuarios que no dominan ambos idiomas.           | 3                   | Consistencia y estándares; Flexibilidad y eficiencia de uso      |
+| 9   | No se permite cambiar el tamaño del texto ni se detecta compatibilidad con funciones de zoom del navegador, afectando la accesibilidad.               | 4                   | Accesibilidad                                                    |
+| 10  | Algunos formularios (como el de registro) presentan criterios visuales muy estrictos para contraseñas, pero no incluyen ayuda contextual al respecto. | 3                   | Prevención de errores; Ayuda y documentación                     |
+
+### 6.4.2. Auditoría recibida.
+
+La auditoría recibida permitió obtener una visión objetiva y detallada sobre el estado actual de la experiencia de usuario en el sistema evaluado. A través de los hallazgos presentados, se identificaron fortalezas, debilidades y recomendaciones clave que servirán como base para futuras mejoras en diseño, accesibilidad y rendimiento.
+
+#### 6.4.2.1. Información del grupo auditor.
+
+El grupo auditor estuvo conformado por especialistas en experiencia de usuario, accesibilidad y rendimiento web. Contaban con conocimientos en herramientas como Selenium, Lighthouse y WebPageTest, lo que permitió realizar una evaluación técnica y centrada en el usuario, garantizando resultados precisos y relevantes para la mejora del sistema.
+
+- Nombre del responsable de auditoría: **EventWine**
+- Especialización: Especialistas en diseño de interfaces (UI), accesibilidad web y
+  evaluación de experiencias inclusivas.
+- Fecha de auditoría: 14/06/2025 - 20/06/2025
+- Herramientas utilizadas:
+  - Selenium, para simular interacciones de usuario y detectar posibles problemas en los flujos de navegación.
+  - Lighthouse, para evaluar el rendimiento, la accesibilidad, las mejores prácticas y el SEO de la interfaz.
+  - WebPageTest, para medir tiempos de carga y rendimiento desde diferentes ubicaciones y dispositivos.
+  - RedLine13, utilizada para pruebas de carga y rendimiento en escenarios de alto tráfico.
+  - Otras herramientas complementarias conocidas fueron empleadas para obtener una visión integral del comportamiento y la experiencia del usuario.
+
+#### 6.4.2.2. Cronograma de auditoría recibida.
+
+El cronograma de la auditoría recibida detalla las fechas y actividades realizadas por el equipo auditor durante cada fase del proceso. Desde la evaluación inicial hasta la entrega del informe final, cada etapa se llevó a cabo de manera estructurada para garantizar una revisión completa, precisa y alineada con los objetivos del análisis.
+
+| Fecha      | Actividad                                                                         | Responsable     |
+| ---------- | --------------------------------------------------------------------------------- | --------------- |
+| 14/06/2025 | Evaluación de accesibilidad automática con Lighthouse y WebPageTest               | Deybbi Crisanto |
+| 14/06/2025 | Simulación de navegación con lector de pantalla (NVDA)                            | Moises Donayre  |
+| 15/06/2025 | Análisis de estructura de navegación y flujos críticos                            | Gustavo Huanca  |
+| 15/06/2025 | Revisión de formularios: validaciones, mensajes de error y campos obligatorios    | July Paico      |
+| 16/06/2025 | Verificación del contraste de colores y jerarquía visual según estándares WCAG    | Jesús Paucar    |
+| 16/06/2025 | Evaluación de consistencia de íconos, botones y etiquetas en diferentes vistas    | Moises Donayre  |
+| 17/06/2025 | Pruebas de cambio de idioma (i18n) y cobertura de traducciones EN/ES              | July Paico      |
+| 17/06/2025 | Revisión de tiempos de carga y rendimiento (RedLine13 y WebPageTest)              | Gustavo Huanca  |
+| 18/06/2025 | Detección de errores de diseño en pantallas de registro, login y módulos internos | Jesús Paucar    |
+| 18/06/2025 | Documentación de hallazgos críticos y clasificación por severidad                 | Deybbi Crisanto |
+| 19/06/2025 | Elaboración de propuestas de mejora visual, estructural y de contenido            | July Paico      |
+| 19/06/2025 | Sesión de revisión interna de observaciones y ajustes sugeridos                   | Moises Donayre  |
+| 20/06/2025 | Redacción del informe final con capturas, evidencias y criterios heurísticos      | Gustavo Huanca  |
+| 20/06/2025 | Presentación oficial de hallazgos y entregables al equipo de desarrollo y cliente | Deybbi Crisanto |
+
+#### 6.4.2.3. Contenido de auditoría recibida.
+
+El contenido de la auditoría recibida incluye un análisis detallado de la interfaz evaluada, considerando aspectos como accesibilidad, tiempos de carga, usabilidad y consistencia visual. Los resultados se sustentan en métricas objetivas y observaciones técnicas, acompañados de recomendaciones concretas para optimizar la experiencia del usuario y mejorar el rendimiento general del sistema.
+
+| #   | Problema                                                                                                                                                       | Escala de severidad | Heurística/Principio violado(a)                                   |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------------------------------------------------------- |
+| 1   | Los textos de botones como "Ver Detalle" o "Registrar" presentan bajo contraste con el fondo, dificultando su visualización para usuarios con visión reducida. | 3                   | Accesibilidad; Estética y diseño minimalista                      |
+| 2   | El mismo modelo y placa de vehículo se repite varias veces (ej. ABC123), lo que puede causar confusión al usuario.                                             | 3                   | Consistencia y estándares                                         |
+| 3   | Algunas imágenes de perfil no cargan o muestran íconos rotos (ej. avatar en la sección de perfil), lo que afecta la percepción de calidad.                     | 2                   | Estética y diseño minimalista; Visibilidad del estado del sistema |
+| 4   | En el formulario de registro de vehículo, los campos de ID no tienen validación ni etiquetas explicativas, lo que puede confundir al usuario.                  | 3                   | Ayuda y documentación; Prevención de errores                      |
+| 5   | No se indica visualmente qué campos son obligatorios en formularios como "Editar Perfil" o "Registrar Vehículo".                                               | 2                   | Prevención de errores; Estética y diseño minimalista              |
+| 6   | La información de los reportes no se puede filtrar o buscar, lo cual dificulta la eficiencia en sistemas con grandes volúmenes de datos.                       | 2                   | Flexibilidad y eficiencia de uso                                  |
+| 7   | No existe retroalimentación al guardar cambios en el perfil, como un mensaje de éxito o error.                                                                 | 2                   | Visibilidad del estado del sistema                                |
+| 8   | Algunos textos y componentes están desalineados visualmente (ej. títulos de tarjetas de reporte), afectando la estética general del sistema.                   | 1                   | Estética y diseño minimalista                                     |
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+
+A partir de los hallazgos identificados durante la auditoría, se implementaron una serie de modificaciones orientadas a mejorar la experiencia de usuario. Estas acciones incluyeron ajustes en el diseño visual, optimización del rendimiento, corrección de errores de accesibilidad y mejoras en la navegación. Cada cambio fue realizado con el objetivo de subsanar las observaciones detectadas y garantizar una interacción más fluida, intuitiva y eficiente para los usuarios finales.
+
+|   # | Problema                                                                             | Subsanación                                                                                            |
+| --: | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+|   1 | El avatar cargado no se muestra correctamente en el formulario de edición de perfil. | Corregir la lógica de visualización del avatar, asegurando que la imagen se renderice tras la carga.   |
+|   2 | No se visualiza feedback al guardar cambios en el perfil.                            | Añadir un mensaje de éxito (toast/snackbar) visible al usuario luego de guardar correctamente.         |
+|   3 | El botón de 'Save Changes' no tiene una animación que indique procesamiento.         | Agregar una animación de carga o estado de espera al presionar 'Save Changes'.                         |
+|   4 | Falta validación visual de campos requeridos vacíos.                                 | Resaltar los campos vacíos requeridos con un borde rojo y mensaje de validación.                       |
+|   5 | No hay consistencia entre los estilos del menú lateral y el formulario central.      | Unificar estilos visuales para garantizar cohesión entre la interfaz lateral y el contenido principal. |
+|   6 | La barra lateral tiene bajo contraste con el fondo, afectando la legibilidad.        | Ajustar el contraste de la barra lateral usando colores que cumplan estándares WCAG.                   |
+|   7 | No se redirige al usuario tras guardar exitosamente el perfil.                       | Implementar una redirección automática o confirmación persistente tras el guardado.                    |
+|   8 | Falta un placeholder representativo en el campo 'Bio'.                               | Agregar texto guía en el campo 'Bio' que sugiera el tipo de información esperada.                      |
