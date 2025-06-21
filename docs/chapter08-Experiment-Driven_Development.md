@@ -444,7 +444,26 @@ Para validar los experimentos definidos en el marco del desarrollo de MoviGesti�
 
 Para garantizar una evaluación rigurosa de los experimentos y tomar decisiones basadas en evidencia, se definieron objetivos analíticos claros, junto con KPIs e indicadores específicos por funcionalidad. Esta selección asegura el seguimiento continuo del impacto de cada mejora implementada en la experiencia del usuario y en la eficiencia operativa de MoviGestión.
 
-**Login**
+**Gerente**
+![Gerente](../assets/chapter08/LightHouse_8.1.png)
+![Gerente](../assets/chapter08/LightHouse_8.2.png)
+![Gerente](../assets/chapter08/LightHouse_8.3.png)
+![Gerente](../assets/chapter08/LightHouse_8.4.png)
+![Gerente](../assets/chapter08/LightHouse_8.5.png)
+![Gerente](../assets/chapter08/LightHouse_8.6.png)
+![Gerente](../assets/chapter08/LightHouse_8.7.png)
+**Transportista**
+![Transportista](../assets/chapter08/LightHouse_8.8.png)
+![Transportista](../assets/chapter08/LightHouse_8.9.png)
+![Transportista](../assets/chapter08/LightHouse_8.10.png)
+![Transportista](../assets/chapter08/LightHouse_8.11.png)
+![Transportista](../assets/chapter08/LightHouse_8.12.png)
+
+**Estadísticas**
+![Cuadro](../assets/chapter08/Cuadro.png)
+![Cuadro](../assets/chapter08/Grafico_Barras_1.png)
+![Cuadro](../assets/chapter08/Grafico_Barras_2.png)
+![Cuadro](../assets/chapter08/Grafico_Barras_3.png)
 
 ### 8.2.7. Web and Mobile Tracking Plan
 
