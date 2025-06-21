@@ -126,30 +126,23 @@ Las revisiones de código son un pilar colaborativo en el proceso de desarrollo 
   - Fomento de la Seguridad Contextual: Un par de ojos humanos puede identificar vulnerabilidades de seguridad más complejas o específicas del dominio de la aplicación que no son detectables por patrones genéricos de análisis estático.
   - Intercambio de Conocimiento: Servir como una herramienta de aprendizaje y mentoría, permitiendo que el conocimiento sobre la base de código y las mejores prácticas se difunda entre el equipo, reduciendo la dependencia de un solo experto.
   - Mejora Continua: Impulsar una cultura de mejora constante, donde los comentarios constructivos llevan a soluciones más robustas, legibles y mantenibles.
+
 - Metodología de Revisión en MoviGestión (Pull/Merge Requests):
-Las revisiones en MoviGestión se articulan principalmente a través del proceso de Pull Requests (PRs) o Merge Requests (MRs), una práctica estándar en el desarrollo moderno basado en Git.
+  Las revisiones en MoviGestión se articulan principalmente a través del proceso de Pull Requests (PRs) o Merge Requests (MRs), una práctica estándar en el desarrollo moderno basado en Git.
 
   - Flujo Operativo:
 
   1 . Cuando un desarrollador completa una tarea (sea una nueva funcionalidad para envíos, una mejora en la interfaz de reportes de incidentes, o una corrección en el backend de gestión de vehículos), crea un Pull Request. Este PR propone la integración de sus cambios en la rama de desarrollo principal.<br>
   2 . El PR es asignado a uno o más desarrolladores para su revisión. Estos revisores son responsables de analizar el código propuesto.<br>
-  3 . La revisión abarca una evaluación exhaustiva, considerando aspectos como:<br>
-    - La claridad y la documentación interna del código.
-    - La adhesión a los principios de diseño y arquitectura de MoviGestión.
-    - La eficiencia y el rendimiento de las soluciones implementadas (ej. consultas a base de datos, lógica de procesamiento).
-    - El manejo adecuado de errores, casos excepcionales y la robustez ante entradas inesperadas.
-    - La calidad y la cobertura de las pruebas unitarias y de integración asociadas al cambio.
-    - La seguridad del código, buscando posibles vulnerabilidades o malas prácticas.
-    - El impacto potencial del cambio en otras partes del sistema.
+  3 . La revisión abarca una evaluación exhaustiva, considerando aspectos como:<br> - La claridad y la documentación interna del código. - La adhesión a los principios de diseño y arquitectura de MoviGestión. - La eficiencia y el rendimiento de las soluciones implementadas (ej. consultas a base de datos, lógica de procesamiento). - El manejo adecuado de errores, casos excepcionales y la robustez ante entradas inesperadas. - La calidad y la cobertura de las pruebas unitarias y de integración asociadas al cambio. - La seguridad del código, buscando posibles vulnerabilidades o malas prácticas. - El impacto potencial del cambio en otras partes del sistema.
 
   4 . Los comentarios y sugerencias se realizan directamente en la plataforma del PR, facilitando el diálogo entre el autor y los revisores.<br>
   5 . El autor del PR es responsable de incorporar la retroalimentación y realizar las modificaciones necesarias hasta que el código satisfaga los estándares y reciba la aprobación de los revisores.<br>
   6 . Una vez aprobado, el código es fusionado en la rama de desarrollo, integrándose en la base de código de MoviGestión.<br>
+
 - Herramientas de Soporte: La gestión de estos Pull Requests se realiza a través de la plataforma de control de versiones utilizada por el equipo (como GitLab, GitHub o Azure DevOps), que provee las herramientas necesarias para la colaboración, los comentarios en línea y el seguimiento del estado de cada revisión.
 
 - Periodicidad: Las revisiones de código son un proceso continuo e integral, que se activa con cada propuesta de cambio significativo al codebase, garantizando un flujo de trabajo ágil que prioriza la calidad y la colaboración.
-
-
 
 ## 6.3. Validations Interviews
 
@@ -526,3 +519,23 @@ A partir de los hallazgos identificados durante la auditoría, se implementaron 
 |   6 | La barra lateral tiene bajo contraste con el fondo, afectando la legibilidad.        | Ajustar el contraste de la barra lateral usando colores que cumplan estándares WCAG.                   |
 |   7 | No se redirige al usuario tras guardar exitosamente el perfil.                       | Implementar una redirección automática o confirmación persistente tras el guardado.                    |
 |   8 | Falta un placeholder representativo en el campo 'Bio'.                               | Agregar texto guía en el campo 'Bio' que sugiera el tipo de información esperada.                      |
+
+##### Auditoría del equipo
+
+| Miembro del equipo     | Validaciones / Avances realizados                                                                                                                                                                                     | Nota |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| **Juan Cueto**         | - Registro de vehículos con validación de campos vacíos<br>- Validación de formato de placa<br>- Prevención de duplicados<br>- Vista de listado funcional y ordenada<br>- Botón de eliminación con confirmación modal | 20   |
+| **Fabrizio Sanchez**   | - Edición de perfil con campos persistentes<br>- Validación de imagen de avatar<br>- Validación de email en formato y unicidad<br>- Lógica de guardado con feedback<br>- Interfaz responsiva en todos los tamaños     | 20   |
+| **Flavio Trigueros**   | - Sección de reportes lista y funcional<br>- Filtro de reportes por tipo<br>- Validación de fechas y transportista<br>- Vista sin errores en estado vacío<br>- Orden cronológico asegurado en la visualización        | 20   |
+| **Aldhair Valenzuela** | - Ajustes de contraste y fondo entre secciones<br>- Sidebar funcional en diferentes resoluciones<br>- Test de accesibilidad en botones<br>- Revisión de colores y consistencia<br>- Pruebas de navegación fluida      | 20   |
+| **Piero Tarazona**     | - Detalle del envío completo<br>- Carga de datos dinámica por ID<br>- Visualización de transportista, fecha y estado<br>- Renderizado condicional según estado<br>- Prueba de diseño responsive en vista detalle      | 20   |
+
+- **Juan Cueto**: Demostró un trabajo sólido al implementar correctamente el módulo de registro de vehículos. Cumplió con las validaciones esperadas (formato de placa, campos obligatorios, control de duplicados) y desarrolló una interfaz funcional para el listado. Sin embargo, presentó retrasos en los primeros días del sprint y algunas validaciones menores fueron completadas tras retroalimentación.
+
+- **Fabrizio Sanchez**: Sobresalió en la implementación del módulo de perfil, asegurando persistencia de datos, validaciones tanto de formato como de contenido, y un diseño responsivo. Se anticipó a posibles errores del usuario y propuso mejoras de experiencia.
+
+- **Flavio Trigueros**: Logró finalizar correctamente la sección de reportes, incluyendo filtros y validaciones esenciales. Aunque cumplió con las tareas asignadas, hubo pequeños detalles de presentación y organización que requirieron ajustes en fases posteriores.
+
+- **Aldhair Valenzuela**: Trabajó en aspectos visuales y de accesibilidad, como la paleta de colores, contrastes y comportamiento del sidebar. Su participación fue clave para la coherencia visual del sistema, pero algunos ajustes tuvieron que ser afinados por otros miembros en etapas finales.
+
+- **Piero Tarazona**: Implementó de forma eficaz la vista de detalle de envío, garantizando que todos los campos clave fueran visibles y adaptables a diferentes pantallas. Además, realizó pruebas funcionales para asegurar una experiencia sin errores en la navegación del detalle.
