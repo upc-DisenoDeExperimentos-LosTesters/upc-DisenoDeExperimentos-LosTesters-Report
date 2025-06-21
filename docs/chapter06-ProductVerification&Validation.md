@@ -619,7 +619,7 @@ A partir de los hallazgos identificados durante la auditoría, se implementaron 
 | 7   | Tras guardar el perfil, el usuario permanece en la misma vista sin confirmación ni redirección, dejando la sensación de estar “estancado”.            | Se definió un flujo de post-guardado: al confirmarse el éxito, se despliega un modal breve con un botón “Regresar al dashboard” y enlace a “Editar detalles nuevamente”.                  | Flujo más intuitivo, permite continuar con la siguiente tarea sin ambigüedad.   |
 | 8   | El campo “Bio” carece de placeholder y no orienta al usuario sobre el tipo de información que debería incluir (longitud, tono, ejemplos).             | Se añadió un placeholder descriptivo (“Escribe una breve biografía: experiencia, intereses, hobbies…”), con contador de caracteres y validación de longitud mínima/máxima en tiempo real. | Guía proactiva para creación de contenido, mejora la calidad de dato            |
 
-##### Auditoría del equipo
+### 6.4.3 Auditoría del equipo
 
 | Miembro del equipo     | Validaciones / Avances realizados                                                                                                                                                                                     | Nota |
 | ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
