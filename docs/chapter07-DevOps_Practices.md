@@ -251,43 +251,61 @@ Se planea la integración de un canal de alertas para notificaciones inmediatas 
 
 ## 7.4. Continuous monitoring
 
-El Monitoreo Continuo es un componente fundamental dentro del enfoque DevOps de MoviGestión, ya que permite observar en tiempo real el comportamiento del sistema en ambientes de staging y producción. Este monitoreo incluye desde la experiencia del usuario hasta el estado interno de los servicios backend, facilitando la detección proactiva de errores, cuellos de botella, desviaciones de rendimiento o posibles vulnerabilidades. El objetivo es asegurar la continuidad operativa y ofrecer una experiencia estable al usuario final.
+El Monitoreo Continuo en MoviGestión constituye un pilar esencial de nuestra estrategia DevOps, al asegurar una vigilancia ininterrumpida tanto en los entornos de staging como en producción. Gracias a la instrumentación de métricas de experiencia de usuario (tiempos de carga, tolerancia de interacción) y al seguimiento profundo de los servicios backend (consumo de CPU, memoria, latencia de APIs), somos capaces de identificar de manera proactiva errores, problemas y desviaciones de rendimiento e incluso posibles vulnerabilidades de seguridad. Este sistema de monitoreo, complementado con dashboards en tiempo real, alertas automatizadas y análisis de logs, facilita la colaboración entre equipos de desarrollo y operaciones, garantiza la continuidad operativa y contribuye a mantener una experiencia estable, rápida y confiable para el usuario final.
 
 ### 7.4.1. Tools and Practices.
 
-A continuación, se detallan las herramientas y prácticas empleadas por el equipo de MoviGestión para lograr un monitoreo continuo eficaz:
+A continuación se presenta una versión enriquecida y más completa de las herramientas y prácticas utilizadas por el equipo de MoviGestión para garantizar un monitoreo continuo de alto valor:
 
-**Pruebas de carga y estrés (JMeter):** Utilizamos Apache JMeter para simular múltiples usuarios concurrentes y escenarios de alta carga. Esto permite evaluar el comportamiento del sistema bajo condiciones extremas, detectar cuellos de botella en servicios críticos como autenticación, generación de rutas o paneles de reportes, y validar la escalabilidad horizontal del backend. Estas pruebas son ejecutadas de manera programada o previa a cada release importante, como parte del proceso de validación continua.
+**Pruebas de carga y estrés (Apache JMeter)**
+
+Para validar la robustez y escalabilidad del sistema, empleamos JMeter en escenarios que simulan desde decenas hasta miles de usuarios concurrentes. Estas pruebas, programadas regularmente y antes de cada release mayor, nos permiten:
+
+- Detectar cuellos de botella en procesos críticos (autenticación, generación de rutas, paneles de reportes).
+
+- Evaluar la escalabilidad horizontal de los microservicios y la capa de base de datos.
+
+- Definir y ajustar thresholds de rendimiento (tiempo de respuesta máximo permitido, tasas de error).
+
+- Integrar los resultados en el pipeline de CI/CD, donde se generan reportes automáticos y alertas por incumplimiento de SLA.
 
 ![BicasTeam API](../assets/chapter07/jmeter.png)
 
-**Monitoreo de experiencia del usuario (Datadog y Google Analytics):** Para comprender cómo los usuarios interactúan con la aplicación, integramos herramientas que recopilan métricas de navegación, tiempos de respuesta y eventos críticos.
+**Monitoreo de experiencia del usuario (Real User Monitoring + Google Analytics)**
 
-Google Analytics proporciona información sobre los flujos de navegación, tasa de rebote y puntos de abandono, lo cual permite optimizar la interfaz y estructura de contenidos.
+Combinamos análisis pasivo y activo para comprender el comportamiento real de nuestros usuarios:
+
+- **Google Analytics:** Recopilamos datos detallados sobre los flujos de navegación, páginas de entrada y salida, rutas de clic, puntos de abandono y conversiones, para identificar secciones de alto interés y cuellos de botella en el recorrido. Este enfoque nos permite rediseñar la arquitectura de contenidos y las llamadas a la acción, optimizando la usabilidad y mejorando las tasas de retención y conversión.
 
 ![BicasTeam API](../assets/chapter07/GoogleAnalytics.jpg)
 
-Datadog, incluso en su versión gratuita, ofrece visibilidad detallada de la experiencia del usuario mediante métricas como latencia, tiempo de carga, errores de frontend y eventos personalizados. Esta información permite detectar anomalías en tiempo real y priorizar acciones correctivas que impacten directamente en la percepción del servicio.
+- **Datadog RUM:** Supervisamos en tiempo real métricas críticas de frontend como el tiempo de carga de cada recurso, la latencia de interacción, errores de JavaScript y el comportamiento tras eventos clave (scroll, click, formulario). Todas estas métricas se visualizan en dashboards personalizados que facilitan el análisis histórico y la correlación entre diferentes indicadores. Además, configuramos alertas automáticas integradas con Slack y PagerDuty, de modo que ante cualquier desviación o anomalía el equipo reciba notificaciones inmediatas y pueda intervenir proactivamente.
 
 ![BicasTeam API](../assets/chapter07/DataDog.png)
 
-**Supervisión de APIs (Postman + Pingdom):** Las APIs internas y externas son monitoreadas constantemente para asegurar disponibilidad, estabilidad y cumplimiento de contratos. Con Postman definimos colecciones de pruebas que se ejecutan automáticamente para verificar respuestas esperadas, tiempos máximos permitidos y validaciones de esquema JSON. Pingdom, por su parte, permite monitoreo externo de endpoints públicos desde distintas ubicaciones geográficas, asegurando que el sistema sea accesible y funcional para usuarios en diferentes regiones.
+**Supervisión de APIs (Postman + Pingdom)**
+
+Garantizamos la máxima disponibilidad y el estricto cumplimiento de contratos en todos nuestros endpoints mediante dos enfoques complementarios:
+
+- **Postman Monitors:** Diseñamos colecciones de pruebas automatizadas que validan de forma continua las respuestas de cada endpoint, comprueban la conformidad con los esquemas JSON definidos y miden los tiempos de respuesta frente a umbrales preestablecidos. Cada ejecución se integra en el pipeline de CI/CD, generando reportes automáticos y disparando alertas si alguna llamada excede los límites de rendimiento o devuelve datos inesperados.
 
 ![BicasTeam API](../assets/chapter07/postman.png)
 
-**Auditorías de calidad web (Google Lighthouse + Catchpoint):**
+**Auditorías de calidad web (Lighthouse + Catchpoint)**
+Mantenemos altos estándares de rendimiento, accesibilidad y buenas prácticas a través de auditorías regulares y pruebas sintéticas:
 
-Google Lighthouse realiza evaluaciones detalladas del frontend sobre criterios clave como accesibilidad, rendimiento, optimización móvil, SEO y buenas prácticas. Estas auditorías permiten a los desarrolladores identificar problemas de frontend que afectan tanto la velocidad como la usabilidad.
+- **Google Lighthouse:** Ejecutamos análisis completos de Core Web Vitals, accesibilidad, optimización móvil, SEO y cumplimiento de mejores prácticas. Los informes, con puntuaciones y recomendaciones detalladas, se visualizan en un dashboard centralizado, lo que permite al equipo de frontend priorizar y planificar las correcciones de forma ágil.
 
 ![BicasTeam API](../assets/chapter07/LighthouseGoogle.png)
 
-Catchpoint complementa estas evaluaciones mediante pruebas de experiencia digital desde múltiples dispositivos, navegadores y ubicaciones. Así se valida que los usuarios finales reciban una experiencia consistente independientemente de su entorno o red.
+- **Catchpoint:**
+Complementamos estas auditorías con tests sintéticos desde múltiples navegadores, dispositivos y ubicaciones. Generamos mapas de calor de tiempo de carga y disponibilidad, validando que la experiencia de usuario sea homogénea y sin interrupciones, independientemente del entorno de red o del dispositivo utilizado.
 
 ![BicasTeam API](../assets/chapter07/Catchpoint.jpg)
 
 Este conjunto de herramientas no solo permite monitorear la aplicación desde distintos ángulos, sino que forma parte integral de nuestros pipelines automatizados, garantizando visibilidad continua, capacidad de respuesta inmediata y mejora constante del producto a lo largo del tiempo.
 
-### 7.4.2. Monitoring Pipeline Components.
+### 7.4.2. Monitoring Pipeline Components
 
 El pipeline de monitoreo continuo en MoviGestión está diseñado para proporcionar visibilidad completa del estado del sistema en tiempo real, desde entornos de staging hasta producción. Este pipeline abarca cuatro fases principales: recolección, almacenamiento, análisis y visualización de datos. En la fase de recolección, herramientas como Heroku Metrics, Sentry, Google Analytics y, en una siguiente etapa, Prometheus, permiten capturar métricas clave del sistema, errores en tiempo real, patrones de navegación y rendimiento del frontend. Estos datos se almacenan de forma estructurada utilizando componentes como GitHub Actions Artifacts, logs de Heroku, y servicios como Datadog, permitiendo conservar el historial operativo para su posterior análisis.
 
@@ -296,7 +314,6 @@ Durante la fase de análisis, herramientas como Google Lighthouse y Catchpoint p
 ![BicasTeam API](../assets/chapter07/pingdom.jpg)
 
 Este pipeline no solo permite monitorear continuamente la salud de los servicios y la experiencia del usuario, sino que también facilita la toma de decisiones basada en datos concretos y contribuye a la mejora continua del producto.
-
 
 ### 7.4.3. Alerting Pipeline Components.
 
