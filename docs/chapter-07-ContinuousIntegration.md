@@ -258,31 +258,31 @@ A continuación, se detallan las herramientas y prácticas empleadas por el equi
 
 **Pruebas de carga y estrés (JMeter):** Utilizamos Apache JMeter para simular múltiples usuarios concurrentes y escenarios de alta carga. Esto permite evaluar el comportamiento del sistema bajo condiciones extremas, detectar cuellos de botella en servicios críticos como autenticación, generación de rutas o paneles de reportes, y validar la escalabilidad horizontal del backend. Estas pruebas son ejecutadas de manera programada o previa a cada release importante, como parte del proceso de validación continua.
 
-[Imagen]
+![BicasTeam API](../assets/chapter07/jmeter.png)
 
 **Monitoreo de experiencia del usuario (Datadog y Google Analytics):** Para comprender cómo los usuarios interactúan con la aplicación, integramos herramientas que recopilan métricas de navegación, tiempos de respuesta y eventos críticos.
 
 Google Analytics proporciona información sobre los flujos de navegación, tasa de rebote y puntos de abandono, lo cual permite optimizar la interfaz y estructura de contenidos.
 
-[Imagen]
+![BicasTeam API](../assets/chapter07/GoogleAnalytics.jpg)
 
 Datadog, incluso en su versión gratuita, ofrece visibilidad detallada de la experiencia del usuario mediante métricas como latencia, tiempo de carga, errores de frontend y eventos personalizados. Esta información permite detectar anomalías en tiempo real y priorizar acciones correctivas que impacten directamente en la percepción del servicio.
 
-[Imagen]
+![BicasTeam API](../assets/chapter07/DataDog.png)
 
 **Supervisión de APIs (Postman + Pingdom):** Las APIs internas y externas son monitoreadas constantemente para asegurar disponibilidad, estabilidad y cumplimiento de contratos. Con Postman definimos colecciones de pruebas que se ejecutan automáticamente para verificar respuestas esperadas, tiempos máximos permitidos y validaciones de esquema JSON. Pingdom, por su parte, permite monitoreo externo de endpoints públicos desde distintas ubicaciones geográficas, asegurando que el sistema sea accesible y funcional para usuarios en diferentes regiones.
 
-[Imagen]
+![BicasTeam API](../assets/chapter07/postman.png)
 
 **Auditorías de calidad web (Google Lighthouse + Catchpoint):**
 
 Google Lighthouse realiza evaluaciones detalladas del frontend sobre criterios clave como accesibilidad, rendimiento, optimización móvil, SEO y buenas prácticas. Estas auditorías permiten a los desarrolladores identificar problemas de frontend que afectan tanto la velocidad como la usabilidad.
 
-[Imagen]
+![BicasTeam API](../assets/chapter07/LighthouseGoogle.png)
 
 Catchpoint complementa estas evaluaciones mediante pruebas de experiencia digital desde múltiples dispositivos, navegadores y ubicaciones. Así se valida que los usuarios finales reciban una experiencia consistente independientemente de su entorno o red.
 
-[Imagen]
+![BicasTeam API](../assets/chapter07/Catchpoint.jpg)
 
 Este conjunto de herramientas no solo permite monitorear la aplicación desde distintos ángulos, sino que forma parte integral de nuestros pipelines automatizados, garantizando visibilidad continua, capacidad de respuesta inmediata y mejora constante del producto a lo largo del tiempo.
 
@@ -292,7 +292,7 @@ El pipeline de monitoreo continuo en MoviGestión está diseñado para proporcio
 
 Durante la fase de análisis, herramientas como Google Lighthouse y Catchpoint permiten evaluar la calidad de la interfaz desde múltiples perspectivas, incluyendo accesibilidad, rendimiento, tiempos de carga y consistencia en diferentes dispositivos y ubicaciones. Complementariamente, JMeter se utiliza para simular cargas y validar el comportamiento del sistema bajo condiciones de alta demanda. Finalmente, en la fase de visualización, se integran paneles personalizados mediante Grafana (en etapas avanzadas), los tableros de Sentry, las métricas en tiempo real de Datadog, y la consola de administración de Heroku, lo que proporciona al equipo técnico una visión clara e inmediata del estado del sistema.
 
-[Imagen]
+![BicasTeam API](../assets/chapter07/pingdom.jpg)
 
 Este pipeline no solo permite monitorear continuamente la salud de los servicios y la experiencia del usuario, sino que también facilita la toma de decisiones basada en datos concretos y contribuye a la mejora continua del producto.
 
@@ -303,12 +303,19 @@ El sistema de alertas en MoviGestión garantiza una respuesta oportuna ante cual
 
 * Prometheus + Alertmanager conforman el núcleo del sistema de alertas de infraestructura. Prometheus recopila métricas clave del sistema en tiempo real, como uso de CPU, latencia, tasa de errores o saturación de servicios, y permite definir reglas de alerta basadas en expresiones lógicas (PromQL). Cuando se detecta una condición crítica (por ejemplo, más de un 5% de errores 5xx en un endpoint durante más de 2 minutos), estas alertas se envían a Alertmanager. Este componente gestiona el enrutamiento, agrupamiento, silenciamiento y distribución de alertas mediante múltiples canales como Slack, correo electrónico o Microsoft Teams, según su nivel de severidad. Esta arquitectura asegura una reacción rápida y filtrada a eventos relevantes, reduciendo el ruido y mejorando la eficiencia en la respuesta operativa.
 
+![BicasTeam API](../assets/chapter07/prometheus.png)
+
 * Sentry se encarga del monitoreo y alerta de errores de tiempo de ejecución tanto en el frontend como en el backend. Su integración con los entornos de producción permite capturar excepciones, fallos no controlados, errores de consola y trazas completas de stack en tiempo real. Cuando ocurre un error, Sentry genera alertas automáticas con contexto detallado (usuario afectado, navegador, acción que causó el fallo), lo que permite reproducir el incidente y priorizar su resolución. Además, permite configurar umbrales de frecuencia (por ejemplo, si un mismo error ocurre más de X veces en una hora) y enviar alertas a canales específicos como Slack o Discord, garantizando que los errores más críticos no pasen desapercibidos.
+
+![BicasTeam API](../assets/chapter07/sentry.png)
 
 * Grafana, por su parte, se integra directamente con Prometheus para la visualización de datos históricos y en tiempo real. Además de su función como herramienta de dashboards, Grafana permite definir alertas visuales directamente desde los paneles, configurando condiciones de activación, duración mínima de la condición y frecuencia de evaluación. Estas alertas también se pueden canalizar hacia Alertmanager, logrando así una cobertura completa desde la observación hasta la acción.
 
+![BicasTeam API](../assets/chapter07/grafana.png)
+
 * GitHub Actions + Health Checks forman un segundo mecanismo de alerta centrado en la validación post-despliegue. Al finalizar un despliegue en staging o producción, se ejecutan automáticamente validaciones de disponibilidad y estado de servicios mediante scripts cURL, ping a endpoints críticos y pruebas de smoke test. Si alguna de estas validaciones falla —por ejemplo, si el endpoint /api/auth/login no responde en menos de 500ms o retorna un código de error—, el workflow se detiene y lanza una notificación automática al equipo mediante issues, correos configurados o integraciones webhook, permitiendo tomar acción inmediata o incluso ejecutar un rollback si es necesario.
 
+![BicasTeam API](../assets/chapter07/GithubActions.png)
 
 Esta combinación de mecanismos de alerta —a nivel de infraestructura, despliegue y ejecución— permite a MoviGestión mantener un sistema resiliente, con capacidad de respuesta inmediata ante incidentes y un alto estándar de confiabilidad operativa.
 
