@@ -208,91 +208,170 @@ del ABET – EAC - Student Outcome 5
 
 <table>
     <tr>
-        <th>Criterio Especifico</th>
+        <th>Criterio Específico</th>
         <th>Acciones Realizadas</th>
         <th>Conclusiones</th>
     </tr>
     <tr>
         <td>Participa en equipos multidisciplinarios con eficacia, eficiencia y objetividad, en el marco de un proyecto en soluciones de ingeniería de software</td>
         <td>
-            <u> <b>TB1 </b></u>
+            <u><b>TB1</b></u>
             <ul>
                 <li>
-                    <u> <b>Cueto Dominguez, Juan Diego </b></u>
-                    <p>Participé de manera responsable en el desarrollo y despliegue de los     sistemas de software, realizando ajustes en el backend, frontend y aplicación   móvil. Además, gestioné el despliegue de los servicios en la nube (Heroku y   AWS) y configuré la base de datos de forma segura. También apoyé en la    elaboración de la documentación, asegurando buenas prácticas éticas y  profesionales en cada etapa del proyecto.
-                    </p>
-                 </li>
-                 <li>
-                    <u> <b>Sanchez Zamora, Fabrizio Alessandro </b></u>
-                    <p>Actué con responsabilidad ética y profesional al llevar a cabo el análisis competitivo y construir el modelo de needfinding a través de user personas, empathy maps y task matrix. En la definición de entrevistas, prioricé el respeto por la privacidad y la transparencia hacia los participantes, asegurando una recopilación de información honesta y empática. Todas las acciones realizadas fueron orientadas a reflejar de manera auténtica las necesidades reales de los usuarios y a fundamentar decisiones de diseño con integridad.
-                    </p>
-                 </li>
-                 <li>
-                    <u> <b>Tarazona Medina, Piero Abel </b></u>
-                    <p>Realicé la revisión integral de las Style Guidelines de la aplicación, así como del diseño de la arquitectura del sistema, el diagrama de clases, de base de datos y los diagramas C4, actuando de manera ética y profesional. Me aseguré de que las decisiones de diseño promovieran la mantenibilidad, la seguridad y la escalabilidad del software, priorizando prácticas responsables que garanticen la protección de los datos de los usuarios y la transparencia en la estructura del sistema.
-                    </p>
-                 </li>
-                 <li>
-                    <u> <b>Trigueros Chumacero, Flavio Eduardo </b></u>
-                    <p>Participé de manera responsable en la investigación y definición de la startup y del producto de software, realizando un análisis ético de la problemática que abordamos. Desarrollé el modelo Lean UX y definí los segmentos objetivos, asegurando siempre que las decisiones tomadas fueran respetuosas de los intereses de los usuarios y del impacto social del proyecto. Manteniendo un enfoque profesional, propuse soluciones basadas en principios de equidad, claridad y beneficio para los distintos públicos involucrados.
-                    </p>
-                 </li>
-                 <li>
-                    <u> <b>Valenzuela Huillcaya, Aldhair Johan Juan </b></u>
-                    <p>Asumí la responsabilidad ética y profesional en la revisión y validación de las User Stories, el Product Backlog y las épicas, garantizando que cada requisito refleja de manera fiel las necesidades de los usuarios y los objetivos del proyecto. Me aseguré de que las funcionalidades propuestas cumplieran con criterios de calidad, accesibilidad y respeto a los principios éticos de ingeniería de software, promoviendo así un desarrollo responsable, sostenible y centrado en el usuario.
-                    </p>
-                 </li>
+                    <u><b>Cueto Dominguez, Juan Diego</b></u>
+                    <p>Participé de manera responsable en el desarrollo y despliegue de los sistemas de software, realizando ajustes en el backend, frontend y aplicación móvil...</p>
+                </li>
+                <li>
+                    <u><b>Sanchez Zamora, Fabrizio Alessandro</b></u>
+                    <p>Actué con responsabilidad ética y profesional al llevar a cabo el análisis competitivo...</p>
+                </li>
+                <li>
+                    <u><b>Tarazona Medina, Piero Abel</b></u>
+                    <p>Realicé la revisión integral de las Style Guidelines de la aplicación...</p>
+                </li>
+                <li>
+                    <u><b>Trigueros Chumacero, Flavio Eduardo</b></u>
+                    <p>Participé de manera responsable en la investigación y definición de la startup...</p>
+                </li>
+                <li>
+                    <u><b>Valenzuela Huillcaya, Aldhair Johan Juan</b></u>
+                    <p>Asumí la responsabilidad ética y profesional en la revisión y validación de las User Stories...</p>
+                </li>
             </ul>
-        </td>
-        <td>
-            <p> 
-            A lo largo del desarrollo de nuestro proyecto, cada integrante del equipo demostró un compromiso sólido con la responsabilidad ética y profesional en cada etapa del proceso de ingeniería de software. Desde la investigación inicial, la definición del producto y la comprensión profunda de los usuarios, hasta la construcción de modelos de negocio, la elaboración del backlog, el diseño de la arquitectura del sistema y la definición de estilos visuales, actuamos siempre guiados por principios de respeto, transparencia, calidad y sostenibilidad. <br> <br>
-            Nuestra colaboración se basó en la toma de decisiones informadas, priorizando la privacidad de los usuarios, la accesibilidad, la seguridad de la información y la integridad del sistema. Adoptamos buenas prácticas éticas en el análisis, diseño y documentación del software, con el objetivo de crear una solución útil, confiable y que aporte un impacto positivo en el entorno en el que será implementada. <br> <br>
-            Esta experiencia reafirma nuestro compromiso como futuros profesionales de la ingeniería de software, conscientes de la importancia de actuar con responsabilidad social y técnica en cada proyecto que emprendamos.
-            </p>
-        </td>
-        <br>
-    </tr>
-    <tr>
-        <td>Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software</td>
-        <td>
-        <u> <b>TB1 </b></u>
+            <u><b>TB2</b></u>
             <ul>
                 <li>
-                    <u> <b>Cueto Dominguez, Juan Diego </b></u>
-                    <p>Durante el desarrollo del proyecto, emitir juicios informados al seleccionar tecnologías de bajo costo y alta disponibilidad para el backend, frontend y aplicación móvil, considerando el impacto económico del despliegue en la nube. Asimismo, configuré la base de datos optimizando recursos para reducir costos operativos y mejorar la sostenibilidad del sistema en el tiempo. Además, apoyé en la documentación para garantizar el acceso y comprensión de las soluciones en un contexto global y socialmente responsable.
-                    </p>
-                 </li>
-                 <li>
-                    <u> <b>Sanchez Zamora, Fabrizio Alessandro </b></u>
-                    <p>Realicé el análisis competitivo y la construcción de user personas, empathy maps y task matrix evaluando críticamente el impacto que las soluciones propuestas tendrían en los distintos sectores sociales y económicos. Durante la definición de las entrevistas, me aseguré de obtener información relevante que permitiera comprender no sólo las necesidades individuales, sino también el contexto más amplio en el que se insertan, para orientar nuestras decisiones de diseño hacia soluciones sostenibles, equitativas y culturalmente pertinentes.
-                    </p>
-                 </li>
-                 <li>
-                    <u> <b>Tarazona Medina, Piero Abel </b></u>
-                    <p>Revisé las Style Guidelines, la arquitectura del sistema, el diagrama de clases, la base de datos y los diagramas C4 teniendo en cuenta los posibles impactos ambientales, sociales y económicos de las decisiones técnicas. Emití juicios informados para optimizar recursos, fomentar la eficiencia energética de la infraestructura digital y asegurar la adaptabilidad de la solución en contextos globales diversos, priorizando siempre el beneficio colectivo y la sostenibilidad.
-                    </p>
-                 </li>
-                 <li>
-                    <u> <b>Trigueros Chumacero, Flavio Eduardo </b></u>
-                    <p>Desarrollé la investigación y definición de la startup y del producto de software emitiendo juicios informados sobre la problemática detectada, analizando su impacto en contextos sociales y económicos. En la construcción del modelo Lean UX y la definición de segmentos objetivos, consideré los efectos de nuestras soluciones a nivel global y en la comunidad específica, priorizando la inclusión, la viabilidad económica y la responsabilidad social en las decisiones estratégicas del proyecto.
-                    </p>
-                 </li>
-                 <li>
-                    <u> <b>Valenzuela Huillcaya, Aldhair Johan Juan </b></u>
-                    <p>Participé en la revisión de las User Stories, el Product Backlog y las épicas, emitiendo juicios informados sobre la priorización y definición de funcionalidades, considerando el impacto global y social de cada desarrollo. Analicé la viabilidad económica de las propuestas, su escalabilidad y sus posibles efectos en distintos contextos de uso, asegurando que las decisiones estratégicas fueran responsables, inclusivas y sostenibles a largo plazo.
-                    </p>
-                 </li>
+                    <u><b>Cueto Dominguez, Juan Diego</b></u>
+                    <p>Definí el Planning Phase y ejecuté los Experiments, integrando los artefactos del Shareback Session...</p>
+                </li>
+                <li>
+                    <u><b>Sanchez Zamora, Fabrizio Alessandro</b></u>
+                    <p>Elaboré el Design Phase y el análisis de resultados para los Experiments...</p>
+                </li>
+                <li>
+                    <u><b>Tarazona Medina, Piero Abel</b></u>
+                    <p>Implementé el Continuous Learning e integré los resultados en el To-Be Product Backlog...</p>
+                </li>
+                <li>
+                    <u><b>Trigueros Chumacero, Flavio Eduardo</b></u>
+                    <p>Diseñé los Experiments y elaboré los To-Be Sprint Backlogs...</p>
+                </li>
+                <li>
+                    <u><b>Valenzuela Huillcaya, Aldhair Johan Juan</b></u>
+                    <p>Revisé y prioricé el Question Backlog después de interpretar los resultados de los Experiments...</p>
+                </li>
+            </ul>
+            <u><b>TP</b></u>
+            <ul>
+                <li>
+                    <u><b>Cueto Dominguez, Juan Diego</b></u>
+                    <p>Implementé y desplegué el Landing Page y la RESTful API, asegurando que cumplieran con los estándares de calidad...</p>
+                </li>
+                <li>
+                    <u><b>Sanchez Zamora, Fabrizio Alessandro</b></u>
+                    <p>Elaboré el Product Verification & Validation, incluyendo Unit Tests y Acceptance Tests...</p>
+                </li>
+                <li>
+                    <u><b>Tarazona Medina, Piero Abel</b></u>
+                    <p>Implementé el Pipeline de Integración Continua y diseñé pruebas automatizadas...</p>
+                </li>
+                <li>
+                    <u><b>Trigueros Chumacero, Flavio Eduardo</b></u>
+                    <p>Ejecuté el proceso de requirements specification, elaborando artefactos del estado To-Be...</p>
+                </li>
+                <li>
+                    <u><b>Valenzuela Huillcaya, Aldhair Johan Juan</b></u>
+                    <p>Desarrollé y validé los artefactos de Product Verification, asegurando la sostenibilidad de las pruebas...</p>
+                </li>
             </ul>
         </td>
         <td>
             <p>
-            Como equipo, hemos demostrado nuestra capacidad para emitir juicios informados en cada etapa del desarrollo de MoviGestión, considerando de manera crítica el impacto de nuestras decisiones en contextos globales, económicos, ambientales y sociales. Desde la definición inicial del producto hasta el diseño técnico y la planificación estratégica, analizamos no solo la viabilidad tecnológica, sino también las implicancias que nuestras soluciones tendrían para los usuarios, las organizaciones y la sociedad en su conjunto.  <br> <br>
-            Reflexionamos constantemente sobre la sostenibilidad de nuestras elecciones, priorizando diseños que optimicen recursos, fomenten la inclusión digital y promuevan el desarrollo económico responsable. <br> <br> Asimismo, evaluamos los riesgos y beneficios de nuestras decisiones en términos de accesibilidad, equidad de uso y adaptabilidad a diferentes contextos culturales y tecnológicos.  <br> <br>
-            Nuestra colaboración se fundamentó en principios de responsabilidad social y ética profesional, permitiéndonos construir un producto de software que no solo satisface requerimientos técnicos, sino que también contribuye positivamente al entorno en el que será implementado. Esta experiencia fortaleció nuestro compromiso con una ingeniería de software consciente y con visión de largo plazo.
+                **TB1**: A lo largo del desarrollo del proyecto, el equipo demostró un compromiso sólido con la ética y profesionalismo... <br><br> 
+                **TB2**: Cada integrante cumplió con el diseño y ejecución de Experiments, logrando resultados que alimentaron el aprendizaje continuo...<br><br>  
+                **TP**: En el tercer hito, se cumplieron los requisitos clave relacionados con la implementación, pruebas y automatización del producto de software. Esta experiencia consolidó nuestras competencias técnicas y profesionales, reafirmando nuestro compromiso con la calidad y sostenibilidad.<br><br>
             </p>
         </td>
-        <br>
     </tr>
-
+    <tr>
+        <td>Conoce al menos un sector empresarial o dominio de aplicación de soluciones de software</td>
+        <td>
+            <u><b>TB1</b></u>
+            <ul>
+                <li>
+                    <u><b>Cueto Dominguez, Juan Diego</b></u>
+                    <p>Emití juicios informados al seleccionar tecnologías de bajo costo y alta disponibilidad para el backend, frontend y aplicación móvil...</p>
+                </li>
+                <li>
+                    <u><b>Sanchez Zamora, Fabrizio Alessandro</b></u>
+                    <p>Realicé el análisis competitivo y la construcción de user personas...</p>
+                </li>
+                <li>
+                    <u><b>Tarazona Medina, Piero Abel</b></u>
+                    <p>Revisé las Style Guidelines, la arquitectura del sistema, el diagrama de clases...</p>
+                </li>
+                <li>
+                    <u><b>Trigueros Chumacero, Flavio Eduardo</b></u>
+                    <p>Desarrollé la investigación y definición de la startup...</p>
+                </li>
+                <li>
+                    <u><b>Valenzuela Huillcaya, Aldhair Johan Juan</b></u>
+                    <p>Participé en la revisión de las User Stories, el Product Backlog y las épicas...</p>
+                </li>
+            </ul>
+            <u><b>TB2</b></u>
+            <ul>
+                <li>
+                    <u><b>Cueto Dominguez, Juan Diego</b></u>
+                    <p>Definí el Planning Phase y ejecuté los Experiments...</p>
+                </li>
+                <li>
+                    <u><b>Sanchez Zamora, Fabrizio Alessandro</b></u>
+                    <p>Elaboré el Design Phase y el análisis de resultados...</p>
+                </li>
+                <li>
+                    <u><b>Tarazona Medina, Piero Abel</b></u>
+                    <p>Implementé el Continuous Learning...</p>
+                </li>
+                <li>
+                    <u><b>Trigueros Chumacero, Flavio Eduardo</b></u>
+                    <p>Diseñé los Experiments y elaboré los To-Be Sprint Backlogs...</p>
+                </li>
+                <li>
+                    <u><b>Valenzuela Huillcaya, Aldhair Johan Juan</b></u>
+                    <p>Revisé y prioricé el Question Backlog...</p>
+                </li>
+            </ul>
+            <u><b>TP</b></u>
+            <ul>
+                <li>
+                    <u><b>Cueto Dominguez, Juan Diego</b></u>
+                    <p>Implementé y desplegué el Landing Page...</p>
+                </li>
+                <li>
+                    <u><b>Sanchez Zamora, Fabrizio Alessandro</b></u>
+                    <p>Elaboré el Product Verification & Validation...</p>
+                </li>
+                <li>
+                    <u><b>Tarazona Medina, Piero Abel</b></u>
+                    <p>Implementé el Pipeline de Integración Continua...</p>
+                </li>
+                <li>
+                    <u><b>Trigueros Chumacero, Flavio Eduardo</b></u>
+                    <p>Ejecuté el proceso de requirements specification...</p>
+                </li>
+                <li>
+                    <u><b>Valenzuela Huillcaya, Aldhair Johan Juan</b></u>
+                    <p>Desarrollé y validé los artefactos de Product Verification...</p>
+                </li>
+            </ul>
+        </td>
+        <td>
+            <p>
+                **TB1**: Durante este hito, se seleccionaron tecnologías adecuadas y se diseñaron soluciones sostenibles..<br><br>
+                **TB2**: Los Experiments permitieron evaluar e iterar soluciones efectivas y responsables...  <br><br>
+                **TP**: En el tercer hito, se implementaron soluciones completas y se validaron mediante pruebas exhaustivas, asegurando calidad y sostenibilidad.<br><br>
+            </p>
+        </td>
+    </tr>
 </table>
