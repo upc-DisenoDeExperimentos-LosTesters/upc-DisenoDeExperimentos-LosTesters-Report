@@ -54,7 +54,7 @@
     </tr>
 </table>
 
-<center> Mayo, 2025</center>
+<center> Junio, 2025</center>
 
 ---
 
