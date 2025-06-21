@@ -192,61 +192,6 @@ _Tabla de las historias de usuarios establecidas para todo el proyecto de MoviGe
       </td>
       <td >EP04</td>
     </tr>
-    <tr>
-      <td >US07</td>
-      <td >Gestión de inventario de flotas</td>
-      <td >Como gerente, quiero añadir nuevas flotas (registrando detalles como tipo, capacidad, placa, estado) a mi negocio para tener un control activo de mis flotas y asegurar la disponibilidad de vehículos para las operaciones.</td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: Adición de Nueva Flota </b> 
-          Dado que el gerente está en la sección de gestión de flotas, cuando ingresa los detalles de una nueva flota y guarda, entonces la nueva flota aparece en la lista de flotas disponibles.
-          </li>
-          <li> 
-          <b>Criterio 2: Edición de Detalles de Flota </b> 
-          Dado que el gerente selecciona una flota existente en la sección de gestión de flotas, cuando edita su información y guarda los cambios, entonces los cambios se guardan correctamente en el sistema.
-          </li>
-        </u>
-      </td>
-      <td >EP04</td>
-    </tr>
-     <tr>
-      <td >US08</td>
-      <td >Gestión de Perfil de Gerente</td>
-      <td >Como gerente, quiero visualizar y editar mi información personal (como nombre, correo electrónico, número de teléfono) para </td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: Visualización de Perfil de Gerente </b> 
-          Dado que el gerente ha iniciado sesión en el sistema, cuando accede a la sección de "Mi Perfil", entonces el sistema muestra sus datos personales (nombre, correo electrónico, teléfono).
-          </li>
-          <li> 
-          <b>Criterio 2: Edición y Guardado de Perfil de Gerente  </b> 
-          Dado que el gerente edita sus datos personales y guarda los cambios, entonces los cambios se guardan y se reflejan correctamente en el sistema.
-          </li>
-        </u>
-      </td>
-      <td >EP06</td>
-    </tr>
-    </tr>
-     <tr>
-      <td >US09</td>
-      <td >Gestión de Perfil de Transportista</td>
-      <td >Como transportista, quiero visualizar y editar mi información personal (como nombre, correo electrónico, número de teléfono, información de contacto de emergencia) para asegurarme de que mis datos estén correctos y actualizados en el sistema. </td>
-      <td>
-        <ul> 
-          <li> 
-          <b>Criterio 1: Visualización de Perfil de Transportista </b> 
-          Dado que el transportista ha iniciado sesión en la aplicación, cuando accede a la sección de "Mi Perfil", entonces el sistema muestra sus datos personales (nombre, correo electrónico, teléfono, contacto de emergencia).
-          </li>
-          <li> 
-          <b>Criterio 2: Edición y Guardado de Perfil de Transportista  </b> 
-          Dado que el transportista edita sus datos personales y guarda los cambios, entonces los cambios se guardan y se reflejan correctamente en el sistema.
-          </li>
-        </u>
-      </td>
-      <td >EP06</td>
-    </tr>
   </tbody>
 </table>
 
@@ -268,7 +213,7 @@ _Impact Mapping de los dos user persona del proyecto._
   ![ImpactMapping_5](/assets/chapter03/impact-map-5.jpeg) <br><br>
   ![ImpactMapping_6](/assets/chapter03/impact-map-6.jpeg) <br><br>
 
-## 3.4. Product Backlog.
+## 3.4. Product Backlog
 
 - En esta sección del proyecto vamos a esquematizar y completar el Product Backlog, un elemento fundamental en la gestión ágil de proyectos de desarrollo de software. El Product Backlog actúa como una lista dinámica y priorizada de todas las funcionalidades, mejoras y requisitos que deben ser desarrollados para el producto. Su orden se basa en la priorización del valor para el negocio y es clave para guiar el trabajo del equipo de desarrollo a lo largo del proyecto.
 - El Product Backlog se compone de historias de usuario, tareas técnicas y otras actividades relacionadas con el desarrollo del producto. Este orden sigue una lógica clara, colocando en primer lugar aquellas historias relacionadas con la experiencia del usuario en la Landing Page, seguidas de las funcionalidades esenciales de la aplicación web, y finalmente, las historias técnicas necesarias para el desarrollo del sistema (Patton et al., 2014).
@@ -289,66 +234,46 @@ _Impact Mapping de los dos user persona del proyecto._
   <tbody>
     <tr>
       <td>1</td>
-      <td>US07</td>
-      <td>Asignación de envío</td>
-      <td>Como gerente, quiero poder asignar envíos a mis transportistas seleccionando de una lista de envíos pendientes y transportistas disponibles, considerando la capacidad del vehículo y la ubicación, para distribuir eficientemente los envíos y optimizar los tiempos de entrega.</td>
-      <td>3</td>
+      <td>US01</td>
+      <td>Visualización de paquetes entregados por un transportista</td>
+      <td>Como gerente, quiero visualizar el número y detalle de paquetes entregados por un transportista en un período específico para medir su rendimiento en términos de productividad y eficiencia.</td>
+      <td>2</td>
     </tr>
     <tr>
       <td>2</td>
-      <td>US09</td>
-      <td>Asignación de flota</td>
-      <td>Como gerente, quiero asignar flotas (especificando un vehículo o un grupo de vehículos) a mis transportistas para un período determinado o para una ruta específica, considerando la capacidad y el tipo de carga, para que puedan realizar los encargos con el vehículo adecuado.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>US10</td>
-      <td>Gestión de inventario de flotas</td>
-      <td>Como gerente, quiero añadir nuevas flotas (registrando detalles como tipo, capacidad, placa, estado) a mi negocio para tener un control activo de mis flotas y asegurar la disponibilidad de vehículos para las operaciones.</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>US08</td>
-      <td>Visualización de historial de envíos</td>
-      <td>Como gerente, quiero ver el historial de envíos realizados, incluyendo el estado final (exitoso, fallido, cancelado), fechas, transportistas asignados y motivos de fallo (si aplica) para saber cuántos de estos fueron exitosos y analizar las causas de los envíos no exitosos para mejorar la eficiencia futura.</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>5</td>
       <td>US02</td>
       <td>Visualización de reportes de un transportista</td>
-      <td>Como gerente, quiero ver los tipos y detalles de los reportes hechos por mis transportistas (ej. incidencias, problemas con paquetes) filtrados por período y transportista para tomar decisiones estratégicas en los próximos envíos basadas en problemas recurrentes o áreas de mejora.</td>
+      <td>Como gerente, quiero ver los tipos y detalles de los reportes hechos por mis transportistas (ej. incidencias, problemas con paquetes) filtrados por período y transportista para tomar decisiones estratégicas en los próximos envíos basadas en problemas recurrentes o áreas de mejora.	</td>
       <td>3</td>
     </tr>
     <tr>
-      <td>6</td>
+      <td>3</td>
       <td>US03</td>
       <td>Visualización de envíos asignados a un transportista</td>
       <td>Como gerente, quiero ver el listado de envíos asignados a un transportista, incluyendo fechas de entrega, estado actual y detalles del envío, para poder medir el rendimiento de mis empleados en relación con la carga de trabajo y el cumplimiento de plazos.</td>
       <td>3</td>
     </tr>
     <tr>
-      <td>7</td>
-      <td>US01</td>
-      <td>Visualización de paquetes entregados por un transportista</td>
-      <td>Como gerente, quiero visualizar el número y detalle de paquetes entregados por un transportista en un período específico para medir su rendimiento en términos de productividad y eficiencia.</td>
+      <td>4</td>
+      <td>US04</td>
+      <td>Asignación de envíos</td>
+      <td>Como gerente, quiero poder asignar envíos a mis transportistas seleccionando de una lista de envíos pendientes y transportistas disponibles, considerando la capacidad del vehículo y la ubicación, para distribuir eficientemente los envíos y optimizar los tiempos de entrega.</td>
       <td>5</td>
     </tr>
     <tr>
-      <td>8</td>
-      <td>US15</td>
-      <td>Gestión de Perfil de Gerente</td>
-      <td>Como gerente, quiero visualizar y editar mi información personal (como nombre, correo electrónico, número de teléfono) para asegurarme de que mis datos estén correctos y actualizados en el sistema.</td>
+      <td>5</td>
+      <td>US05</td>
+      <td>Visualización de historial de envíos</td>
+      <td>Como gerente, quiero ver el historial de envíos realizados, incluyendo el estado final (exitoso, fallido, cancelado), fechas, transportistas asignados y motivos de fallo (si aplica) para saber cuántos de estos fueron exitosos y analizar las causas de los envíos no exitosos para mejorar la eficiencia futura.</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>US06</td>
+      <td>Asignación de flotas</td>
+      <td>Como gerente, quiero asignar flotas (especificando un vehículo o un grupo de vehículos) a mis transportistas para un período determinado o para una ruta específica, considerando la capacidad y el tipo de carga, para que puedan realizar los encargos con el vehículo adecuado.</td>
       <td>2</td>
     </tr>
     <tr>
-      <td>9</td>
-      <td>US16</td>
-      <td>Gestión de Perfil de Transportista</td>
-      <td>Como transportista, quiero visualizar y editar mi información personal (como nombre, correo electrónico, número de teléfono, información de contacto de emergencia) para asegurarme de que mis datos estén correctos y actualizados en el sistema.</td>
-      <td>2</td>
-    </tr>
   </tbody>
 </table>
