@@ -241,11 +241,133 @@ En esta sección presentamos las Experiment‑Ready Questions, un conjunto de pr
 ## 8.2. Experiment Design
 
 ### 8.2.1. Hypotheses
-  
+
+
+|                        | **Hypothesis**                                                                                                                                      |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**           | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables?                    |
+| **Belief**             | La configuración de notificaciones multicanal permitirá una mejor coordinación y una respuesta más rápida a incidencias críticas.                    |
+| **Hypothesis**         | La implementación de notificaciones multicanal configurables reducirá el tiempo promedio de respuesta a incidencias en al menos un 30%.             |
+| **Null Hypothesis**    | La implementación de notificaciones multicanal configurables no tendrá impacto significativo en el tiempo promedio de respuesta a incidencias.       |
+
+
+
+|                        | **Hypothesis**                                                                                                                                      |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**           | ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach‑marks?                    |
+| **Belief**             | Los tutoriales interactivos y coach‑marks ayudarán a nuevos usuarios a comprender mejor la interfaz y avanzar de manera más eficiente en su flujo inicial. |
+| **Hypothesis**         | La introducción de tutoriales interactivos y coach‑marks reducirá la tasa de abandono de nuevos usuarios en al menos un 15% durante el proceso de onboarding inicial. |
+| **Null Hypothesis**    | La introducción de tutoriales interactivos y coach‑marks no reducirá significativamente la tasa de abandono de nuevos usuarios durante el proceso de onboarding inicial. |
+
+
+
+|                        | **Hypothesis**                                                                                                                                      |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**           | ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico?                    |
+| **Belief**             | Los skeleton screens reducirán la percepción de lentitud y mejorarán la satisfacción de los usuarios durante la carga de pantallas críticas.          |
+| **Hypothesis**         | El uso de skeleton screens en pantallas críticas reducirá la percepción de lentitud y aumentará la satisfacción de los usuarios en al menos un 10%.  |
+| **Null Hypothesis**    | El uso de skeleton screens en pantallas críticas no mejorará significativamente la percepción de lentitud ni aumentará la satisfacción de los usuarios. |
+
+
+
+|                        | **Hypothesis**                                                                                                                                      |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**           | ¿Incrementará la base de usuarios activos la internacionalización al inglés?                    |
+| **Belief**             | La internacionalización de la interfaz al inglés permitirá expandir la base de usuarios en mercados clave que prefieren este idioma.                 |
+| **Hypothesis**         | La internacionalización de la interfaz al inglés incrementará la base de usuarios activos en al menos un 20% dentro de seis meses posteriores a su implementación. |
+| **Null Hypothesis**    | La internacionalización de la interfaz al inglés no incrementará significativamente la base de usuarios activos dentro de seis meses posteriores a su implementación. |
+
+
+
+|                        | **Hypothesis**                                                                                                                                      |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**           | ¿Mejorará la experiencia añadiendo un modo oscuro a la aplicación web?                    |
+| **Belief**             | Un modo oscuro facilitará la navegación en entornos con poca luz, mejorando la comodidad visual y el compromiso de los usuarios.                     |
+| **Hypothesis**         | La introducción de un modo oscuro a la aplicación incrementará el tiempo promedio de uso en un 25% y aumentará la satisfacción percibida de al menos el 60% de los usuarios. |
+| **Null Hypothesis**    | La introducción de un modo oscuro no incrementará significativamente el tiempo promedio de uso ni mejorará significativamente la satisfacción percibida de los usuarios. |
+
 ### 8.2.2. Measures
-  
+
+### Question: ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables?
+
+| Measure |
+|---------|
+| **Tiempo promedio de respuesta:** Registrar el tiempo promedio que transcurre desde que ocurre una incidencia hasta que se toma la primera acción correctiva antes y después de la implementación. <br> **Satisfacción del usuario:** Realizar encuestas y entrevistas a gerentes y transportistas para evaluar la percepción de mejora en la coordinación y rapidez de notificaciones. <br> **Canal preferido:** Monitorear las configuraciones de usuarios para identificar qué canales (push, email, SMS) son los más usados y cómo contribuyen a la efectividad. |
+
+---
+
+### Question: ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach-marks?
+
+| Measure |
+|---------|
+| **Tasa de finalización del onboarding:** Comparar la cantidad de usuarios que completan el proceso antes y después de implementar los tutoriales interactivos. <br> **Tiempo promedio por paso:** Medir el tiempo promedio dedicado en cada etapa del onboarding y detectar posibles fricciones. <br> **Percepción del usuario:** Recopilar feedback directo mediante encuestas rápidas que midan la claridad, utilidad y satisfacción del flujo guiado. |
+
+---
+
+### Question: ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico?
+
+| Measure |
+|---------|
+| **Percepción de velocidad:** Evaluar, mediante encuestas, la experiencia de los usuarios con skeleton screens versus el loader clásico en términos de fluidez y percepción de espera. <br> **Métricas técnicas clave:** Analizar métricas como el Largest Contentful Paint (LCP) y el First Contentful Paint (FCP) para determinar mejoras cuantitativas. <br> **Engagement en pantallas clave:** Monitorear la interacción del usuario (clics, scrolls) en pantallas críticas después de los cambios. |
+
+---
+
+### Question: ¿Incrementará la base de usuarios activos la internacionalización al inglés?
+
+| Measure |
+|---------|
+| **Nuevas regiones activas:** Comparar el número de usuarios registrados y activos provenientes de mercados angloparlantes antes y después de implementar la internacionalización. <br> **Engagement regional:** Analizar métricas de interacción (sesiones, tiempo promedio de uso) segmentadas por región para medir la adopción. <br> **Comentarios culturales:** Realizar encuestas cualitativas y análisis de soporte para identificar posibles ajustes culturales o de idioma. |
+
+---
+
+### Question: ¿Mejorará la experiencia añadiendo un modo oscuro a la aplicación web?
+
+| Measure |
+|---------|
+| **Uso del modo oscuro:** Monitorear qué porcentaje de usuarios activa el modo oscuro y su frecuencia de uso en comparación con el modo claro. <br> **Satisfacción visual:** Evaluar mediante encuestas la percepción de mejora en la comodidad visual, especialmente en entornos con poca luz. <br> **Incremento de tiempo de uso:** Comparar el tiempo promedio que los usuarios pasan en la plataforma antes y después de la implementación del modo oscuro para medir impacto en engagement. |
+
+
 ### 8.2.3. Conditions
-  
+
+### Question: ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables?
+
+| Condición Experimental     | Condición de Control                                                                                            |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Implementación de un sistema de notificaciones multicanal (push, email, SMS) configurables, permitiendo a los usuarios seleccionar canales y frecuencia de alertas. El tiempo de respuesta a incidencias críticas disminuirá en un 30%, medido a través de tiempos promedio registrados antes y después de la implementación. | Uso del sistema actual sin notificaciones configurables ni opciones multicanal. Los reportes permanecen internos en la aplicación, con una comunicación más lenta y menos eficiente. |
+
+---
+
+### Question: ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach-marks?
+
+| Condición Experimental                                                                                                   | Condición de Control                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Desarrollo de tutoriales interactivos y coach-marks que guían a los usuarios paso a paso durante su primera sesión, destacando funciones clave y facilitando la navegación. La tasa de abandono disminuirá en un 15%, evaluado mediante análisis de embudo en las etapas del flujo de registro. | Uso de la interfaz actual sin tutoriales ni guías interactivas, dejando que los usuarios exploren la plataforma por su cuenta, lo que aumenta la probabilidad de abandono. |
+
+---
+
+### Question: ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico?
+
+| Condición Experimental                                                                                                   | Condición de Control                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Implementación de skeleton screens en pantallas críticas para mostrar placeholders dinámicos mientras se carga el contenido real. La percepción de velocidad aumentará en un 25%, evaluado mediante encuestas de usuarios y tiempos hasta la primera interacción perceptible. | Uso del loader clásico, que presenta un ícono animado genérico durante la carga, creando una mayor percepción de espera. |
+
+---
+
+### Question: ¿Incrementará la base de usuarios activos la internacionalización al inglés?
+
+| Condición Experimental                                                                                                   | Condición de Control                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Internacionalización de la plataforma al inglés, con soporte para formatos globales (fechas, moneda, zonas horarias) y documentación adaptada. La base de usuarios activos crecerá en un 20%, evaluado mediante registros y usuarios recurrentes en mercados internacionales. | Plataforma disponible únicamente en español, sin soporte para formatos internacionales ni opciones de idioma adicionales, limitando la adopción en mercados extranjeros. |
+
+---
+
+### Question: ¿Mejorará la experiencia añadiendo un modo oscuro a la aplicación web?
+
+| Condición Experimental                                                                                                   | Condición de Control                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| Adición de un modo oscuro en la aplicación, configurable desde las preferencias de usuario. La satisfacción aumentará en un 20%, medido mediante encuestas y puntajes de valoración de experiencia visual. | Uso exclusivo del modo claro actual, sin opciones de personalización de esquema de colores, lo que puede generar fatiga visual en condiciones de baja iluminación. |
+
+
 ### 8.2.4. Scale Calculations and Decisions
   
 ### 8.2.5. Methods Selection
@@ -253,3 +375,62 @@ En esta sección presentamos las Experiment‑Ready Questions, un conjunto de pr
 ### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection
   
 ### 8.2.7. Web and Mobile Tracking Plan
+
+Para **MoviGestión**, nuestro objetivo es optimizar y monitorear la aplicación web y móvil con el fin de mejorar la gestión de flotas, garantizar la eficiencia operativa y maximizar la satisfacción de los usuarios. A medida que implementamos mejoras clave, estableceremos un plan de seguimiento detallado que nos permita evaluar el impacto de las funcionalidades introducidas y garantizar el cumplimiento de los objetivos planteados. 
+
+El monitoreo de las funcionalidades experimentales se realizará en dos etapas principales:
+
+
+#### 1. Implementación Inicial
+
+Durante esta etapa, nos centraremos en el despliegue de las nuevas funcionalidades y en la recopilación de datos iniciales para establecer una línea base de rendimiento.
+
+##### **Recopilación de Datos**
+
+- **Métricas de Uso:** 
+  - Número de usuarios activos diarios y mensuales (DAU/MAU). 
+  - Duración promedio de las sesiones. 
+  - Tasa de uso de funcionalidades críticas, como la visualización de rutas, la carga de envíos y el registro de incidencias.
+
+- **Interacciones de los Usuarios:** 
+  - Cantidad de clics en botones clave (e.g., "Optimizar Ruta", "Reportar Incidencia"). 
+  - Frecuencia de acceso a vistas críticas como el dashboard y el historial de operaciones.
+
+- **Feedback de Usuarios:** 
+  - Encuestas integradas en la aplicación para evaluar la percepción sobre la usabilidad de las nuevas funcionalidades, incluyendo tutoriales interactivos y configuraciones de notificaciones.
+
+##### **Análisis Comparativo**
+- Comparación entre las métricas obtenidas tras la implementación de las funcionalidades con los datos históricos de la plataforma. 
+- Identificación de cambios en el rendimiento técnico (e.g., First Contentful Paint, Largest Contentful Paint).
+
+
+#### 2. Seguimiento Continuo
+
+Después de la implementación inicial, se establecerá un sistema continuo de monitoreo y evaluación para realizar ajustes basados en datos y mejorar la experiencia del usuario.
+
+##### **Recopilación de Datos**
+
+- **Métricas en Tiempo Real:**
+  - Uso de herramientas como Google Analytics y Firebase para rastrear el comportamiento del usuario en tiempo real.
+  - Identificación de tendencias de uso, como los horarios pico de actividad y las funcionalidades más utilizadas.
+
+- **Segmentación de Usuarios:**
+  - Separación de datos por tipo de usuario (gerentes, transportistas, administradores).
+  - Análisis de patrones de interacción específicos de cada grupo para personalizar mejoras.
+
+- **Tasa de Retención:**
+  - Seguimiento de usuarios recurrentes mensuales (MRR). 
+  - Evaluación de la tasa de abandono en etapas clave como el onboarding o el registro de vehículos.
+
+##### **Evaluación y Ajustes**
+
+- **Informes Periódicos:**
+  - Generación de informes mensuales que incluyan datos clave, análisis de tendencias y recomendaciones para optimización.
+  - Identificación de oportunidades para iterar en las funcionalidades implementadas.
+
+- **Iteración Basada en Datos:**
+  - Ajustes en tiempo real en la interfaz de usuario, notificaciones y optimización de rutas con base en los datos recopilados y el feedback de usuarios.
+  - Priorización de futuras actualizaciones y mejoras basadas en las métricas de impacto.
+
+
+Este enfoque asegurará que **MoviGestión** evolucione continuamente en función de los datos, maximizando su utilidad para los usuarios y consolidándose como una herramienta esencial en la gestión de flotas de transporte.
