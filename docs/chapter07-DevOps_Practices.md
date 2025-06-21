@@ -247,3 +247,81 @@ Se planea la integración de un canal de alertas para notificaciones inmediatas 
 * Despliegues reversibles y validación previa con Review Apps.
 
 * Alineación con DevOps y prácticas modernas de entrega continua.
+
+
+## 7.4. Continuous monitoring
+
+El Monitoreo Continuo es un componente fundamental dentro del enfoque DevOps de MoviGestión, ya que permite observar en tiempo real el comportamiento del sistema en ambientes de staging y producción. Este monitoreo incluye desde la experiencia del usuario hasta el estado interno de los servicios backend, facilitando la detección proactiva de errores, cuellos de botella, desviaciones de rendimiento o posibles vulnerabilidades. El objetivo es asegurar la continuidad operativa y ofrecer una experiencia estable al usuario final.
+
+### 7.4.1. Tools and Practices.
+
+A continuación, se detallan las herramientas y prácticas empleadas por el equipo de MoviGestión para lograr un monitoreo continuo eficaz:
+
+**Pruebas de carga y estrés (JMeter):** Utilizamos Apache JMeter para simular múltiples usuarios concurrentes y escenarios de alta carga. Esto permite evaluar el comportamiento del sistema bajo condiciones extremas, detectar cuellos de botella en servicios críticos como autenticación, generación de rutas o paneles de reportes, y validar la escalabilidad horizontal del backend. Estas pruebas son ejecutadas de manera programada o previa a cada release importante, como parte del proceso de validación continua.
+
+![BicasTeam API](../assets/chapter07/jmeter.png)
+
+**Monitoreo de experiencia del usuario (Datadog y Google Analytics):** Para comprender cómo los usuarios interactúan con la aplicación, integramos herramientas que recopilan métricas de navegación, tiempos de respuesta y eventos críticos.
+
+Google Analytics proporciona información sobre los flujos de navegación, tasa de rebote y puntos de abandono, lo cual permite optimizar la interfaz y estructura de contenidos.
+
+![BicasTeam API](../assets/chapter07/GoogleAnalytics.jpg)
+
+Datadog, incluso en su versión gratuita, ofrece visibilidad detallada de la experiencia del usuario mediante métricas como latencia, tiempo de carga, errores de frontend y eventos personalizados. Esta información permite detectar anomalías en tiempo real y priorizar acciones correctivas que impacten directamente en la percepción del servicio.
+
+![BicasTeam API](../assets/chapter07/DataDog.png)
+
+**Supervisión de APIs (Postman + Pingdom):** Las APIs internas y externas son monitoreadas constantemente para asegurar disponibilidad, estabilidad y cumplimiento de contratos. Con Postman definimos colecciones de pruebas que se ejecutan automáticamente para verificar respuestas esperadas, tiempos máximos permitidos y validaciones de esquema JSON. Pingdom, por su parte, permite monitoreo externo de endpoints públicos desde distintas ubicaciones geográficas, asegurando que el sistema sea accesible y funcional para usuarios en diferentes regiones.
+
+![BicasTeam API](../assets/chapter07/postman.png)
+
+**Auditorías de calidad web (Google Lighthouse + Catchpoint):**
+
+Google Lighthouse realiza evaluaciones detalladas del frontend sobre criterios clave como accesibilidad, rendimiento, optimización móvil, SEO y buenas prácticas. Estas auditorías permiten a los desarrolladores identificar problemas de frontend que afectan tanto la velocidad como la usabilidad.
+
+![BicasTeam API](../assets/chapter07/LighthouseGoogle.png)
+
+Catchpoint complementa estas evaluaciones mediante pruebas de experiencia digital desde múltiples dispositivos, navegadores y ubicaciones. Así se valida que los usuarios finales reciban una experiencia consistente independientemente de su entorno o red.
+
+![BicasTeam API](../assets/chapter07/Catchpoint.jpg)
+
+Este conjunto de herramientas no solo permite monitorear la aplicación desde distintos ángulos, sino que forma parte integral de nuestros pipelines automatizados, garantizando visibilidad continua, capacidad de respuesta inmediata y mejora constante del producto a lo largo del tiempo.
+
+### 7.4.2. Monitoring Pipeline Components.
+
+El pipeline de monitoreo continuo en MoviGestión está diseñado para proporcionar visibilidad completa del estado del sistema en tiempo real, desde entornos de staging hasta producción. Este pipeline abarca cuatro fases principales: recolección, almacenamiento, análisis y visualización de datos. En la fase de recolección, herramientas como Heroku Metrics, Sentry, Google Analytics y, en una siguiente etapa, Prometheus, permiten capturar métricas clave del sistema, errores en tiempo real, patrones de navegación y rendimiento del frontend. Estos datos se almacenan de forma estructurada utilizando componentes como GitHub Actions Artifacts, logs de Heroku, y servicios como Datadog, permitiendo conservar el historial operativo para su posterior análisis.
+
+Durante la fase de análisis, herramientas como Google Lighthouse y Catchpoint permiten evaluar la calidad de la interfaz desde múltiples perspectivas, incluyendo accesibilidad, rendimiento, tiempos de carga y consistencia en diferentes dispositivos y ubicaciones. Complementariamente, JMeter se utiliza para simular cargas y validar el comportamiento del sistema bajo condiciones de alta demanda. Finalmente, en la fase de visualización, se integran paneles personalizados mediante Grafana (en etapas avanzadas), los tableros de Sentry, las métricas en tiempo real de Datadog, y la consola de administración de Heroku, lo que proporciona al equipo técnico una visión clara e inmediata del estado del sistema.
+
+![BicasTeam API](../assets/chapter07/pingdom.jpg)
+
+Este pipeline no solo permite monitorear continuamente la salud de los servicios y la experiencia del usuario, sino que también facilita la toma de decisiones basada en datos concretos y contribuye a la mejora continua del producto.
+
+
+### 7.4.3. Alerting Pipeline Components.
+
+El sistema de alertas en MoviGestión garantiza una respuesta oportuna ante cualquier fallo o condición crítica detectada en el sistema.
+
+* Prometheus + Alertmanager conforman el núcleo del sistema de alertas de infraestructura. Prometheus recopila métricas clave del sistema en tiempo real, como uso de CPU, latencia, tasa de errores o saturación de servicios, y permite definir reglas de alerta basadas en expresiones lógicas (PromQL). Cuando se detecta una condición crítica (por ejemplo, más de un 5% de errores 5xx en un endpoint durante más de 2 minutos), estas alertas se envían a Alertmanager. Este componente gestiona el enrutamiento, agrupamiento, silenciamiento y distribución de alertas mediante múltiples canales como Slack, correo electrónico o Microsoft Teams, según su nivel de severidad. Esta arquitectura asegura una reacción rápida y filtrada a eventos relevantes, reduciendo el ruido y mejorando la eficiencia en la respuesta operativa.
+
+![BicasTeam API](../assets/chapter07/prometheus.png)
+
+* Sentry se encarga del monitoreo y alerta de errores de tiempo de ejecución tanto en el frontend como en el backend. Su integración con los entornos de producción permite capturar excepciones, fallos no controlados, errores de consola y trazas completas de stack en tiempo real. Cuando ocurre un error, Sentry genera alertas automáticas con contexto detallado (usuario afectado, navegador, acción que causó el fallo), lo que permite reproducir el incidente y priorizar su resolución. Además, permite configurar umbrales de frecuencia (por ejemplo, si un mismo error ocurre más de X veces en una hora) y enviar alertas a canales específicos como Slack o Discord, garantizando que los errores más críticos no pasen desapercibidos.
+
+![BicasTeam API](../assets/chapter07/sentry.png)
+
+* Grafana, por su parte, se integra directamente con Prometheus para la visualización de datos históricos y en tiempo real. Además de su función como herramienta de dashboards, Grafana permite definir alertas visuales directamente desde los paneles, configurando condiciones de activación, duración mínima de la condición y frecuencia de evaluación. Estas alertas también se pueden canalizar hacia Alertmanager, logrando así una cobertura completa desde la observación hasta la acción.
+
+![BicasTeam API](../assets/chapter07/grafana.png)
+
+* GitHub Actions + Health Checks forman un segundo mecanismo de alerta centrado en la validación post-despliegue. Al finalizar un despliegue en staging o producción, se ejecutan automáticamente validaciones de disponibilidad y estado de servicios mediante scripts cURL, ping a endpoints críticos y pruebas de smoke test. Si alguna de estas validaciones falla —por ejemplo, si el endpoint /api/auth/login no responde en menos de 500ms o retorna un código de error—, el workflow se detiene y lanza una notificación automática al equipo mediante issues, correos configurados o integraciones webhook, permitiendo tomar acción inmediata o incluso ejecutar un rollback si es necesario.
+
+![BicasTeam API](../assets/chapter07/GithubActions.png)
+
+Esta combinación de mecanismos de alerta —a nivel de infraestructura, despliegue y ejecución— permite a MoviGestión mantener un sistema resiliente, con capacidad de respuesta inmediata ante incidentes y un alto estándar de confiabilidad operativa.
+
+### 7.4.4. Notification Pipeline Components.
+
+El pipeline de notificaciones en MoviGestión permite comunicar de forma automática el estado de ejecución de cada etapa del ciclo de integración, pruebas, entrega y monitoreo. Su principal objetivo es mantener informados a los miembros del equipo sobre la calidad del software, los resultados de validaciones críticas y cualquier fallo detectado durante la ejecución de los pipelines. Para esto, se emplea principalmente Jenkins, que permite configurar notificaciones detalladas al finalizar cada etapa del pipeline, informando sobre el éxito o fallo del build, el tiempo de ejecución, y los errores o advertencias generadas. Estas notificaciones pueden enviarse automáticamente por correo electrónico o mediante integraciones con canales de comunicación como Slack, Microsoft Teams o incluso Telegram, según la configuración del equipo.
+
+Adicionalmente, Jenkins permite automatizar el envío de reportes periódicos con resúmenes del estado del sistema, cobertura de pruebas, errores encontrados, y métricas relevantes. Estas funcionalidades brindan visibilidad continua a los stakeholders y al equipo técnico, permitiendo tomar decisiones informadas y oportunas. La integración de este sistema con herramientas como Sentry o Prometheus garantiza que tanto los errores en tiempo de ejecución como los eventos críticos de infraestructura puedan derivar en notificaciones inmediatas a los responsables correspondientes. Gracias a este pipeline, MoviGestión asegura una comunicación fluida y proactiva en cada ciclo de entrega, minimizando tiempos de reacción y reforzando su compromiso con la calidad y estabilidad del sistema.
