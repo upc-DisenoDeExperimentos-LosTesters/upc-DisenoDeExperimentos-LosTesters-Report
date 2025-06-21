@@ -94,11 +94,62 @@ En este proyecto se utilizó Selenium para llevar a cabo las pruebas de Core Sys
 
 ### 6.2.1. Static Code Analysis
 
+El análisis estático del código es un pilar fundamental en la metodología de desarrollo de MoviGestión. Consiste en la inspección automatizada del código fuente sin necesidad de ejecutarlo, con el objetivo primordial de identificar tempranamente fallos potenciales, vulnerabilidades de seguridad y desviaciones de las buenas prácticas de programación. Este enfoque proactivo es vital para mantener una base de código robusta, optimizar la eficiencia del desarrollo y reducir la acumulación de deuda técnica a lo largo del ciclo de vida del proyecto. Dado que MoviGestión abarca un frontend web con Vue.js, un backend en .NET Framework y una aplicación móvil con Flutter, la estrategia de análisis estático se adapta a las particularidades de cada ecosistema tecnológico.
+
 ### 6.2.1.1. Coding stantard & Code conventions
+
+La consistencia en el estilo y las convenciones de codificación es crucial para la legibilidad, mantenibilidad y la colaboración efectiva dentro del equipo de MoviGestión. Establecer y adherirse a un conjunto claro de directrices asegura que el código sea uniforme, fácil de comprender y modificar por cualquier desarrollador, independientemente de la tecnología específica. En MoviGestión, nos guiamos por los siguientes principios clave:
+
+- Claridad y Expresividad: Adoptamos la filosofía de que el código debe ser autoexplicativo siempre que sea posible. Esto implica el uso de nombres completos y significativos para variables, funciones, clases y componentes, que reflejen claramente su propósito y el dominio de negocio (gestión de flotas, envíos, incidencias). Se prioriza la legibilidad sobre la brevedad, buscando que el flujo lógico del programa sea evidente a simple vista.
+- Modularidad y Responsabilidad Única: Cada unidad de código (ya sea una función en Vue.js, un método en C# o un widget en Flutter) debe tener una única responsabilidad bien definida. Esto promueve la creación de componentes y servicios pequeños, cohesivos y fáciles de probar y mantener. En el backend de .NET, esto se manifiesta en una clara separación de capas; en el frontend web, en componentes Vue reutilizables; y en la aplicación Flutter, en la descomposición de la interfaz de usuario en widgets manejables.
+- Uniformidad Estructural: Se establecen reglas específicas para el formato del código, incluyendo la indentación, el uso de espacios, la colocación de llaves y la organización de importaciones. Esta uniformidad, aplicada transversalmente en todos los lenguajes y frameworks de MoviGestión, elimina distracciones visuales y permite a los desarrolladores enfocarse en la lógica de negocio, no en las diferencias de estilo. Se utilizan herramientas de formato automatizadas para garantizar la adherencia constante a estas convenciones.
 
 ### 6.2.1.2. Code Quality & Code Security
 
+Garantizar la alta calidad y la robustez del código es fundamental para la fiabilidad de MoviGestión, un sistema que gestiona operaciones críticas de flotas. Esto implica no solo la ausencia de errores, sino también la eficiencia, escalabilidad y seguridad inherente de la solución.
+
+- Excelencia Técnica y Métricas: La calidad del código se evalúa y se busca optimizar de forma continua. Esto incluye monitorear métricas como la complejidad ciclomática, que indica la intrincación de los flujos de control del código, y la densidad de "code smells", que señala áreas con posibles problemas de diseño o mantenibilidad. La cobertura de pruebas automatizadas es otra métrica esencial, asegurando que las funcionalidades críticas de MoviGestión estén debidamente validadas. La plataforma SonarQube juega un rol clave en este monitoreo, proporcionando un panorama integral del "estado de salud" del código en todos los módulos del proyecto (Vue.js, .NET, Flutter).
+- Seguridad Intrínseca: La seguridad es diseñada desde las primeras fases de desarrollo. Se implementan prácticas de codificación defensiva para mitigar vulnerabilidades comunes que podrían afectar la integridad de los datos de la flota o la privacidad de los usuarios. Esto incluye:
+  - Validación Rigurosa de Entradas: Asegurar que todas las entradas de usuario, tanto en el frontend como en el backend, sean validadas y sanitizadas para prevenir ataques como inyección SQL, XSS o path traversal.
+  - Gestión Segura de Dependencias: Realizar un escaneo regular de las bibliotecas y paquetes de terceros utilizados en Vue.js, .NET y Flutter para detectar y actualizar versiones con vulnerabilidades conocidas.
+  - Principios de Menor Privilegio: Diseñar el acceso a los recursos y datos con el principio de mínimo privilegio, asegurando que los usuarios y los componentes del sistema solo tengan los permisos estrictamente necesarios.
+- Integración de Detección Temprana (SonarLint): Para infundir una cultura de calidad y seguridad directamente en el flujo de trabajo diario de los desarrolladores, se utiliza SonarLint. Esta extensión se integra directamente en los IDEs (como Visual Studio para .NET y VS Code para Vue.js/Flutter) y proporciona retroalimentación instantánea sobre problemas de calidad y seguridad mientras el código está siendo escrito. Esto permite a los desarrolladores identificar y corregir posibles fallos de diseño, errores o vulnerabilidades en el momento de su creación, reduciendo la necesidad de correcciones costosas en etapas posteriores del desarrollo.
+
 ### 6.2.2. Reviews
+
+Las revisiones de código son un pilar colaborativo en el proceso de desarrollo de MoviGestión, actuando como un complemento indispensable al análisis estático automatizado. Este proceso implica que los desarrolladores examinen y evalúen el código fuente escrito por sus compañeros.
+
+- Propósitos Fundamentales:
+
+  - Validación de Lógica y Diseño: Ir más allá de los problemas superficiales para identificar errores lógicos sutiles, ineficiencias o deficiencias en el diseño arquitectónico que las herramientas automáticas podrían pasar por alto.
+  - Refuerzo de Estándares: Asegurar que el código no solo sea funcional, sino que también se adhiera a los principios de Clean Code, Modularidad y Uniformidad definidos para MoviGestión.
+  - Fomento de la Seguridad Contextual: Un par de ojos humanos puede identificar vulnerabilidades de seguridad más complejas o específicas del dominio de la aplicación que no son detectables por patrones genéricos de análisis estático.
+  - Intercambio de Conocimiento: Servir como una herramienta de aprendizaje y mentoría, permitiendo que el conocimiento sobre la base de código y las mejores prácticas se difunda entre el equipo, reduciendo la dependencia de un solo experto.
+  - Mejora Continua: Impulsar una cultura de mejora constante, donde los comentarios constructivos llevan a soluciones más robustas, legibles y mantenibles.
+- Metodología de Revisión en MoviGestión (Pull/Merge Requests):
+Las revisiones en MoviGestión se articulan principalmente a través del proceso de Pull Requests (PRs) o Merge Requests (MRs), una práctica estándar en el desarrollo moderno basado en Git.
+
+  - Flujo Operativo:
+
+  1 . Cuando un desarrollador completa una tarea (sea una nueva funcionalidad para envíos, una mejora en la interfaz de reportes de incidentes, o una corrección en el backend de gestión de vehículos), crea un Pull Request. Este PR propone la integración de sus cambios en la rama de desarrollo principal.<br>
+  2 . El PR es asignado a uno o más desarrolladores para su revisión. Estos revisores son responsables de analizar el código propuesto.<br>
+  3 . La revisión abarca una evaluación exhaustiva, considerando aspectos como:<br>
+    - La claridad y la documentación interna del código.
+    - La adhesión a los principios de diseño y arquitectura de MoviGestión.
+    - La eficiencia y el rendimiento de las soluciones implementadas (ej. consultas a base de datos, lógica de procesamiento).
+    - El manejo adecuado de errores, casos excepcionales y la robustez ante entradas inesperadas.
+    - La calidad y la cobertura de las pruebas unitarias y de integración asociadas al cambio.
+    - La seguridad del código, buscando posibles vulnerabilidades o malas prácticas.
+    - El impacto potencial del cambio en otras partes del sistema.
+
+  4 . Los comentarios y sugerencias se realizan directamente en la plataforma del PR, facilitando el diálogo entre el autor y los revisores.<br>
+  5 . El autor del PR es responsable de incorporar la retroalimentación y realizar las modificaciones necesarias hasta que el código satisfaga los estándares y reciba la aprobación de los revisores.<br>
+  6 . Una vez aprobado, el código es fusionado en la rama de desarrollo, integrándose en la base de código de MoviGestión.<br>
+- Herramientas de Soporte: La gestión de estos Pull Requests se realiza a través de la plataforma de control de versiones utilizada por el equipo (como GitLab, GitHub o Azure DevOps), que provee las herramientas necesarias para la colaboración, los comentarios en línea y el seguimiento del estado de cada revisión.
+
+- Periodicidad: Las revisiones de código son un proceso continuo e integral, que se activa con cada propuesta de cambio significativo al codebase, garantizando un flujo de trabajo ágil que prioriza la calidad y la colaboración.
+
+
 
 ## 6.3. Validations Interviews
 
