@@ -322,6 +322,41 @@ Esta combinación de mecanismos de alerta —a nivel de infraestructura, desplie
 
 ### 7.4.4. Notification Pipeline Components.
 
-El pipeline de notificaciones en MoviGestión permite comunicar de forma automática el estado de ejecución de cada etapa del ciclo de integración, pruebas, entrega y monitoreo. Su principal objetivo es mantener informados a los miembros del equipo sobre la calidad del software, los resultados de validaciones críticas y cualquier fallo detectado durante la ejecución de los pipelines. Para esto, se emplea principalmente Jenkins, que permite configurar notificaciones detalladas al finalizar cada etapa del pipeline, informando sobre el éxito o fallo del build, el tiempo de ejecución, y los errores o advertencias generadas. Estas notificaciones pueden enviarse automáticamente por correo electrónico o mediante integraciones con canales de comunicación como Slack, Microsoft Teams o incluso Telegram, según la configuración del equipo.
+El sistema de notificaciones de MoviGestión se estructura como un pipeline modular, diseñado para una comunicación eficiente y adaptable con conductores y gerentes. Su objetivo es asegurar la entrega fiable de alertas críticas (envíos, asignaciones, incidencias) a través de múltiples canales, personalizando cada interacción según las preferencias del usuario.
 
-Adicionalmente, Jenkins permite automatizar el envío de reportes periódicos con resúmenes del estado del sistema, cobertura de pruebas, errores encontrados, y métricas relevantes. Estas funcionalidades brindan visibilidad continua a los stakeholders y al equipo técnico, permitiendo tomar decisiones informadas y oportunas. La integración de este sistema con herramientas como Sentry o Prometheus garantiza que tanto los errores en tiempo de ejecución como los eventos críticos de infraestructura puedan derivar en notificaciones inmediatas a los responsables correspondientes. Gracias a este pipeline, MoviGestión asegura una comunicación fluida y proactiva en cada ciclo de entrega, minimizando tiempos de reacción y reforzando su compromiso con la calidad y estabilidad del sistema.
+Este pipeline se compone de los siguientes módulos clave:
+
+1 . Generador de Eventos
+Este es el punto de origen de cualquier notificación. Se encarga de identificar y emitir señales cuando ocurren situaciones relevantes en el sistema.
+
+- Descripción: Servicios en el backend que detectan cambios de estado o condiciones específicas que activan una alerta (ej., un envío cambia de estado, se reporta una incidencia).
+- Tecnología: Principalmente .NET Framework (C#). Para alta escalabilidad, podría integrarse con colas de mensajes (ej., RabbitMQ).
+
+2 . Procesador de Notificaciones
+Una vez generado un evento, este componente central se ocupa de preparar el mensaje adecuado para los destinatarios correctos.
+
+- Descripción: Servicio en el backend que consume eventos, identifica a los usuarios afectados, consulta sus preferencias de notificación (almacenadas en MySQL) y genera el contenido personalizado del mensaje.
+- Tecnología: Desarrollado en .NET Framework (C#), interactuando con MySQL.
+
+3 . Enrutador de Canales
+Con el mensaje listo, el enrutador decide la vía óptima para su entrega.
+
+- Descripción: Módulo en el backend que dirige el mensaje preparado al servicio de envío apropiado, basándose en las preferencias del usuario y la urgencia de la notificación.
+- Canales Comunes para MoviGestión: Notificaciones Push, Correo Electrónico, SMS, y Notificaciones In-App.
+- Tecnología: Lógica en .NET Framework (C#).
+
+4 . Proveedores de Canales Externos
+Estos son los servicios que ejecutan la entrega real de las notificaciones al usuario final.
+
+- Descripción: Plataformas especializadas que el backend de MoviGestión invoca para enviar mensajes a través de diversos medios.
+- Tecnologías/Servicios Específicos:
+- Push (App Flutter): Firebase Cloud Messaging (FCM).
+- Correo Electrónico: Servicios como SendGrid, Mailgun o Amazon SES.
+- SMS: Pasarelas como Twilio o Nexmo.
+- In-App (Web Vue.js y App Flutter): SignalR (WebSockets) desde .NET Framework para tiempo real, o APIs REST para actualizaciones periódicas.
+
+5 . Interfaz de Configuración de Notificaciones
+Este componente brinda control directo al usuario sobre sus preferencias de comunicación.
+
+- Descripción: Secciones en las interfaces de usuario (web y móvil) donde los usuarios configuran qué tipos de notificaciones quieren recibir, por qué canales y con qué frecuencia.
+- Tecnología: Implementado con Vue.js para la web y Flutter para la móvil, ambos interactuando con APIs REST del backend de .NET Framework para guardar y cargar las preferencias en la base de datos.
