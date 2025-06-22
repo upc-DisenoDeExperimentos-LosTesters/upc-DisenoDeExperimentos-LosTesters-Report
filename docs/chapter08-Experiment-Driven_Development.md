@@ -186,7 +186,7 @@ La plataforma MoviGestión, en su fase inicial de desarrollo, integra un conjunt
 
 En esta sección presentamos las Experiment‑Ready Questions, un conjunto de preguntas concretas y priorizadas que guían la validación de nuestras principales hipótesis de mejora. Cada pregunta está diseñada para enfocarse en un aspecto crítico identificado en el As‑Is y el Raw Material, desde la percepción de rendimiento hasta la adopción de nuevas funcionalidades, evaluando de manera cuantitativa el impacto, el riesgo de implementación y el grado de interés de los usuarios. Al responderlas mediante pequeños experimentos controlados, podremos tomar decisiones fundamentadas, optimizar recursos y avanzar en ciclos iterativos que impulsen la evolución de MoviGestión de forma ágil y eficiente.
 
-| Question                                                                                                        | Confidence                                                                                            | Risk                                                                                 | Impact                                                                              | Interest                                                                               | Total Score |
+| Question         | Confidence      | Risk       | Impact    | Interest    | Total Score |
 | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ----------- |
 | ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico? | 8 – Técnica probada en la industria para reducir la percepción de espera.                             | 2 – Riesgo bajo, es una modificación visual ligera.                                  | 6 – Puede aumentar el engagement y reducir el abandono inicial.                     | 5 – Interés moderado, los usuarios notan mejoras sutiles de UX.                        | 21          |
 | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables?    | 8 – Buena base en otros sistemas de alertas multicanal.                                               | 3 – Riesgo medio-bajo, implica configuración de infraestructura de mensajería.       | 8 – Mejora significativa de la coordinación operativa y la resolución de problemas. | 7 – Alta relevancia para gerentes y transportistas que dependen de alertas inmediatas. | 26          |
@@ -198,21 +198,21 @@ En esta sección presentamos las Experiment‑Ready Questions, un conjunto de pr
 
 ### 8.1.4. Question Backlog
 
-| Prioridad (1,2,3,5,8) | Pregunta                                                                                                        |
-| --------------------- | --------------------------------------------------------------------------------------------------------------- |
-| 1                     | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables?    |
-| 2                     | ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach‑marks?        |
-| 3                     | ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico? |
-| 3                     | ¿Incrementará la base de usuarios activos la internacionalización al inglés?                                    |
-| 5                     | ¿Mejorará la experiencia añadiendo un modo oscuro a la aplicación web?                                          |
+| Prioridad	(1,2,3,5,8,) | Pregunta |
+|------------------------|----------|
+| 5	| ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach-marks? |
+| 5	| ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables? |
+| 3	| ¿Incrementará la base de usuarios activos la internacionalización al inglés? |
+| 3	| ¿Aumentará el uso en entornos de baja iluminación la implementación de un modo oscuro y alto contraste? |
+| 1 | ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico? |
 
 ### 8.1.5. Experiment Cards
 
-| Question   | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables?                                                                                                                                                                                                        |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Question   | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables? |
+| ---------- | ------------------------------------------------------------------------------------------------------------ |
 | Why        | Actualmente no existe un sistema de notificaciones multicanal (push, email y SMS) que los usuarios puedan configurar. Se postula que las notificaciones multicanal configurables permitirán a gerentes y transportistas reaccionar un 30% más rápido ante reportes críticos, mejorando la coordinación operacional. |
-| What       | Desplegar alertas push, email y SMS para incidencias, confirmaciones de entrega y cambios de asignación. Permitir a cada usuario definir el canal preferido y la frecuencia de recepción de avisos.                                                                                                                 |
-| Hypothesis | Se espera que, con la implementación de notificaciones multicanal configurables, el tiempo promedio de respuesta a incidencias críticas por parte de gerentes y transportistas se reduzca en un 30%.                                                                                                                |
+| What       | Desplegar alertas push, email y SMS para incidencias, confirmaciones de entrega y cambios de asignación. Permitir a cada usuario definir el canal preferido y la frecuencia de recepción de avisos. |
+| Hypothesis | Se espera que, con la implementación de notificaciones multicanal configurables, el tiempo promedio de respuesta a incidencias críticas por parte de gerentes y transportistas se reduzca en un 30% o más. |
 
 | Question   | ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach‑marks?                                                                                                                                                                                                                                                      |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
