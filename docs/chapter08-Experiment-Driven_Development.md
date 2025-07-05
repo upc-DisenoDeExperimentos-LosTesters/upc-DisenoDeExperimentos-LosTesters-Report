@@ -186,7 +186,7 @@ La plataforma MoviGestión, en su fase inicial de desarrollo, integra un conjunt
 
 En esta sección presentamos las Experiment‑Ready Questions, un conjunto de preguntas concretas y priorizadas que guían la validación de nuestras principales hipótesis de mejora. Cada pregunta está diseñada para enfocarse en un aspecto crítico identificado en el As‑Is y el Raw Material, desde la percepción de rendimiento hasta la adopción de nuevas funcionalidades, evaluando de manera cuantitativa el impacto, el riesgo de implementación y el grado de interés de los usuarios. Al responderlas mediante pequeños experimentos controlados, podremos tomar decisiones fundamentadas, optimizar recursos y avanzar en ciclos iterativos que impulsen la evolución de MoviGestión de forma ágil y eficiente.
 
-| Question         | Confidence      | Risk       | Impact    | Interest    | Total Score |
+| Question                                                                                                        | Confidence                                                                                            | Risk                                                                                 | Impact                                                                              | Interest                                                                               | Total Score |
 | --------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ----------- |
 | ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico? | 8 – Técnica probada en la industria para reducir la percepción de espera.                             | 2 – Riesgo bajo, es una modificación visual ligera.                                  | 6 – Puede aumentar el engagement y reducir el abandono inicial.                     | 5 – Interés moderado, los usuarios notan mejoras sutiles de UX.                        | 21          |
 | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables?    | 8 – Buena base en otros sistemas de alertas multicanal.                                               | 3 – Riesgo medio-bajo, implica configuración de infraestructura de mensajería.       | 8 – Mejora significativa de la coordinación operativa y la resolución de problemas. | 7 – Alta relevancia para gerentes y transportistas que dependen de alertas inmediatas. | 26          |
@@ -198,21 +198,21 @@ En esta sección presentamos las Experiment‑Ready Questions, un conjunto de pr
 
 ### 8.1.4. Question Backlog
 
-| Prioridad	(1,2,3,5,8,) | Pregunta |
-|------------------------|----------|
-| 5	| ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach-marks? |
-| 5	| ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables? |
-| 3	| ¿Incrementará la base de usuarios activos la internacionalización al inglés? |
-| 3	| ¿Aumentará el uso en entornos de baja iluminación la implementación de un modo oscuro y alto contraste? |
-| 1 | ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico? |
+| Prioridad (1,2,3,5,8,) | Pregunta                                                                                                        |
+| ---------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 5                      | ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach-marks?        |
+| 5                      | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables?    |
+| 3                      | ¿Incrementará la base de usuarios activos la internacionalización al inglés?                                    |
+| 3                      | ¿Aumentará el uso en entornos de baja iluminación la implementación de un modo oscuro y alto contraste?         |
+| 1                      | ¿Mejorará la percepción de velocidad el uso de skeleton screens en pantallas críticas frente al loader clásico? |
 
 ### 8.1.5. Experiment Cards
 
-| Question   | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables? |
-| ---------- | ------------------------------------------------------------------------------------------------------------ |
+| Question   | ¿Reducirá el tiempo de respuesta a incidencias la implementación de notificaciones multicanal configurables?                                                                                                                                                                                                        |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Why        | Actualmente no existe un sistema de notificaciones multicanal (push, email y SMS) que los usuarios puedan configurar. Se postula que las notificaciones multicanal configurables permitirán a gerentes y transportistas reaccionar un 30% más rápido ante reportes críticos, mejorando la coordinación operacional. |
-| What       | Desplegar alertas push, email y SMS para incidencias, confirmaciones de entrega y cambios de asignación. Permitir a cada usuario definir el canal preferido y la frecuencia de recepción de avisos. |
-| Hypothesis | Se espera que, con la implementación de notificaciones multicanal configurables, el tiempo promedio de respuesta a incidencias críticas por parte de gerentes y transportistas se reduzca en un 30% o más. |
+| What       | Desplegar alertas push, email y SMS para incidencias, confirmaciones de entrega y cambios de asignación. Permitir a cada usuario definir el canal preferido y la frecuencia de recepción de avisos.                                                                                                                 |
+| Hypothesis | Se espera que, con la implementación de notificaciones multicanal configurables, el tiempo promedio de respuesta a incidencias críticas por parte de gerentes y transportistas se reduzca en un 30% o más.                                                                                                          |
 
 | Question   | ¿Reducirá la tasa de abandono en el onboarding la introducción de tutoriales interactivos y coach‑marks?                                                                                                                                                                                                                                                      |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -528,3 +528,231 @@ Después de la implementación inicial, se establecerá un sistema continuo de m
   - Priorización de futuras actualizaciones y mejoras basadas en las métricas de impacto.
 
 Este enfoque asegurará que **MoviGestión** evolucione continuamente en función de los datos, maximizando su utilidad para los usuarios y consolidándose como una herramienta esencial en la gestión de flotas de transporte.
+
+# 8.3. Experimentation
+
+En esta fase se implementan y prueban soluciones concretas para validar las hipótesis definidas. A través de experimentos controlados se busca medir su impacto real en la experiencia del usuario y el valor del negocio, permitiendo tomar decisiones basadas en evidencia.
+
+## 8.3.1. To-Be User Stories.
+
+Las siguientes historias representan funcionalidades esperadas tras la experimentación. Están formuladas con escenarios claros que permiten evaluar su impacto en el comportamiento del usuario y validar si cumplen los objetivos definidos en los experimentos previos.
+
+| **User Story ID** | **Título**                             | **Descripción**                                                                                                                                      | **Criterios de Aceptación**                                                                                                                                                                                                                                                                                                                                                | **Epic ID** |
+| ----------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| UA01              | Activación de modo oscuro              | Como usuario frecuente de la plataforma, quiero activar un modo oscuro en la interfaz para reducir la fatiga visual en ambientes con poca luz.       | **Escenario 1: Activación manual desde configuración**</br></br>**Given** que estoy en configuración, **When** activo el modo oscuro, **Then** la interfaz cambia automáticamente.</br></br>**Escenario 2: Persistencia**</br></br>**Given** que lo activé previamente, **When** inicio sesión en otro dispositivo, **Then** la interfaz carga en modo oscuro.             | E06         |
+| UA02              | Skeleton screens en pantallas clave    | Como usuario, quiero que se muestren skeleton screens al cargar listas y dashboards, para tener una percepción más fluida y rápida de la aplicación. | **Escenario 1: Visualización en carga**</br></br>**Given** que accedo al dashboard, **When** los datos están cargando, **Then** se muestra una animación de skeletons.</br></br>**Escenario 2: Reemplazo por datos reales**</br></br>**Given** que los datos están listos, **When** termina la carga, **Then** los skeletons desaparecen y se muestra la información real. | EP01        |
+| UA03              | Encuestas tras entregas completadas    | Como transportista, quiero recibir una breve encuesta después de cada entrega completada para dar retroalimentación y mejorar la experiencia.        | **Escenario 1: Activación post-entrega**</br></br>**Given** que completo una entrega, **When** finalizo el proceso, **Then** se muestra una encuesta rápida.</br></br>**Escenario 2: Almacenamiento de respuestas**</br></br>**Given** que respondo la encuesta, **When** envío mis respuestas, **Then** estas se almacenan y son enviadas al sistema de analítica.        | EP05        |
+| UA04              | Onboarding con pasos interactivos      | Como nuevo usuario, quiero un asistente que me guíe paso a paso en las funciones básicas para aprender rápidamente a usar la plataforma.             | **Escenario 1: Primer inicio**</br></br>**Given** que accedo por primera vez, **When** inicio sesión, **Then** se lanza un tutorial interactivo.                                                                                                                                                                                                                           | E06         |
+| UA05              | Exportación de reportes personalizados | Como gerente, quiero exportar reportes en formatos PDF y Excel con filtros específicos para agilizar mis reuniones semanales.                        | **Escenario 1: Generación de reporte**</br></br>**Given** que accedo al módulo de reportes, **When** selecciono filtros y formato, **Then** el sistema genera el archivo.</br></br>**Escenario 2: Descarga**</br></br>**Given** que el reporte está generado, **When** presiono “descargar”, **Then** se descarga el archivo con el nombre y formato correcto.             | EP03        |
+| UA06              | Cambio de idioma a inglés              | Como usuario, quiero cambiar el idioma de la interfaz a inglés para usar la aplicación en mi idioma preferido.                                       | **Escenario 1: Cambio desde configuración**</br></br>**Given** que estoy en configuración, **When** elijo inglés, **Then** toda la interfaz se actualiza al nuevo idioma.</br></br>**Escenario 2: Persistencia**</br></br>**Given** que cambio de idioma, **When** vuelvo a iniciar sesión, **Then** la configuración se mantiene.                                         | E06         |
+| UA07              | Panel de estadísticas personales       | Como transportista, quiero ver estadísticas de mis entregas y reportes para evaluar mi desempeño y mejorar mi rendimiento.                           | **Escenario 1: Acceso al panel**</br></br>**Given** que inicio sesión, **When** accedo a “Mis estadísticas”, **Then** se muestra un resumen de mis entregas, fallos y reportes.</br></br>**Escenario 2: Filtros**</br></br>**Given** que elijo un período, **Then** los datos se actualizan.                                                                               | EP02        |
+
+## 8.3.2. To-Be Product Backlog
+
+El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en la fase de experimentación, priorizadas según su impacto y complejidad estimada. Cada ítem representa una funcionalidad clave a validar, alineada con hipótesis previamente definidas y con objetivos de mejora en rendimiento, usabilidad, personalización y expansión de la plataforma. Los Story Points asignados permiten estimar el esfuerzo de implementación y facilitar la planificación de futuros sprints.
+
+| **# Orden** | **User Story ID** | **Título**                             | **Story Points** (1 / 2 / 3 / 5 / 8) |
+| ----------- | ----------------- | -------------------------------------- | ------------------------------------ |
+| 1           | UA01              | Activación de modo oscuro              | 2                                    |
+| 2           | UA02              | Skeleton screens en pantallas clave    | 3                                    |
+| 3           | UA03              | Encuestas tras entregas completadas    | 3                                    |
+| 5           | UA04              | Onboarding con pasos interactivos      | 5                                    |
+| 6           | UA05              | Exportación de reportes personalizados | 5                                    |
+| 7           | UA06              | Cambio de idioma a inglés              | 3                                    |
+| 8           | UA07              | Panel de estadísticas personales       | 3                                    |
+
+## 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+### 8.3.3.1. To-Be Sprint Backlogs
+
+<table border="1" cellpadding="6" cellspacing="0">
+  <thead>
+    <tr>
+      <td colspan="1"><strong>Sprint #</strong></td>
+       <td colspan="8"><strong>Sprint 1</strong></td>
+    </tr>
+    <tr>
+      <th colspan="2">User Story</th>
+      <th colspan="6">WorkItem/Task</th>
+    </tr>
+    <tr>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Estimation (Story Points)</th>
+      <th>Assigned To</th>
+      <th>Status (To-do/In-Process/To-Review/Done)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">UX01</td>
+      <td rowspan="2">Activación de modo oscuro</td>
+      <td>TK1</td>
+      <td>Implementar cambio de tema manual</td>
+      <td>Agregar opción de cambio claro/oscuro en ajustes del usuario</td>
+      <td>1</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td>TK2</td>
+      <td>Persistencia del tema</td>
+      <td>Guardar y aplicar la preferencia en futuras sesiones</td>
+      <td>1</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">UX02</td>
+      <td rowspan="2">Skeleton screens en pantallas clave</td>
+      <td>TK3</td>
+      <td>Implementar skeleton en dashboard</td>
+      <td>Sustituir loader tradicional por skeleton mientras carga</td>
+      <td>2</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td>TK4</td>
+      <td>Reemplazo por datos reales</td>
+      <td>Detectar final de carga para mostrar información real</td>
+      <td>1</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">UX03</td>
+      <td rowspan="2">Encuestas tras entregas completadas</td>
+      <td>TK5</td>
+      <td>Mostrar encuesta tras entrega</td>
+      <td>Desplegar formulario corto tras completar la entrega</td>
+      <td>2</td>
+      <td>-----</td>
+      <td>In-Process</td>
+    </tr>
+    <tr>
+      <td>TK6</td>
+      <td>Almacenar respuestas</td>
+      <td>Guardar respuestas y enviarlas a sistema analítico</td>
+      <td>1</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">UA04</td>
+      <td rowspan="2">Onboarding con pasos interactivos</td>
+      <td>TK7</td>
+      <td>Desplegar tutorial en primer inicio</td>
+      <td>Detectar si es el primer inicio de sesión y lanzar el asistente paso a paso</td>
+      <td>2</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td>TK8</td>
+      <td>Diseño visual del asistente</td>
+      <td>Diseñar los pasos, tooltips y navegación del tutorial interactivo</td>
+      <td>2</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">UA05</td>
+      <td rowspan="2">Exportación de reportes personalizados</td>
+      <td>TK9</td>
+      <td>Generar reporte con filtros</td>
+      <td>Permitir selección de filtros y formatos (PDF, Excel) en la vista de reportes</td>
+      <td>2</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td>TK10</td>
+      <td>Descargar reporte generado</td>
+      <td>Habilitar botón de descarga con el nombre y formato adecuado</td>
+      <td>1</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">UA06</td>
+      <td rowspan="2">Cambio de idioma a inglés</td>
+      <td>TK11</td>
+      <td>Selector de idioma</td>
+      <td>Agregar selector de idioma en la configuración</td>
+      <td>1</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td>TK12</td>
+      <td>Persistencia de idioma</td>
+      <td>Guardar idioma preferido y mantenerlo entre sesiones</td>
+      <td>2</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td rowspan="2">UA07</td>
+      <td rowspan="2">Panel de estadísticas personales</td>
+      <td>TK13</td>
+      <td>Acceso al panel de estadísticas</td>
+      <td>Diseñar la vista de resumen con entregas, fallos y reportes al iniciar sesión</td>
+      <td>3</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+    <tr>
+      <td>TK14</td>
+      <td>Aplicar filtros por período</td>
+      <td>Habilitar selección de rango de fechas para actualizar los datos del panel</td>
+      <td>2</td>
+      <td>-----</td>
+      <td>To-do</td>
+    </tr>
+  </tbody>
+</table>
+
+### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+
+### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+### 8.3.3.6. Team Collaboration Insights
+
+## 8.3.4. To-Be Validation Interviews
+
+### 8.3.4.1. Diseño de Entrevistas.
+
+1. ¿Qué te pareció la opción del modo oscuro en la aplicación? ¿Te resultó cómoda o preferiste mantener el modo claro?
+2. ¿El tutorial interactivo al ingresar por primera vez te ayudó a comprender mejor cómo usar la plataforma? ¿Qué parte fue más útil?
+3. ¿Pudiste cambiar el idioma de la aplicación fácilmente desde la configuración? ¿Se mantuvo tu elección en futuras sesiones?
+4. ¿El uso de pantallas de carga con skeletons mejoró tu experiencia al navegar por el dashboard?
+5. ¿Cómo calificarías el panel de estadísticas personales? ¿La información sobre tus entregas y fallos te resultó útil para mejorar tu rendimiento?
+6. ¿Utilizaste los filtros por período de tiempo en el panel de estadísticas? ¿Te resultó fácil interpretar los resultados?
+7. ¿Pudiste exportar correctamente los reportes personalizados en PDF o Excel? ¿Los datos generados fueron útiles para tus reuniones o análisis?
+8. ¿Cómo fue tu experiencia con las encuestas después de completar una entrega? ¿Te pareció relevante la información solicitada?
+9. ¿Consideras que las notificaciones personalizadas te ayudaron a no olvidar tareas o entregas pendientes?
+10. ¿Qué funcionalidades agregarías o mejorarías en la aplicación para facilitar tu trabajo diario en la gestión o ejecución de entregas?
+
+### 8.3.4.2. Registro de Entrevistas.
+
+# 8.4. Experiment Aftermath & Analysis
+
+## 8.4.1. Analysis and Interpretation of Results
+
+## 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+# 8.5. Continuous Learning
+
+## 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+# 8.6. To-Be Software Platform Pre-launch
+
+## 8.6.1. About-the-Product Intro Video
