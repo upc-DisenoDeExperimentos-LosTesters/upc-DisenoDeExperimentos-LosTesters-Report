@@ -543,9 +543,9 @@ Las siguientes historias representan funcionalidades esperadas tras la experimen
 | UA02              | Skeleton screens en pantallas clave    | Como usuario, quiero que se muestren skeleton screens al cargar listas y dashboards, para tener una percepción más fluida y rápida de la aplicación. | **Escenario 1: Visualización en carga**</br></br>**Given** que accedo al dashboard, **When** los datos están cargando, **Then** se muestra una animación de skeletons.</br></br>**Escenario 2: Reemplazo por datos reales**</br></br>**Given** que los datos están listos, **When** termina la carga, **Then** los skeletons desaparecen y se muestra la información real. | EP01        |
 | UA03              | Encuestas tras entregas completadas    | Como transportista, quiero recibir una breve encuesta después de cada entrega completada para dar retroalimentación y mejorar la experiencia.        | **Escenario 1: Activación post-entrega**</br></br>**Given** que completo una entrega, **When** finalizo el proceso, **Then** se muestra una encuesta rápida.</br></br>**Escenario 2: Almacenamiento de respuestas**</br></br>**Given** que respondo la encuesta, **When** envío mis respuestas, **Then** estas se almacenan y son enviadas al sistema de analítica.        | EP05        |
 | UA04              | Onboarding con pasos interactivos      | Como nuevo usuario, quiero un asistente que me guíe paso a paso en las funciones básicas para aprender rápidamente a usar la plataforma.             | **Escenario 1: Primer inicio**</br></br>**Given** que accedo por primera vez, **When** inicio sesión, **Then** se lanza un tutorial interactivo.                                                                                                                                                                                                                           | E06         |
-| UA05              | Exportación de reportes personalizados | Como gerente, quiero exportar reportes en formatos PDF y Excel con filtros específicos para agilizar mis reuniones semanales.                        | **Escenario 1: Generación de reporte**</br></br>**Given** que accedo al módulo de reportes, **When** selecciono filtros y formato, **Then** el sistema genera el archivo.</br></br>**Escenario 2: Descarga**</br></br>**Given** que el reporte está generado, **When** presiono “descargar”, **Then** se descarga el archivo con el nombre y formato correcto.             | EP03        |
+| UA05              | Exportación de reportes personalizados | Como gerente, quiero exportar reportes en formatos PDF y Excel con filtros específicos para agilizar mis reuniones semanales.                        | **Escenario 1: Generación de reporte**</br></br>**Given** que accedo al módulo de reportes, **When** selecciono el boton de pdf f **Then** el sistema genera un archivo pdf con la informacion del reporte.</br></br>**Escenario 2: Visualizacion**</br></br>**Given** que el archivo pdf está generado, **When** presiono abrir pdf, **Then** se muestra la informacion del reporte            | EP03        |
 | UA06              | Cambio de idioma a inglés              | Como usuario, quiero cambiar el idioma de la interfaz a inglés para usar la aplicación en mi idioma preferido.                                       | **Escenario 1: Cambio desde configuración**</br></br>**Given** que estoy en configuración, **When** elijo inglés, **Then** toda la interfaz se actualiza al nuevo idioma.</br></br>**Escenario 2: Persistencia**</br></br>**Given** que cambio de idioma, **When** vuelvo a iniciar sesión, **Then** la configuración se mantiene.                                         | E06         |
-| UA07              | Panel de estadísticas personales       | Como transportista, quiero ver estadísticas de mis entregas y reportes para evaluar mi desempeño y mejorar mi rendimiento.                           | **Escenario 1: Acceso al panel**</br></br>**Given** que inicio sesión, **When** accedo a “Mis estadísticas”, **Then** se muestra un resumen de mis entregas, fallos y reportes.</br></br>**Escenario 2: Filtros**</br></br>**Given** que elijo un período, **Then** los datos se actualizan.                                                                               | EP02        |
+
 
 ## 8.3.2. To-Be Product Backlog
 
@@ -691,24 +691,6 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
       <td>TK12</td>
       <td>Persistencia de idioma</td>
       <td>Guardar idioma preferido y mantenerlo entre sesiones</td>
-      <td>2</td>
-      <td>-----</td>
-      <td>To-do</td>
-    </tr>
-    <tr>
-      <td rowspan="2">UA07</td>
-      <td rowspan="2">Panel de estadísticas personales</td>
-      <td>TK13</td>
-      <td>Acceso al panel de estadísticas</td>
-      <td>Diseñar la vista de resumen con entregas, fallos y reportes al iniciar sesión</td>
-      <td>3</td>
-      <td>-----</td>
-      <td>To-do</td>
-    </tr>
-    <tr>
-      <td>TK14</td>
-      <td>Aplicar filtros por período</td>
-      <td>Habilitar selección de rango de fechas para actualizar los datos del panel</td>
       <td>2</td>
       <td>-----</td>
       <td>To-do</td>
