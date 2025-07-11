@@ -728,8 +728,38 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
 # 8.4. Experiment Aftermath & Analysis
 
 ## 8.4.1. Analysis and Interpretation of Results
+En el estudio, las preguntas originales planteadas en las entrevistas iniciales fueron reformuladas y estructuradas con el objetivo de obtener respuestas más claras y relevantes para el análisis de la experiencia de usuario con la aplicación de gestión de flotas. Este enfoque permitió identificar con mayor precisión las percepciones, preferencias y necesidades de los participantes respecto a las funcionalidades clave implementadas o propuestas en el producto.
+
+### Preguntas Formuladas
+
+En el estudio se realizaron las siguientes preguntas para evaluar la experiencia de los usuarios con la aplicación:
+
+1. ¿Qué te pareció la opción del modo oscuro en la aplicación?
+2. ¿Pudiste cambiar el idioma desde la configuración? ¿Fue útil para ti?
+3. ¿El tutorial interactivo al ingresar por primera vez te ayudó a comprender cómo usar la plataforma?
+4. ¿Consideras que las pantallas de carga con skeletons mejoraron tu experiencia de navegación?
+5. ¿Te resultó útil el panel de estadísticas personales para hacer seguimiento de tu desempeño?
+6. ¿Qué tan útiles te parecieron las notificaciones personalizadas para tus tareas diarias?
+7. ¿Pudiste exportar reportes personalizados fácilmente? ¿Los formatos disponibles fueron suficientes?
+8. ¿Cómo calificarías la experiencia al responder encuestas después de una entrega?
+9. ¿Te resultó clara la interfaz al momento de realizar tareas como ver asignaciones o revisar reportes?
+10. ¿Qué funcionalidades agregarías o mejorarías para optimizar tu trabajo diario?
+
+Estas preguntas fueron presentadas a una muestra de 25 posibles usuarios (gerentes y transportistas). Los participantes respondieron en base a su experiencia directa o simulada con las funcionalidades actuales y propuestas de la aplicación. A continuación, se presentan los resultados obtenidos.
+
 
 ## 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+| **Prioridad** (1, 2, 3, 5, 8) | **Pregunta**                                                                                                       |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| 1                            | ¿Mejorará la experiencia del usuario al añadir un modo oscuro en la aplicación de gestión de flotas?                |
+| 2                            | ¿Facilitará la comprensión del estado de carga la implementación de skeleton screens en pantallas clave?           |
+| 3                            | ¿Aportarán valor las encuestas tras cada entrega completada para evaluar el servicio?                              |
+| 5                            | ¿Mejorará la experiencia del usuario nuevo al incluir un onboarding con pasos interactivos?                         |
+| 5                            | ¿Facilitará la toma de decisiones la posibilidad de exportar reportes personalizados por filtros y formato?         |
+| 3                            | ¿Aumentará la accesibilidad para otros usuarios permitir el cambio de idioma a inglés en la aplicación?            |
+| 5                            | ¿Ayudará al transportista a mejorar su rendimiento el tener acceso a un panel con estadísticas personales?         |
+
 
 # 8.5. Continuous Learning
 
