@@ -442,9 +442,10 @@ Para validar los experimentos definidos en el marco del desarrollo de MoviGesti�
 
 ### 8.2.6. Data Analytics: Goals, KPIs and Metrics Selection
 
-Para garantizar una evaluación rigurosa de los experimentos y tomar decisiones basadas en evidencia, se definieron objetivos analíticos claros, junto con KPIs e indicadores específicos por funcionalidad. Esta selección asegura el seguimiento continuo del impacto de cada mejora implementada en la experiencia del usuario y en la eficiencia operativa de MoviGestión.
+En la fase de análisis posterior al experimento, se lleva a cabo un examen exhaustivo de todos los datos generados para extraer aprendizajes accionables y fundamentar futuras decisiones. Para ello, se definieron objetivos analíticos específicos para cada funcionalidad de MoviGestión, acompañados de KPIs e indicadores medibles, tanto cualitativos como cuantitativos, que abarcan desde las tasas de adopción y éxito de la tarea hasta el tiempo de respuesta y la satisfacción del usuario. Esta selección rigurosa de métricas permite un monitoreo continuo del impacto de cada mejora implementada, facilitando la identificación de tendencias, la detección de desviaciones y la optimización de procesos operativos. Gracias a este enfoque estructurado, el equipo cuenta con una visión clara de qué aspectos funcionan correctamente, cuáles requieren ajustes y cómo cada decisión contribuye al valor global del producto y a la eficiencia del negocio.
 
-**Gerente**
+#### Gerente
+
 ![Gerente](../assets/chapter08/LightHouse_8.1.png)
 ![Gerente](../assets/chapter08/LightHouse_8.2.png)
 ![Gerente](../assets/chapter08/LightHouse_8.3.png)
@@ -452,14 +453,17 @@ Para garantizar una evaluación rigurosa de los experimentos y tomar decisiones 
 ![Gerente](../assets/chapter08/LightHouse_8.5.png)
 ![Gerente](../assets/chapter08/LightHouse_8.6.png)
 ![Gerente](../assets/chapter08/LightHouse_8.7.png)
-**Transportista**
+
+#### Transportista
+
 ![Transportista](../assets/chapter08/LightHouse_8.8.png)
 ![Transportista](../assets/chapter08/LightHouse_8.9.png)
 ![Transportista](../assets/chapter08/LightHouse_8.10.png)
 ![Transportista](../assets/chapter08/LightHouse_8.11.png)
 ![Transportista](../assets/chapter08/LightHouse_8.12.png)
 
-**Estadísticas**
+#### Estadísticas
+
 ![Cuadro](../assets/chapter08/Cuadro.png)
 ![Cuadro](../assets/chapter08/Grafico_Barras_1.png)
 ![Cuadro](../assets/chapter08/Grafico_Barras_2.png)
@@ -473,19 +477,19 @@ El monitoreo de las funcionalidades experimentales se realizará en dos etapas p
 
 #### 1. Implementación Inicial
 
-Durante esta etapa, nos centraremos en el despliegue de las nuevas funcionalidades y en la recopilación de datos iniciales para establecer una línea base de rendimiento.
+Durante la fase de Implementación Inicial, se procederá al despliegue estructurado de las funcionalidades recién desarrolladas en el entorno de pruebas o preproducción. Paralelamente, se activarán los mecanismos de monitoreo y se configurarán las herramientas de captura de datos —como registros de uso, métricas de rendimiento y feedback de usuarios— para recolectar información cuantitativa y cualitativa desde el primer momento. Estos datos servirán para establecer una línea base de referencia que permitirá comparar el comportamiento del sistema antes y después de la implantación de mejoras. Asimismo, se documentarán posibles incidencias y se coordinará con los equipos de infraestructura, QA y soporte para garantizar una transición ordenada y con mínima afectación al servicio. Gracias a este enfoque metodológico, el equipo dispondrá de un punto de partida sólido para detectar rápidamente anomalías, validar suposiciones y sentar las bases de las fases posteriores de análisis y optimización.
 
 ##### **Recopilación de Datos**
 
 - **Métricas de Uso:**
 
-  - Número de usuarios activos diarios y mensuales (DAU/MAU).
-  - Duración promedio de las sesiones.
-  - Tasa de uso de funcionalidades críticas, como la visualización de rutas, la carga de envíos y el registro de incidencias.
+  - Número de usuarios activos diarios y mensuales (DAU/MAU).<br><br>
+  - Duración promedio de las sesiones.<br><br>
+  - Tasa de uso de funcionalidades críticas, como la visualización de rutas, la carga de envíos y el registro de incidencias.<br><br>
 
 - **Interacciones de los Usuarios:**
 
-  - Cantidad de clics en botones clave (e.g., "Optimizar Ruta", "Reportar Incidencia").
+  - Cantidad de clics en botones clave (e.g., "Optimizar Ruta", "Reportar Incidencia").<br><br>
   - Frecuencia de acceso a vistas críticas como el dashboard y el historial de operaciones.
 
 - **Feedback de Usuarios:**
@@ -498,7 +502,7 @@ Durante esta etapa, nos centraremos en el despliegue de las nuevas funcionalidad
 
 #### 2. Seguimiento Continuo
 
-Después de la implementación inicial, se establecerá un sistema continuo de monitoreo y evaluación para realizar ajustes basados en datos y mejorar la experiencia del usuario.
+Tras la implementación inicial, se activará un mecanismo permanente de supervisión y evaluación que combine el análisis automático de métricas (rendimiento del sistema, tasas de error, tiempos de respuesta) con la recopilación de feedback cualitativo de los usuarios. Mediante tableros de control actualizados en tiempo real y revisiones periódicas, diarias para indicadores críticos y semanales o mensuales para métricas estratégicas, el equipo identificará patrones de uso, cuellos de botella y oportunidades de mejora. Esta aproximación basada en datos permitirá ajustar parametrizaciones, optimizar flujos de navegación y depurar incidencias de forma proactiva, asegurando una evolución continua de la plataforma y una experiencia de usuario cada vez más fluida y satisfactoria.
 
 ##### **Recopilación de Datos**
 
@@ -531,17 +535,18 @@ Este enfoque asegurará que **MoviGestión** evolucione continuamente en funció
 
 # 8.3. Experimentation
 
-En esta fase se implementan y prueban soluciones concretas para validar las hipótesis definidas. A través de experimentos controlados se busca medir su impacto real en la experiencia del usuario y el valor del negocio, permitiendo tomar decisiones basadas en evidencia.
+En esta fase se lleva a cabo la implementación y validación de las soluciones planteadas durante las etapas previas. Mediante la ejecución de experimentos controlados, ya sean pruebas A/B, prototipos interactivos o pilotos en entornos reales, se recopila información cualitativa y cuantitativa para medir con precisión su impacto en la experiencia de usuario y en los indicadores clave del negocio (tasa de conversión, tiempo de uso, satisfacción, retorno de inversión, etc.). Gracias a este enfoque empírico, el equipo puede identificar rápidamente aciertos y puntos de mejora, ajustar parámetros técnicos o de diseño, y descartar hipótesis inválidas. Al basar las decisiones en datos reales y en métricas definidas de antemano, se reducen los riesgos asociados a la toma de decisiones intuitivas y se optimiza el camino hacia una solución de alto valor tanto para los usuarios como para la organización.
 
-## 8.3.1. To-Be User Stories.
+## 8.3.1. To-Be User Stories
 
-Las siguientes historias representan funcionalidades esperadas tras la experimentación. Están formuladas con escenarios claros que permiten evaluar su impacto en el comportamiento del usuario y validar si cumplen los objetivos definidos en los experimentos previos.
+En esta etapa se describen las historias de usuario que recogen las funcionalidades clave identificadas durante la fase de experimentación. Cada historia está estructurada en escenarios concretos, con condiciones iniciales, acciones esperadas y resultados medibles, de modo que pueda evaluarse de forma objetiva su influencia en el comportamiento del usuario. Además, se definen criterios de aceptación y métricas específicas (por ejemplo, frecuencia de uso, tasa de éxito o nivel de satisfacción) que facilitan la validación de si cada funcionalidad cumple con los objetivos establecidos en los experimentos previos. Gracias a esta formulación precisa, el equipo dispone de un marco claro para priorizar el desarrollo, afinar detalles de implementación y confirmar, con base en datos reales, el valor aportado al producto y al negocio.
 
 | **User Story ID** | **Título**                             | **Descripción**                                                                                                                                      | **Criterios de Aceptación**                                                                                                                                                                                                                                                                                                                                                | **Epic ID** |
 | ----------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
-| UA01              | Activación de modo oscuro              | Como usuario frecuente de la plataforma, quiero activar un modo oscuro en la interfaz para reducir la fatiga visual en ambientes con poca luz.       | **Escenario 1: Activación manual desde configuración**</br></br>**Given** que estoy en configuración, **When** activo el modo oscuro, **Then** la interfaz cambia automáticamente.</br></br>**Escenario 2: Persistencia**</br></br>**Given** que lo activé previamente, **When** inicio sesión en otro dispositivo, **Then** la interfaz carga en modo oscuro.             | E06         |
-| UA02              | Skeleton screens en pantallas clave    | Como usuario, quiero que se muestren skeleton screens al cargar listas y dashboards, para tener una percepción más fluida y rápida de la aplicación. | **Escenario 1: Visualización en carga**</br></br>**Given** que accedo al dashboard, **When** los datos están cargando, **Then** se muestra una animación de skeletons.</br></br>**Escenario 2: Reemplazo por datos reales**</br></br>**Given** que los datos están listos, **When** termina la carga, **Then** los skeletons desaparecen y se muestra la información real. | EP01        |
-| UA03              | Encuestas tras entregas completadas    | Como transportista, quiero recibir una breve encuesta después de cada entrega completada para dar retroalimentación y mejorar la experiencia.        | **Escenario 1: Activación post-entrega**</br></br>**Given** que completo una entrega, **When** finalizo el proceso, **Then** se muestra una encuesta rápida.</br></br>**Escenario 2: Almacenamiento de respuestas**</br></br>**Given** que respondo la encuesta, **When** envío mis respuestas, **Then** estas se almacenan y son enviadas al sistema de analítica.        | EP05        |
+| UA01              | Activación de modo oscuro              | **Como** usuario de la plataforma, **quiero** habilitar o deshabilitar el modo oscuro, **para** reducir la fatiga visual en ambientes con poca luz y conservar mi preferencia en todos mis dispositivos.       | **Escenario 1:** Activación adecuada del modo oscuro <br><br>**Dado que** el usuario activa el selector “Modo oscuro” en la sección de configuración, **cuando** confirme el cambio mediante un dialogue, **entonces** la interfaz aplicará inmediatamente el tema oscuro y persistirá la preferencia en el perfil del usuario en el servidor.<br><br> **Escenario 2:** Configuracion predeterminada de modo oscuro <br><br> **Dado que** el usuario inicia sesión en cualquier otro dispositivo, **cuando** se cargue su perfil, **entonces** la plataforma mostrará el modo oscuro sin necesidad de volver a configurarlo.     | E06         |
+| UA02              | Skeleton screens en pantallas clave    | **Como** usuario de la aplicación, **quiero** ver indicadores de carga (skeleton screens) al cargar vistas con datos pesados, **para** percibir que la aplicación responde y evitar confusión. | **Escenario 1:** Visualización de Skeleton Screens  <br><br> **Dado que** el usuario navega a una vista que requiere carga de datos (lista o dashboard), **cuando** la respuesta tarde más de 200 ms en llegar, **entonces** se mostrará un skeleton screen adaptado al diseño de cada componente hasta que los datos estén listos.
+2. Dado que la API devuelve los datos correctamente, cuando se reciban y procesen, entonces los skeleton screens desaparecerán automáticamente y se renderizarán los contenidos reales en la misma posición y dimensión. | EP01        |
+| UA03              | Encuestas tras entregas completadas    | **Como** usuario de la aplicación, **quiero** ver indicadores de carga (skeleton screens) al cargar vistas con datos pesados, **para** percibir que la aplicación responde y evitar confusión.       | **Escenario 1: Activación post-entrega**</br></br>**Given** que completo una entrega, **When** finalizo el proceso, **Then** se muestra una encuesta rápida.</br></br>**Escenario 2: Almacenamiento de respuestas**</br></br>**Given** que respondo la encuesta, **When** envío mis respuestas, **Then** estas se almacenan y son enviadas al sistema de analítica.        | EP05        |
 | UA04              | Onboarding con pasos interactivos      | Como nuevo usuario, quiero un asistente que me guíe paso a paso en las funciones básicas para aprender rápidamente a usar la plataforma.             | **Escenario 1: Primer inicio**</br></br>**Given** que accedo por primera vez, **When** inicio sesión, **Then** se lanza un tutorial interactivo.                                                                                                                                                                                                                           | E06         |
 | UA05              | Exportación de reportes personalizados | Como gerente, quiero exportar reportes en formatos PDF y Excel con filtros específicos para agilizar mis reuniones semanales.                        | **Escenario 1: Generación de reporte**</br></br>**Given** que accedo al módulo de reportes, **When** selecciono el boton de pdf f **Then** el sistema genera un archivo pdf con la informacion del reporte.</br></br>**Escenario 2: Visualizacion**</br></br>**Given** que el archivo pdf está generado, **When** presiono abrir pdf, **Then** se muestra la informacion del reporte            | EP03        |
 | UA06              | Cambio de idioma a inglés              | Como usuario, quiero cambiar el idioma de la interfaz a inglés para usar la aplicación en mi idioma preferido.                                       | **Escenario 1: Cambio desde configuración**</br></br>**Given** que estoy en configuración, **When** elijo inglés, **Then** toda la interfaz se actualiza al nuevo idioma.</br></br>**Escenario 2: Persistencia**</br></br>**Given** que cambio de idioma, **When** vuelvo a iniciar sesión, **Then** la configuración se mantiene.                                         | E06         |
@@ -556,10 +561,10 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
 | 1           | UA01              | Activación de modo oscuro              | 2                                    |
 | 2           | UA02              | Skeleton screens en pantallas clave    | 3                                    |
 | 3           | UA03              | Encuestas tras entregas completadas    | 3                                    |
-| 5           | UA04              | Onboarding con pasos interactivos      | 5                                    |
-| 6           | UA05              | Exportación de reportes personalizados | 5                                    |
-| 7           | UA06              | Cambio de idioma a inglés              | 3                                    |
-| 8           | UA07              | Panel de estadísticas personales       | 3                                    |
+| 4           | UA04              | Onboarding con pasos interactivos      | 5                                    |
+| 5           | UA05              | Exportación de reportes personalizados | 5                                    |
+| 6           | UA06              | Cambio de idioma a inglés              | 3                                    |
+| 7           | UA07              | Panel de estadísticas personales       | 3                                    |
 
 ## 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
@@ -588,7 +593,7 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">UX01</td>
+      <td rowspan="2">UA01</td>
       <td rowspan="2">Activación de modo oscuro</td>
       <td>TK1</td>
       <td>Implementar cambio de tema manual</td>
@@ -606,7 +611,7 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
       <td>To-do</td>
     </tr>
     <tr>
-      <td rowspan="2">UX02</td>
+      <td rowspan="2">UA02</td>
       <td rowspan="2">Skeleton screens en pantallas clave</td>
       <td>TK3</td>
       <td>Implementar skeleton en dashboard</td>
@@ -624,7 +629,7 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
       <td>To-do</td>
     </tr>
     <tr>
-      <td rowspan="2">UX03</td>
+      <td rowspan="2">UA03</td>
       <td rowspan="2">Encuestas tras entregas completadas</td>
       <td>TK5</td>
       <td>Mostrar encuesta tras entrega</td>
@@ -710,7 +715,7 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
 
 ## 8.3.4. To-Be Validation Interviews
 
-### 8.3.4.1. Diseño de Entrevistas.
+### 8.3.4.1. Diseño de Entrevistas
 
 1. ¿Qué te pareció la opción del modo oscuro en la aplicación? ¿Te resultó cómoda o preferiste mantener el modo claro?
 2. ¿El tutorial interactivo al ingresar por primera vez te ayudó a comprender mejor cómo usar la plataforma? ¿Qué parte fue más útil?
@@ -723,30 +728,42 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
 9. ¿Consideras que las notificaciones personalizadas te ayudaron a no olvidar tareas o entregas pendientes?
 10. ¿Qué funcionalidades agregarías o mejorarías en la aplicación para facilitar tu trabajo diario en la gestión o ejecución de entregas?
 
-### 8.3.4.2. Registro de Entrevistas.
+### 8.3.4.2. Registro de Entrevistas
 
 # 8.4. Experiment Aftermath & Analysis
 
 ## 8.4.1. Analysis and Interpretation of Results
-En el estudio, las preguntas originales planteadas en las entrevistas iniciales fueron reformuladas y estructuradas con el objetivo de obtener respuestas más claras y relevantes para el análisis de la experiencia de usuario con la aplicación de gestión de flotas. Este enfoque permitió identificar con mayor precisión las percepciones, preferencias y necesidades de los participantes respecto a las funcionalidades clave implementadas o propuestas en el producto.
+
+Durante esta etapa, los planteamientos iniciales obtenidos en las entrevistas fueron refinados y reorganizados para extraer información más precisa sobre la experiencia de usuario con la aplicación de gestión de flotas. Este proceso permitió profundizar en las percepciones, preferencias y necesidades de gerentes y transportistas en relación con las funcionalidades clave, tanto las ya implementadas como las propuestas. Gracias a esta aproximación sistemática, se pudieron identificar con claridad los puntos fuertes de la plataforma, así como las áreas de oportunidad que requieren ajustes o desarrollo futuro.
 
 ### Preguntas Formuladas
 
-En el estudio se realizaron las siguientes preguntas para evaluar la experiencia de los usuarios con la aplicación:
+Se encuestó a una muestra de 25 participantes, 10 gerentes y 15 transportistas, quienes interactuaron de forma directa o simulada con la aplicación. A continuación, se exponen las preguntas de evaluación diseñadas para medir su grado de satisfacción, usabilidad y eficacia, junto con los criterios de valoración aplicados.
 
-1. ¿Qué te pareció la opción del modo oscuro en la aplicación?
-2. ¿Pudiste cambiar el idioma desde la configuración? ¿Fue útil para ti?
-3. ¿El tutorial interactivo al ingresar por primera vez te ayudó a comprender cómo usar la plataforma?
-4. ¿Consideras que las pantallas de carga con skeletons mejoraron tu experiencia de navegación?
-5. ¿Te resultó útil el panel de estadísticas personales para hacer seguimiento de tu desempeño?
-6. ¿Qué tan útiles te parecieron las notificaciones personalizadas para tus tareas diarias?
-7. ¿Pudiste exportar reportes personalizados fácilmente? ¿Los formatos disponibles fueron suficientes?
-8. ¿Cómo calificarías la experiencia al responder encuestas después de una entrega?
-9. ¿Te resultó clara la interfaz al momento de realizar tareas como ver asignaciones o revisar reportes?
-10. ¿Qué funcionalidades agregarías o mejorarías para optimizar tu trabajo diario?
+**Preguntas de Evaluación:**
+
+- **Modo Oscuro**
+¿Cómo calificaría la facilidad de uso y el confort visual que le ofrece el modo oscuro de la aplicación? ¿Con qué frecuencia has activado o desactivado el modo oscuro durante tu sesión?
+
+- **Selección de Idioma**
+¿Le resultó intuitivo el proceso de cambio de idioma en la configuración? ¿Considera que esta funcionalidad aporta valor a su experiencia?
+
+- **Tutorial Interactivo**
+¿En qué medida el tutorial interactivo inicial facilitó su comprensión de las funciones básicas de la plataforma?
+
+- **Pantallas de Carga (Skeleton Screens)**
+¿Percibió una mejora en la fluidez de la navegación gracias al uso de skeleton screens durante las cargas de contenido?
+
+- **Exportación de Reportes**
+¿Encontró sencillo el proceso de exportar reportes? ¿Fueron adecuados los formatos disponibles (PDF) para sus necesidades?
+
+- **Encuestas Post-entrega**
+¿Cómo valoraría la experiencia de completar encuestas tras concluir una entrega, tanto en términos de claridad como de brevedad?
+
+- **Claridad de la Interfaz**
+¿Considera que la disposición de elementos y la organización de menús contribuyen a realizar tareas como ver asignaciones o revisar reportes de forma eficiente?
 
 Estas preguntas fueron presentadas a una muestra de 25 posibles usuarios (gerentes y transportistas). Los participantes respondieron en base a su experiencia directa o simulada con las funcionalidades actuales y propuestas de la aplicación. A continuación, se presentan los resultados obtenidos.
-
 
 ## 8.4.2. Re-scored and Re-prioritized Question Backlog
 
