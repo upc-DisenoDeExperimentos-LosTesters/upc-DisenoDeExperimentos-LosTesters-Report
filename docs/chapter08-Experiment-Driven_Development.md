@@ -707,6 +707,11 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
 
 ### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence    
 
+![To-Be Frontend](../assets/chapter08/Frontend-ToBe-1.png)
+![To-Be Frontend](../assets/chapter08/Frontend-ToBe-2.png)
+![To-Be Frontend](../assets/chapter08/Frontend-ToBe-3.png)
+![To-Be Frontend](../assets/chapter08/Frontend-ToBe-4.png)
+
 ### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
 ![To-Be Mobile](../assets/chapter08/Mobile-ToBe-1.jpeg)
 ![To-Be Mobile](../assets/chapter08/Mobile-ToBe-2.jpeg)
