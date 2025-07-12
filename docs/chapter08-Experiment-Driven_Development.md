@@ -954,7 +954,7 @@ El video muestra paso a paso el funcionamiento de la aplicación web MoviGestió
 | 5. Cierre y resumen| Recapitulación de lo mostrado y cierre del video                               | 00:02:00         |
 
 
-![About the product](/assets/chapter06/aobut%20the%20product%20image.png)
+![About the product](/assets/chapter08/Product-1.jpg)
 
 
 Youtube URL: https://www.youtube.com/watch?v=KTIzP3XTNLM&t=24s
