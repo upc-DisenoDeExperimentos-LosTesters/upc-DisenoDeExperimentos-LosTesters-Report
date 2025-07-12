@@ -925,6 +925,18 @@ Estas preguntas fueron presentadas a una muestra de 25 posibles usuarios (gerent
 
 **Figma (Prototipo):** El prototipo interactivo elaborado en Figma representa las pantallas y funcionalidades planteadas, diseñadas conforme a los requerimientos y preferencias de los usuarios. Este recurso evidencia cómo el equipo fue refinando y modificando tanto aspectos visuales como funcionales a lo largo del proceso de diseño.
 
+El prototipo interactivo creado en Figma reproduce fielmente las interfaces y soluciones ideadas, fundamentadas en las necesidades reales y expectativas de los usuarios. A lo largo del proceso de diseño, este artefacto ha servido como espacio de iteración: permitiendo ajustar tanto los componentes visuales (colores, tipografías, espacios) como los funcionales (flujos de navegación, estados interactivos y microinteracciones) según el feedback recibido. De este modo, el equipo ha validado cada decisión de diseño antes de pasar a desarrollo.
+
+Enlace al prototipo en Figma: https://www.figma.com/design/gu0SdYkebsOKLB8p5YvOzL/BicasTeam-Movigestion?node-id=0-1&p=f
+
+![Analisis](../assets/chapter08/figma-evidencia.png)
+
+La encuesta diseñada en Google Forms sirvió como herramienta clave para recabar la opinión de los usuarios y contrastar las hipótesis definidas durante el proceso de diseño. A través de preguntas estructuradas —que incluían escalas de satisfacción, campos de comentario libre y preguntas de selección múltiple— se evaluó de manera sistemática la usabilidad, claridad y valor percibido de la aplicación. Los datos obtenidos proporcionaron métricas cuantitativas (por ejemplo, puntuaciones de facilidad de uso) y testimonios cualitativos que respaldaron las decisiones de mejora de funcionalidades y flujos de interacción.
+
+Enlace a la encuesta:
+https://docs.google.com/forms/d/e/1FAIpQLSdR_VyH6hnonWgxboVH9n5Ql-ZeT0DNFnrk_cnwlMQU1hYycw/viewform?usp=dialog 
+
+![Analisis](../assets/chapter08/encuesta-evidencia.png)
 
 # 8.6. To-Be Software Platform Pre-launch
 
