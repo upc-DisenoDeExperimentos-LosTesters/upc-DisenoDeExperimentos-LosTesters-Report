@@ -773,7 +773,7 @@ Cuadro de colaboracion del backend
 
 *Entrevista N° 1*
 
-![Entrevista 1 - businessman](/assets/chapter06/Entrevistas/empresarios-1.png)
+![Entrevista 1 - businessman](/assets/chapter02/interview-1.png)
 
 * Datos principales: 
 * Nombre completo del entrevistado: Abraham Quenta 
@@ -786,7 +786,7 @@ Cuadro de colaboracion del backend
 
 *Entrevista N° 2*
 
-![Entrevista 2 - businessman](/assets/chapter06/Entrevistas/empresarios-2.png)
+![Entrevista 2 - businessman](/assets/chapter02/interview-2.png)
 
 * Datos principales: 
 * Nombre completo del entrevistado: Gustavo Manrique
@@ -799,7 +799,7 @@ Cuadro de colaboracion del backend
 
 *Entrevista N° 3*
 
-![Entrevista 3 - businessman](/assets/chapter06/Entrevistas/empresarios-3.png)
+![Entrevista 3 - businessman](/assets/chapter02/interview-3.png)
 
 * Datos principales: 
 * Nombre completo del entrevistado: Marco Tarazona
@@ -815,7 +815,7 @@ Cuadro de colaboracion del backend
 
 *Entrevista N° 1*
 
-![Entrevista 1 - transportistas](/assets/chapter06/Entrevistas/trans-1.png)
+![Entrevista 1 - transportistas](/assets/chapter02/interview-4.png)
 
 * Datos principales: 
 * Nombre completo del entrevistado: Renzo Cesar Silva Morales
@@ -828,7 +828,7 @@ Cuadro de colaboracion del backend
 
 *Entrevista N° 2*
 
-![Entrevista 2 - transportistas](/assets/chapter06/Entrevistas/trans-2.png)
+![Entrevista 2 - transportistas](/assets/chapter02/interview-5.png)
 
 * Datos principales: 
 * Nombre completo del entrevistado: Ricardo Chate Flores
@@ -841,7 +841,7 @@ Cuadro de colaboracion del backend
 
 *Entrevista N° 3*
 
-![Entrevista 3 - transportistas](/assets/chapter06/Entrevistas/trans-3.png)
+![Entrevista 3 - transportistas](/assets/chapter02/interview-6.png)
 
 * Datos principales: 
 * Nombre completo del entrevistado: Víctor Cuba Bautista
