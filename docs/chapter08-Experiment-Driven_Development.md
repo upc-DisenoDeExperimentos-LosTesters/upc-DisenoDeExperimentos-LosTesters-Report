@@ -923,6 +923,11 @@ Estas preguntas fueron presentadas a una muestra de 25 posibles usuarios (gerent
 
 ## 8.5.1. Shareback Session Artifacts: Learning Workflow
 
+Claro, aquí tienes una versión parafraseada:
+
+**Figma (Prototipo):** El prototipo interactivo elaborado en Figma representa las pantallas y funcionalidades planteadas, diseñadas conforme a los requerimientos y preferencias de los usuarios. Este recurso evidencia cómo el equipo fue refinando y modificando tanto aspectos visuales como funcionales a lo largo del proceso de diseño.
+
+
 # 8.6. To-Be Software Platform Pre-launch
 
 ## 8.6.1. About-the-Product Intro Video
