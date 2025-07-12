@@ -366,12 +366,36 @@ del ABET – EAC - Student Outcome 5
                     <p>Desarrollé y validé los artefactos de Product Verification, asegurando la sostenibilidad de las pruebas...</p>
                 </li>
             </ul>
+            <u><b>TF</b></u>
+            <ul>
+                <li>
+                    <u><b>Cueto Dominguez, Juan Diego</b></u>
+                    <p>Implementé y desplegué el Landing Page y la RESTful API, asegurando que cumplieran con los estándares de calidad...</p>
+                </li>
+                <li>
+                    <u><b>Sanchez Zamora, Fabrizio Alessandro</b></u>
+                    <p>Elaboré el Product Verification & Validation, incluyendo Unit Tests y Acceptance Tests...</p>
+                </li>
+                <li>
+                    <u><b>Tarazona Medina, Piero Abel</b></u>
+                    <p>Implementé el Pipeline de Integración Continua y diseñé pruebas automatizadas...</p>
+                </li>
+                <li>
+                    <u><b>Trigueros Chumacero, Flavio Eduardo</b></u>
+                    <p>Ejecuté el proceso de requirements specification, elaborando artefactos del estado To-Be...</p>
+                </li>
+                <li>
+                    <u><b>Valenzuela Huillcaya, Aldhair Johan Juan</b></u>
+                    <p>Desarrollé y validé los artefactos de Product Verification, asegurando la sostenibilidad de las pruebas...</p>
+                </li>
+            </ul>
         </td>
         <td>
             <p>
                 **TB1**: A lo largo del desarrollo del proyecto, el equipo demostró un compromiso sólido con la ética y profesionalismo... <br><br> 
                 **TB2**: Cada integrante cumplió con el diseño y ejecución de Experiments, logrando resultados que alimentaron el aprendizaje continuo...<br><br>  
                 **TP**: En el tercer hito, se cumplieron los requisitos clave relacionados con la implementación, pruebas y automatización del producto de software. Esta experiencia consolidó nuestras competencias técnicas y profesionales, reafirmando nuestro compromiso con la calidad y sostenibilidad.<br><br>
+                **TF**: En el tercer hito, se cumplieron los requisitos clave relacionados con la implementación, pruebas y automatización del producto de software. Esta experiencia consolidó nuestras competencias técnicas y profesionales, reafirmando nuestro compromiso con la calidad y sostenibilidad.<br><br>
             </p>
         </td>
     </tr>
@@ -447,12 +471,37 @@ del ABET – EAC - Student Outcome 5
                     <p>Desarrollé y validé los artefactos de Product Verification...</p>
                 </li>
             </ul>
+             <u><b>TF</b></u>
+            <ul>
+                <li>
+                    <u><b>Cueto Dominguez, Juan Diego</b></u>
+                    <p>Implementé y desplegué el Landing Page...</p>
+                </li>
+                <li>
+                    <u><b>Sanchez Zamora, Fabrizio Alessandro</b></u>
+                    <p>Elaboré el Product Verification & Validation...</p>
+                </li>
+                <li>
+                    <u><b>Tarazona Medina, Piero Abel</b></u>
+                    <p>Implementé el Pipeline de Integración Continua...</p>
+                </li>
+                <li>
+                    <u><b>Trigueros Chumacero, Flavio Eduardo</b></u>
+                    <p>Ejecuté el proceso de requirements specification...</p>
+                </li>
+                <li>
+                    <u><b>Valenzuela Huillcaya, Aldhair Johan Juan</b></u>
+                    <p>Desarrollé y validé los artefactos de Product Verification...</p>
+                </li>
+            </ul>
         </td>
         <td>
             <p>
                 **TB1**: Durante este hito, se seleccionaron tecnologías adecuadas y se diseñaron soluciones sostenibles..<br><br>
                 **TB2**: Los Experiments permitieron evaluar e iterar soluciones efectivas y responsables...  <br><br>
-                **TP**: En el tercer hito, se implementaron soluciones completas y se validaron mediante pruebas exhaustivas, asegurando calidad y sostenibilidad.<br><br>
+                **TP**: En el tercer hito, se implementaron soluciones completas y se validaron mediante pruebas exhaustivas, asegurando calidad y sostenibilidad.
+                **TF**: En el tercer hito, se implementaron soluciones completas y se validaron mediante pruebas exhaustivas, asegurando calidad y sostenibilidad.
+            <br><br>
             </p>
         </td>
     </tr>
