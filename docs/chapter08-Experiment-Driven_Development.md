@@ -544,12 +544,11 @@ En esta etapa se describen las historias de usuario que recogen las funcionalida
 | **User Story ID** | **Título**                             | **Descripción**                                                                                                                                      | **Criterios de Aceptación**                                                                                                                                                                                                                                                                                                                                                | **Epic ID** |
 | ----------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
 | UA01              | Activación de modo oscuro              | **Como** usuario de la plataforma, **quiero** habilitar o deshabilitar el modo oscuro, **para** reducir la fatiga visual en ambientes con poca luz y conservar mi preferencia en todos mis dispositivos.       | **Escenario 1:** Activación adecuada del modo oscuro <br><br>**Dado que** el usuario activa el selector “Modo oscuro” en la sección de configuración, **cuando** confirme el cambio mediante un dialogue, **entonces** la interfaz aplicará inmediatamente el tema oscuro y persistirá la preferencia en el perfil del usuario en el servidor.<br><br> **Escenario 2:** Configuracion predeterminada de modo oscuro <br><br> **Dado que** el usuario inicia sesión en cualquier otro dispositivo, **cuando** se cargue su perfil, **entonces** la plataforma mostrará el modo oscuro sin necesidad de volver a configurarlo.     | E06         |
-| UA02              | Skeleton screens en pantallas clave    | **Como** usuario de la aplicación, **quiero** ver indicadores de carga (skeleton screens) al cargar vistas con datos pesados, **para** percibir que la aplicación responde y evitar confusión. | **Escenario 1:** Visualización de Skeleton Screens  <br><br> **Dado que** el usuario navega a una vista que requiere carga de datos (lista o dashboard), **cuando** la respuesta tarde más de 200 ms en llegar, **entonces** se mostrará un skeleton screen adaptado al diseño de cada componente hasta que los datos estén listos.
-2. Dado que la API devuelve los datos correctamente, cuando se reciban y procesen, entonces los skeleton screens desaparecerán automáticamente y se renderizarán los contenidos reales en la misma posición y dimensión. | EP01        |
-| UA03              | Encuestas tras entregas completadas    | **Como** usuario de la aplicación, **quiero** ver indicadores de carga (skeleton screens) al cargar vistas con datos pesados, **para** percibir que la aplicación responde y evitar confusión.       | **Escenario 1: Activación post-entrega**</br></br>**Given** que completo una entrega, **When** finalizo el proceso, **Then** se muestra una encuesta rápida.</br></br>**Escenario 2: Almacenamiento de respuestas**</br></br>**Given** que respondo la encuesta, **When** envío mis respuestas, **Then** estas se almacenan y son enviadas al sistema de analítica.        | EP05        |
-| UA04              | Onboarding con pasos interactivos      | Como nuevo usuario, quiero un asistente que me guíe paso a paso en las funciones básicas para aprender rápidamente a usar la plataforma.             | **Escenario 1: Primer inicio**</br></br>**Given** que accedo por primera vez, **When** inicio sesión, **Then** se lanza un tutorial interactivo.                                                                                                                                                                                                                           | E06         |
-| UA05              | Exportación de reportes personalizados | Como gerente, quiero exportar reportes en formatos PDF y Excel con filtros específicos para agilizar mis reuniones semanales.                        | **Escenario 1: Generación de reporte**</br></br>**Given** que accedo al módulo de reportes, **When** selecciono el boton de pdf f **Then** el sistema genera un archivo pdf con la informacion del reporte.</br></br>**Escenario 2: Visualizacion**</br></br>**Given** que el archivo pdf está generado, **When** presiono abrir pdf, **Then** se muestra la informacion del reporte            | EP03        |
-| UA06              | Cambio de idioma a inglés              | Como usuario, quiero cambiar el idioma de la interfaz a inglés para usar la aplicación en mi idioma preferido.                                       | **Escenario 1: Cambio desde configuración**</br></br>**Given** que estoy en configuración, **When** elijo inglés, **Then** toda la interfaz se actualiza al nuevo idioma.</br></br>**Escenario 2: Persistencia**</br></br>**Given** que cambio de idioma, **When** vuelvo a iniciar sesión, **Then** la configuración se mantiene.                                         | E06         |
+| UA02              | Skeleton screens en pantallas clave    | **Como** usuario de la aplicación, **quiero** ver indicadores de carga (skeleton screens) al cargar vistas con datos pesados, **para** percibir que la aplicación responde y evitar confusión. | **Escenario 1:** Visualización de Skeleton Screens  <br><br> **Dado que** el usuario navega a una vista que requiere carga de datos (lista o dashboard), **cuando** la respuesta tarde más de 200 ms en llegar, **entonces** se mostrará un skeleton screen adaptado al diseño de cada componente hasta que los datos estén listos. <br><br> **Escenario 2:** Desaparición de Skeleton Screens <br><br> **Dado que** la API devuelve los datos correctamente, **cuando** se reciban y procesen, **entonces** los skeleton screens desaparecerán automáticamente y se renderizarán los contenidos reales en la misma posición y dimensión. | EP01        |
+| UA03              | Encuestas tras entregas completadas | **Como** transportista de la plataforma, **quiero** recibir una encuesta breve tras completar cada entrega, **para** aportar retroalimentación inmediata y mejorar la calidad del servicio.     | **Escenario 1: Activación post-entrega**</br></br>**Dado que** la entrega se marca como “Completada” en el sistema, **cuando** el back‑end confirme el estado y envíe la notificación, **entonces** se abrirá un modal de encuesta con como máximo cinco preguntas y tiempo estimado de respuesta de 30 s.</br></br>**Escenario 2: Almacenamiento de respuestas**</br></br>2. **Dado que** el transportista envía sus respuestas, **cuando** presione “Enviar”, **entonces** las respuestas se guardarán con metadatos (ID de entrega, timestamp) y se mostrará un mensaje de confirmación de envío exitoso.    | EP05        |
+| UA04              | Exportación de reportes personalizados | **Como** gerente de la plataforma, **quiero** generar y descargar reportes personalizados en PDF con filtros avanzados, **para** preparar mis análisis semanales de forma ágil y fiable.                        | **Escenario 1: Generación de reporte**</br></br>**Dado que** el usuario completa el registro y accede por primera vez, **cuando** cargue el dashboard, **entonces** se iniciará el tutorial interactivo destacando cada elemento clave y esperando la acción del usuario para avanzar.</br></br>**Escenario 2: Visualizacion**</br></br>**Dado que** el usuario finaliza o salta el tutorial, **cuando** cierre sesión y vuelva a ingresar, **entonces** no se volverá a mostrar y se guardará el estado de “tutorial completado” en su perfil.            | EP03        |
+| UA05              | Cambio de idioma a inglés              | **Como** usuario de la plataforma, **quiero** seleccionar el idioma de la interfaz (inglés o español), **para** trabajar en mi idioma preferido y mantenerlo en futuras sesiones. | **Escenario 1: Cambio desde configuración**</br></br>1. **Dado que** el usuario accede a la sección de configuración de idioma, **cuando** seleccione “Inglés” o “Español” y confirme, **entonces** toda la UI se recargará en el idioma elegido sin perder el contexto actual.</br></br>**Escenario 2: Persistencia**</br></br>**Dado que** el usuario cierra sesión y vuelve a iniciar, **cuando** su perfil sea recuperado, **entonces** la plataforma cargará automáticamente el idioma previamente elegido y mostrado la UI en esa lengua. | E06         |
+| UA06 | Asistente de bienvenida interactivo | **Como** nuevo usuario de la plataforma, **quiero** un asistente paso a paso que me muestre las funciones básicas, **para** aprender a usar la herramienta sin perderme. | **Escenario 1:** Primer escenario de prueba <br><br> **Dado que** el usuario completa el registro y accede por primera vez, **cuando** cargue el dashboard, **entonces** se iniciará el tutorial interactivo destacando cada elemento clave y esperando la acción del usuario para avanzar. <br><br> **Escenario 2:** Omisión de tutorial <br><br> **Dado que** el usuario finaliza o salta el tutorial, **cuando** cierre sesión y vuelva a ingresar, **entonces** no se volverá a mostrar y se guardará el estado de “tutorial completado” en su perfil. | E06 |                                     | 
 
 
 ## 8.3.2. To-Be Product Backlog
@@ -561,10 +560,9 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
 | 1           | UA01              | Activación de modo oscuro              | 2                                    |
 | 2           | UA02              | Skeleton screens en pantallas clave    | 3                                    |
 | 3           | UA03              | Encuestas tras entregas completadas    | 3                                    |
-| 4           | UA04              | Onboarding con pasos interactivos      | 5                                    |
-| 5           | UA05              | Exportación de reportes personalizados | 5                                    |
-| 6           | UA06              | Cambio de idioma a inglés              | 3                                    |
-| 7           | UA07              | Panel de estadísticas personales       | 3                                    |
+| 4           | UA04              | Exportación de reportes personalizados | 5                                    |
+| 5           | UA05              | Cambio de idioma a inglés  | 5                                    |
+| 6           | UA06              | Onboarding con pasos interactivos      | 3                                    |                             |
 
 ## 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
@@ -737,8 +735,6 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
 ![To-Be Backend](../assets/chapter08/Backend-ToBe-3.png)
 ![To-Be Backend](../assets/chapter08/Backend-ToBe-4.png)
 
-
-
 ### 8.3.3.6. Team Collaboration Insights
 
 App móvil:
@@ -854,7 +850,6 @@ Cuadro de colaboracion del backend
 * Duracion: 4:50
 * Resumen: El transportista Víctor Cuba Bautista tras probar la plataforma, reconoció que el uso de las funciones eran más sencillos de lo que esperaba. Encontró especialmente útil el registro de incidencias en tiempo real. Aunque le gustaría ver mejoras en algunas funcionalidades adicionales, valora la capacidad de monitorear los sitios de entrega y la seguridad de los datos proporcionada por la plataforma. Al final, Víctor concluyó que MoviGestion es una herramienta efectiva que puede mejorar su eficiencia y reducir el tiempo de inactividad, y estaría dispuesto a recomendarla a otros transportistas
 
-
 # 8.4. Experiment Aftermath & Analysis
 
 ## 8.4.1. Analysis and Interpretation of Results
@@ -889,6 +884,25 @@ Se encuestó a una muestra de 25 participantes, 10 gerentes y 15 transportistas,
 ¿Considera que la disposición de elementos y la organización de menús contribuyen a realizar tareas como ver asignaciones o revisar reportes de forma eficiente?
 
 Estas preguntas fueron presentadas a una muestra de 25 posibles usuarios (gerentes y transportistas). Los participantes respondieron en base a su experiencia directa o simulada con las funcionalidades actuales y propuestas de la aplicación. A continuación, se presentan los resultados obtenidos.
+
+**Análisis de datos demográficos**
+
+![Analisis](../assets/chapter08/analisis-plataforma-1.png)
+![Analisis](../assets/chapter08/analisis-plataforma-2.png)
+![Analisis](../assets/chapter08/analisis-plataforma-3.png)
+![Analisis](../assets/chapter08/analisis-plataforma-4.png)
+![Analisis](../assets/chapter08/analisis-plataforma-5.png)
+![Analisis](../assets/chapter08/analisis-plataforma-6.png)
+![Analisis](../assets/chapter08/analisis-plataforma-7.png)
+![Analisis](../assets/chapter08/analisis-plataforma-8.png)
+![Analisis](../assets/chapter08/analisis-plataforma-9.png)
+![Analisis](../assets/chapter08/analisis-plataforma-10.png)
+![Analisis](../assets/chapter08/analisis-plataforma-11.png)
+![Analisis](../assets/chapter08/analisis-plataforma-12.png)
+![Analisis](../assets/chapter08/analisis-plataforma-13.png)
+![Analisis](../assets/chapter08/analisis-plataforma-14.png)
+![Analisis](../assets/chapter08/analisis-plataforma-15.png)
+![Analisis](../assets/chapter08/analisis-plataforma-16.png)
 
 ## 8.4.2. Re-scored and Re-prioritized Question Backlog
 
