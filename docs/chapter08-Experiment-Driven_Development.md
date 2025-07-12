@@ -700,9 +700,23 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
 
 ### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
+![To-Be Landing Page](../assets/chapter08/Landing-ToBe-1.png)
+![To-Be Landing Page](../assets/chapter08/Landing-ToBe-2.png)
+![To-Be Landing Page](../assets/chapter08/Landing-ToBe-3.png)
+![To-Be Landing Page](../assets/chapter08/Landing-ToBe-4.png)
+
 ### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
 ### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+![To-Be Mobile](../assets/chapter08/Mobile-ToBe-1.jpeg)
+![To-Be Mobile](../assets/chapter08/Mobile-ToBe-2.jpeg)
+![To-Be Mobile](../assets/chapter08/Mobile-ToBe-3.jpeg)
+![To-Be Mobile](../assets/chapter08/Mobile-ToBe-4.jpeg)
+![To-Be Mobile](../assets/chapter08/Mobile-ToBe-5.jpeg)
+![To-Be Mobile](../assets/chapter08/Mobile-ToBe-6.jpeg)
+![To-Be Mobile](../assets/chapter08/Mobile-ToBe-7.jpeg)
+![To-Be Mobile](../assets/chapter08/Mobile-ToBe-8.jpeg)
+
 
 ### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
 
