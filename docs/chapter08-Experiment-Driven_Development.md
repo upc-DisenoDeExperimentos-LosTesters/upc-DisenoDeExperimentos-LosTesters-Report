@@ -726,6 +726,8 @@ El siguiente To-Be Product Backlog agrupa las historias de usuario propuestas en
 ![To-Be Mobile](../assets/chapter08/Mobile-ToBe-6.jpeg)
 ![To-Be Mobile](../assets/chapter08/Mobile-ToBe-7.jpeg)
 ![To-Be Mobile](../assets/chapter08/Mobile-ToBe-8.jpeg)
+![To-Be Mobile](../assets/chapter08/Mobile-ToBe-9.jpeg)
+
 
 
 ### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
